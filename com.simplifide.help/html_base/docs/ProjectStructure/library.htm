@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Library</title>
+</head>
+
+<body>
+<!--*** <h1>Library</h1> ***-->
+<p>A library is a fixed set of code which is not directly part of the design but is used in the design. An example of this 
+	is the ieee library for vhdl. The library has the following set of 
+requirements</p>
+<ul>
+	<li><strong>A library must consist of a static set of Files.</strong></li>
+</ul>
+
+<p>Libraries are treated in a similar fashion to projects except for a few differences important to the performance of the
+plugin</p>
+<ul>
+	<li>Files in the library directory are only compiled when used by files in the project directory. </li>
+	<li>Library files are only compiled initially when the design is loaded.</li>
+</ul>
+
+<h2>Speeding Up Library Load Time (Alpha) </h2>
+
+In general history is intentionally not stored between different "runs" or "cleans" of the project. For the cases of
+libraries which are static there is the option to store the information from the last run. This is highly recommended
+for performance of the plugin. To enable this check the box for <b>Enable Storage of Library Contents</b>
+
+<p><img alt="" src="../images/project/build_options.png" /></p>
+
+<h2>Creating New Library</h2>
+<p>Creation of a new library follows the same steps as creating a new project. 
+Right click on the libraries folder and&nbsp; select <strong>New-&gt;Hardware 
+Library</strong></p>
+<p>
+<img alt="" src="../images/project/dialog_new_library.png" width="553" height="229" /></p>
+</body>
+
+</html>

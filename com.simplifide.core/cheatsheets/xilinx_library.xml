@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Xilinx Library Compilation Instructions">
+  <intro>
+<description>This tutorial guides you through a step by step process for compiling the Xilinx
+libraries to work with SimplifIDE. There are a large number of files in this library including
+some very large ones. For this reason, the compilation can take quite a while. Please be patient. 
+</description>
+  </intro>
+  <item title="Create a Workspace for Libraries outside normal Workspace" skip="true">
+ <description>It is easier and less memory intensive to store libraries outside of your normal workspace. It is 
+ recommend for convenience to put them all in the same workspace as well if possible. 
+ </description> 
+  </item>
+  <item title="Check Memory Allocation for Eclipse" skip="true">
+ <description>Compiling the xilinx libraries for SimplifIDE is a memory intensive process. Please set the java 
+ virtual machine options found in "eclipse.conf" where eclipse is installed to at minimum the following settings. 
+ -Xmx1024m -Xms1024m -Xmx1024m
+ </description> 
+  </item>
+  <item title="Create the Xilinx Suites for Vhdl" skip="true">
+  <action pluginId="com.simplifide.core" class="com.simplifide.core.actions.xilinx.CreateXilinVhdlSuiteAction"/>
+ <description>Create a set of Xilinx Suites (Unisims and XilinxCoreLibs) for Compilation.
+ </description> 
+  </item>
+  <item title="Build Unisims and Store the Library Contents " skip="true">
+  <action pluginId="com.simplifide.core" class="com.simplifide.core.actions.xilinx.BuildUnisimsAction"/>
+ <description>Builds the unisims libraries and stores the contents to a file for more efficient usage. This step will 
+ also copy the project directory to the libraries directory when complete.  Note, this compilation
+ can take quite a while > 15 minutes on some machines. 
+ </description> 
+  </item>
+  <item title="Build XilincCoreLibs and Store the Library Contents " skip="true">
+  <action pluginId="com.simplifide.core" class="com.simplifide.core.actions.xilinx.BuildCoreLibsAction"/>
+ <description>Builds the unisims libraries and stores the contents to a file for more efficient usage. This step will 
+ also copy the project directory to the libraries directory when complete.  Note, this compilation
+ can take quite a while > 15 minutes on some machines. 
+ </description> 
+  </item>
+</cheatsheet>

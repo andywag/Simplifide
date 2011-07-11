@@ -1,0 +1,27 @@
+apply plugin: 'scala'
+
+defaultTasks 'scaladoc'
+
+
+repositories {
+    flatDir name: 'localRepository', dirs: ['/home/andy/software/scala/lib','/home/andy/software/jep-2.3.1']
+}
+
+dependencies {
+    scalaTools 'org.scala-lang:scala-compiler'
+    scalaTools 'org.scala-lang:scala-library'
+
+    compile files('/home/andy/simplifide_base/eclipse/com.simplifide.updates/plugins/com.simplifide.core_1.2.17.201102181006.jar')
+    compile files('/home/andy/software/jep-2.3.1/jep-2.3.1.jar')
+    compile 'org.scala-lang:scala-library'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDir 'src/'
+            srcDir '/home/andy/simplifide_base/eclipse/com.simplifide.scala2/src/'
+        }
+    }
+
+}

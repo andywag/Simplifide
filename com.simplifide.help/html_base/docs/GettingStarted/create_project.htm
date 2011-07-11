@@ -1,0 +1,58 @@
+
+<html>
+
+<head>
+
+<title>Creating Your Own Project</title>
+</head>
+
+<body>
+<!--*** <h1>Creating Your Own Project</h1> ***--> 
+
+
+	<p>The majority of operations for this hardware plugin require knowledge of the project structure, and an effort has been made to make project generation
+	   as simple and straightforward ad possible. The description of the project structure can be found 
+	in the <a href="../ProjectStructure/project_structure.htm">Project Structure</a> section. 
+	
+	 </p>
+<h2>Creating New Project</h2>
+
+<ol>
+	<li>Create a New <a href="../ProjectStructure/suite.htm">Suite</a> Project which will hold all 
+		of the relevant information for this design. This is handled from the
+		<strong>File-&gt;New-&gt;Project </strong>menu. From this menu select the <strong>
+		Hardware/Suite</strong>
+
+		<p><img alt="" src="../images/gettingstarted/wizard_dialog_new_suite.png" width="507" height="507" /></p>
+	</li>
+	<li>
+		Put the name of your suite into the dialog box, and push finish for a new project or select next to add
+		existing projects or libraries. At the bottom of the dialog are 2 checkboxes. The top checkbox controls whether
+		the project contains any standard library packages. 
+		
+		The bottom checkbox controls whether this is a project with only one design library. If the suite contains only
+		one design project then follow the instructions in <a href="#simple">Single Design Library Project</a>, otherwise
+		follow the instructions in <a href="#simple">Multiple Design Library Project.</a>
+		<p><img alt="" src="../images/gettingstarted/new_suite_dialog.jpg" /></p>
+	</li>
+	<ol>
+	<a href name="simple"><h2>Single Design Library Project</h2></a><li>
+	
+		Put the name of your project into the dialog box, and then add links to the folders which contain existing
+		design directories. Select finish and your project is setup. 
+		 <p><img alt="" src="../images/gettingstarted/simple_project_dialog.jpg" /></p>
+	
+	
+	<a href name="complex"><h2>Multiple Design Library Project</h2></a>
+		To add existing projects, put the name of the project into the project window, and put the location of the
+		design directory into the location box or browse to open up a file chooser. This will automatically add 
+		the project to the suite and create a link from the current design files to the project design directory. 
+		When finished push next to add existing libraries using the same method as projects or finish to create the project. 
+		<p><img alt="" src="../images/gettingstarted/suite_wizard_project.jpg" /></p>
+		
+	</a>
+
+
+</body>
+
+</html>

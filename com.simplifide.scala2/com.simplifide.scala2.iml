@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/external/djep-1.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/external/jep-2.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/external/scala-compiler.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/external/scala-library.jar!/" />
+    <conelement value="org.scala-ide.sdt.launching.SCALA_CONTAINER" />
+    <src_description expected_position="6">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="6" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="module-library" exported="">
+      <library name="djep-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/external/djep-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jep-2.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/external/jep-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="scala-compiler.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/external/scala-compiler.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/Program Files/scala/src/scala-compiler-src.jar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="scala-library.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/external/scala-library.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/Program Files/scala/src/scala-library-src.jar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="org.scala-ide.sdt.launching.SCALA_CONTAINER" level="application" />
+    <orderEntry type="library" name="ECLIPSE" level="application" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+  </component>
+</module>
+

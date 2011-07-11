@@ -1,0 +1,11 @@
+state_machine alpha {
+
+    clock "clk" posedge
+    //reset "rst" async active_low
+    current_state "state"
+    next_state    "next_state"
+    transition                a -> b : case('alpha')            'a'
+                                -> c :                          'b'
+                              b -> a :                          'a==b'
+                                -> c :                          'b==c'
+}

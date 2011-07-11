@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="isim.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="deserializer_testbench" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/deserializer_testbench/sim_deserclka" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserclka</obj_property>
+      <obj_property name="ObjectShortName">sim_deserclka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserenaa" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserenaa</obj_property>
+      <obj_property name="ObjectShortName">sim_deserenaa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserdatina" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserdatina</obj_property>
+      <obj_property name="ObjectShortName">sim_deserdatina</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserpatterna" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserpatterna[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_deserpatterna[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserresync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserresync</obj_property>
+      <obj_property name="ObjectShortName">sim_deserresync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserflags" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserflags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_deserflags[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserclkb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserclkb</obj_property>
+      <obj_property name="ObjectShortName">sim_deserclkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserenab" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserenab</obj_property>
+      <obj_property name="ObjectShortName">sim_deserenab</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserrstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserrstb</obj_property>
+      <obj_property name="ObjectShortName">sim_deserrstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserdatoutb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserdatoutb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_deserdatoutb[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserwordcnttc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserwordcnttc</obj_property>
+      <obj_property name="ObjectShortName">sim_deserwordcnttc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserpttrncnttc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserpttrncnttc</obj_property>
+      <obj_property name="ObjectShortName">sim_deserpttrncnttc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/deserializer_testbench/sim_deserstopped" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_deserstopped</obj_property>
+      <obj_property name="ObjectShortName">sim_deserstopped</obj_property>
+   </wvobject>
+</wave_config>

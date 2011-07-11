@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release" default="releasehelp">
+
+	<property name="version" value="1.0.61"/>
+		
+	<property name="upload_dir" value="upload_${version}"/>
+	<property name="plugin_dir" value="${upload_dir}/plugins"/>
+	<property name="feature_dir" value="${upload_dir}/features"/>
+	
+	<property name="corejar" value="com.simplifide.core_${version}.jar"/>
+	<property name="basejar" value="com.simplifide.base_${version}.jar"/>
+	<property name="helpjar" value="com.simplifide.help_${version}.jar"/>
+	<property name="featurejar" value="com.simplifide.features_${version}.jar"/>
+
+	<property name="coreinjar" value="plugins\${corejar}"/>
+	<property name="baseinjar" value="plugins\${basejar}"/>
+	
+	<property name="sitebase" value="../com.simplifide.help/html_base"/>
+	<property name="helpbase" value="../com.simplifide.help/html/"/>
+	<property name="svn_message" value="Checking in Changes for Version ${version}"/>
+	
+	<property name="release_dir" value="../com.simplifide.release/release"/>
+	
+	<property name="update_site" value="updates_alpha"/>
+
+	<taskdef resource="svntask.properties"/>
+	
+	<target name="copyhelp">
+		<mkdir dir="${helpbase}"/>
+		<copy todir="${helpbase}">
+			<fileset dir="${sitebase}">
+				<include name="**/*.htm"/>
+				<include name="**/*.jpg"/>
+				<include name="**/*.png"/>
+			</fileset>
+		</copy>
+		<replace dir="${helpbase}" token="&lt;!--***" value=""/>
+		<replace dir="${helpbase}" token="***--&gt;" value=""/>
+	</target>
+	
+	<target name="ftphelp">
+		<ftp server="simplifide.com"
+			 userid="andywagner"
+			 password="mira1234"
+			 remotedir="simplifide.com/html/">
+			 <fileset dir="${sitebase}"/>
+		</ftp>
+	</target>
+	
+	
+	<target name="releasehelp" depends="copyhelp,ftphelp"/>
+	
+
+
+	
+		
+		
+	
+</project>

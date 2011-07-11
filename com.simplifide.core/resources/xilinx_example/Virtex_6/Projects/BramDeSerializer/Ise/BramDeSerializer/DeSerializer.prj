@@ -1,0 +1,6 @@
+vhdl FastCounter "../../../../Libraries/FastCounter/Vhdl/CntTwoBit.vhd"
+vhdl FastCounter "../../../../Libraries/FastCounter/Vhdl/CntFourBit.vhd"
+vhdl work "../../Libraries/Control/Vhdl/Control.vhd"
+vhdl FastCounter "../../../../Libraries/FastCounter/Vhdl/CntTenBit.vhd"
+vhdl FastCounter "../../../../Libraries/FastCounter/Vhdl/CntFiveBit.vhd"
+vhdl work "../../Vhdl/DeSerializer.vhd"

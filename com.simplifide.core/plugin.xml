@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.simplifide.core.generator.provider" name="Generator Provider" schema="schema/com.simplifide.core.generator.provider.exsd"/>
+    <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="VhdlEditor"
+            extensions="vhd,vhdl"
+            icon="icons/vhdl.gif"
+            contributorClass="com.simplifide.core.vhdl.editor.VhdlEditorActionContribution"
+            class="com.simplifide.core.vhdl.editor.VhdlEditor"
+            id="com.simplifide.core.vhdl.editor.VhdlEditor">
+      </editor>
+      <editor
+            class="com.simplifide.core.verilog.editor.VerilogEditor"
+            contributorClass="com.simplifide.core.verilog.VerilogEditorActionContribution"
+            default="false"
+            extensions="v,sv,svh"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.verilog.editor.VerilogEditor"
+            name="VerilogEditor">
+      </editor>
+      <editor
+            class="com.simplifide.core.ucf.UcfEditor"
+            default="false"
+            extensions="ucf"
+            id="com.simplifide.core.ucf.UcfEditor"
+            name="UCF Editor">
+      </editor>
+   </extension>
+   <extension
+         id="com.simplifide.core.project.HardwareNature"
+         name="Hardware Project"
+         point="org.eclipse.core.resources.natures">
+       <builder id="com.simplifide.core.builder.HardwareBuilder"/>
+       <runtime>
+          <run class="com.simplifide.core.project.HardwareNature"/>
+       </runtime>
+   </extension>
+   <extension
+         id="ProjectWizard"
+         name="ProjectWizard"
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.simplifide.core.category.project"
+            name="Projects"
+            parentCategory="com.simplifide.core.Hardware">
+      </category>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware"
+            class="com.simplifide.core.ui.wizard.suite_prjfile.VerilogSuiteWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.VerilogSuiteWizard"
+            name="Linked Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware"
+            class="com.simplifide.core.ui.wizard.suite_import.SuiteImportWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.import.existing"
+            name="Workspace Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware"
+            class="com.simplifide.core.ui.wizard.suite_classic.SuiteWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.SuiteWizard"
+            name="Classic Hardware Suite"
+            project="true"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.project"
+            class="com.simplifide.core.ui.wizard.project2.ProjectWizard2"
+            hasPages="true"
+            icon="icons/module.gif"
+            id="com.simplifide.core.ui.wizard.project.ProjectWizard"
+            name="Hardware Project"
+            project="false"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.project"
+            class="com.simplifide.core.ui.wizard.project2.LibraryWizard2"
+            hasPages="true"
+            icon="icons/module.gif"
+            id="com.simplifide.core.ui.wizard.project.LibraryWizard"
+            name="Hardware Library"
+            project="false"/>
+     
+     <wizard
+           canFinishEarly="true"
+           category="com.simplifide.core.Hardware/com.simplifide.core.category.project"
+           class="com.simplifide.core.ui.wizard.project2.SubprojectWizard2"
+           hasPages="true"
+           icon="icons/module.gif"
+           id="com.simplifide.core.ui.wizard.project.SubProjectWizard"
+           name="Hardware SubProject"
+           project="false">
+     </wizard>
+      <category
+            id="com.simplifide.core.Hardware"
+            name="Hardware"
+            />
+      <category
+            id="com.simplifide.core.Verilog"
+            name="Verilog"
+            parentCategory="com.simplifide.core.Hardware"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$Package"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlPackageWizard"
+            name="Vhdl Package"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$Entity"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlEntityWizard"
+            name="Vhdl Entity"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$Arch"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlArchWizard"
+            name="Vhdl Architecture"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$EntityArch"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlEntityArchWizard"
+            name="Vhdl Entity and Architecture"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$TestBench"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlTestBenchWizard"
+            name="Vhdl Testbench"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Vhdl"
+            class="com.simplifide.core.ui.wizard.VhdlFileWizard$Tester"
+            hasPages="true"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.wizard.VhdlTester"
+            name="Vhdl Tester"/>
+     <category
+           id="com.simplifide.core.category.other"
+           name="Other"
+           parentCategory="com.simplifide.core.Hardware">
+     </category>
+     <wizard
+           canFinishEarly="true"
+           category="com.simplifide.core.Hardware/com.simplifide.core.category.other"
+           class="com.simplifide.core.ui.wizard.other.ConfigurationDirectoryWizard"
+           hasPages="true"
+           icon="icons/constant.gif"
+           id="com.simplifide.core.ui.wizard.other.ConfigurationDirectoryWizard"
+           name="Configuration Directory"
+           project="false">
+     </wizard>
+     <category
+           id="com.simplifide.core.category.example"
+           name="Examples"
+           parentCategory="com.simplifide.core.Hardware">
+     </category>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+            class="com.simplifide.core.ui.wizard.VerilogFileWizard$Module"
+            hasPages="true"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.ui.wizard.verilog.module"
+            name="Verilog Module"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+            class="com.simplifide.core.ui.wizard.VerilogFileWizard$Interface"
+            hasPages="true"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.ui.wizard.verilog.interface"
+            name="Verilog Interface"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+            class="com.simplifide.core.ui.wizard.VerilogFileWizard$Program"
+            hasPages="true"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.ui.wizard.verilog.program"
+            name="Verilog Program"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+            class="com.simplifide.core.ui.wizard.VerilogFileWizard$Class1"
+            hasPages="true"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.ui.wizard.verilog.class"
+            name="Verilog Class"/>
+     <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+            class="com.simplifide.core.ui.wizard.VerilogFileWizard$Package"
+            hasPages="true"
+            icon="icons/verilog.gif"
+            id="com.simplifide.core.ui.wizard.verilog.package"
+            name="Verilog Package"/>
+     <wizard
+           canFinishEarly="true"
+           category="com.simplifide.core.Hardware/com.simplifide.core.Verilog"
+           class="com.simplifide.core.ui.wizard.VerilogFileWizard$Testbench"
+           hasPages="true"
+           icon="icons/verilog.gif"
+           id="com.simplifide.core.ui.wizard.verilog.testbench"
+           name="Verilog Testbench">
+     </wizard>
+      <category
+            id="com.simplifide.core.Vhdl"
+            name="Vhdl"
+            parentCategory="com.simplifide.core.Hardware"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.VerilogExampleWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.VerilogExample Suite"
+            name="Verilog Example Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.VhdlExampleWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.VhdlExampleWizard"
+            name="Vhdl Example Suite"
+            project="true"/>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.SvExampleWizard$Ovm"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.SvExampleWizard.Ovm"
+            name="Ovm Example Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.SvExampleWizard$Uvm"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.SvExampleWizard.Uvm"
+            name="Uvm Example Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.SvExampleWizard$Vmm"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.SvExampleWizard.Vmm"
+            name="Vmm Example Suite"
+            project="true">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.category.example"
+            class="com.simplifide.core.ui.wizard.suite_classic.XilinxExampleWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.ui.wizard.suite.XilinxExampleWizard"
+            name="Xilinx VHDL Example"
+            project="true">
+      </wizard>
+      <category
+            id="com.simplifide.core.dsp"
+            name="Signal Processing"
+            parentCategory="com.simplifide.core.Hardware">
+      </category>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.dsp"
+            class="com.simplifide.core.ui.wizard.example.FirExampleWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.dsp.fir"
+            name="FIR Filter Suite"
+            project="true">
+      </wizard>
+      <wizard
+            category="com.simplifide.core.Hardware/com.simplifide.core.dsp"
+            class="com.simplifide.core.ui.wizard.example.IirExampleWizard"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.dsp.iir"
+            name="IIR Filter Suite">
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="com.simplifide.core.Hardware/com.simplifide.core.dsp"
+            class="com.simplifide.core.ui.wizard.example.ComplexMultExampleWizard"
+            hasPages="true"
+            icon="icons/suite.gif"
+            id="com.simplifide.core.dsp.fir"
+            name="Complex Multiplier Suite"
+            project="true">
+      </wizard>
+     
+     
+   </extension>
+   <extension
+         id="com.simplifide.core.builder.HardwareBuilder"
+         name="com.simplifide.core.builder.HardwareBuilder"
+         point="org.eclipse.core.resources.builders">
+      <builder hasNature="true">
+         <run class="com.simplifide.core.builder.HardwareBuilder"/>
+      </builder>
+   </extension>
+   <extension
+         id="hardware"
+         name="Hardware View"
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            category="com.simplifide.core.views.category"
+            class="com.simplifide.core.ui.views.HierarchyView"
+            id="hardware.ui.views.HierarchyView"
+            name="Chip Hierarchy"/>
+      <category
+            id="com.simplifide.core.views.category"
+            name="Hardware Views"/>
+      <view
+            allowMultiple="false"
+            category="com.simplifide.core.views.category"
+            class="com.simplifide.core.ui.views.ParseView"
+            id="hardware.ui.views.ParseView"
+            name="ParseView"/>
+      <view
+            allowMultiple="false"
+            category="com.simplifide.core.views.category"
+            class="org.eclipse.ui.navigator.CommonNavigator"
+            id="com.simplifide.core.views.navigatorView"
+            name="Project Navigator">
+      </view>
+      <view
+            category="com.simplifide.core.views.category"
+            class="com.simplifide.core.ui.views.ItemView"
+            id="com.simplifide.core.ui.views.ObjectView"
+            name="Object View"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            category="com.simplifide.core.views.category"
+            class="com.simplifide.core.ui.views.ClassView"
+            id="com.simplifide.core.ui.views.ClassView"
+            name="Class Hierarchy"
+            restorable="true">
+      </view>
+      <view
+            class="com.simplifide.core.license.LicenseFormViewPart"
+            id="com.simplifide.core.license.LicenseFormViewPart"
+            name="New ViewPart">
+      </view>
+   </extension>
+   <extension
+         id="com.simplifide.core.syntaxMarker"
+         name="HardwareMarker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <persistent value="false"/>
+   </extension>
+   <extension
+         id="com.simplifide.core.parseMarker"
+         name="ParseMarker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+   </extension>
+  
+   <extension
+          id="com.simplifide.core.externalMarker"
+         name="ExternalMarker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.core.resources.textmarker"/>
+      <persistent value="false"/>
+   </extension>
+   <extension
+         id="com.simplifide.core.taskmarker"
+         name="TaskMarker"
+         point="org.eclipse.core.resources.markers">
+      <Generic></Generic>
+   </extension>
+  
+   <extension
+         point="org.eclipse.ui.ide.markerResolution">
+      <markerResolutionGenerator
+            class="com.simplifide.core.error.ErrorResolutionGenerator"
+            markerType="com.simplifide.core.syntaxMarker"/>
+   </extension>
+   <extension
+         id="com.simplifide.core.ui.perspective.HardwarePerspectiveFactory"
+         name="Hardware Perspective"
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.simplifide.core.ui.perspective.HardwarePerspectiveFactory"
+            fixed="false"
+            icon="icons/vhdl.gif"
+            id="com.simplifide.core.ui.perspective.HardwarePerspectiveFactory"
+            name="Hardware Perspective"/>
+   </extension>
+   <extension
+         id="com.simplifide.core.ui.preference.HardwarePreference"
+         name="Hardware Preference"
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.simplifide.core.ui.preference.BasePage"
+            id="com.simplifide.core.ui.preference.BasePage"
+            name="SimplifIDE"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.editor.EditorPreferencePage"
+            id="com.simplifide.core.ui.preference.EditorPreferencePage"
+            name="Editor"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.LicensePage"
+            id="com.simplifide.core.ui.preference.LicensePage"
+            name="License"/>
+       <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.VerilogPreferencePage"
+            id="com.simplifide.core.ui.preference.VerilogPreferencePage"
+            name="Verilog"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.VhdlPreferencePage"
+            id="com.simplifide.core.ui.preference.VhdlPreferencePage"
+            name="Vhdl"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.ContentAssistPreferencePage"
+            id="com.simplifide.core.ui.preference.ContentAssistPreferencePage"
+            name="Content Assist"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.HoverPreferencePage"
+            id="com.simplifide.core.ui.preference.HoverPreferencePage"
+            name="Text Hovers"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VhdlPreferencePage"
+            class="com.simplifide.core.vhdl.editor.templates.VhdlTemplatePreferencePage"
+            id="com.simplifide.core.vhdl.editor.templates.VhdlTemplatePreferencePage"
+            name="Editor Templates"/>
+   	  
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VerilogPreferencePage"
+            class="com.simplifide.core.verilog.editor.templates.VerilogTemplatePreferencePage"
+            id="com.simplifide.core.verilog.editor.templates.VerilogTemplatePreferencePage"
+            name="Editor Templates"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VhdlPreferencePage"
+            class="com.simplifide.core.vhdl.error.VhdlErrorPreferencePage"
+            id="com.simplifide.core.vhdl.error.VhdlErrorPreferencePage"
+            name="Errors"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VerilogPreferencePage"
+            class="com.simplifide.core.verilog.error.VerilogErrorPreferencePage"
+            id="com.simplifide.core.vhdl.error.VeriloglErrorPreferencePage"
+            name="Errors"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.BuildPreferencePage"
+            id="com.simplifide.core.ui.preference.BuildPreferencePage"
+            name="Build"/>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.BuildPreferencePage"
+            class="com.simplifide.core.errorparser.pref.TargetPreferencePage"
+            id="com.simplifide.core.errorparser.pref.TargetPreferencePage"
+            name="Commands">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.BuildPreferencePage"
+            class="com.simplifide.core.errorparser.pref.ExternalErrorPreferencePage"
+            id="com.simplifide.core.errorparser.pref.ExternalErrorPreferencePage"
+            name="External Error">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.ColorPreferencePage"
+            id="com.simplifide.core.ui.preference.ColorPreferencePage"
+            name="Color">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.dirstructure.ProjectStructurePreferencePage"
+            id="com.simplifide.core.ui.preference.ProjectStructurePreferencePage"
+            name="Directory Structure">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.ProjectStructurePreferencePage"
+            class="com.simplifide.core.ui.preference.dirstructure.SuiteStructurePreferencePage"
+            id="com.simplifide.core.ui.preference.SuiteStructurePreferencePage"
+            name="Suite Structure">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.ProjectStructurePreferencePage"
+            class="com.simplifide.core.ui.preference.dirstructure.ProjectStructPreferencePage"
+            id="com.simplifide.core.ui.preference.ProjectStructPreferencePage"
+            name="Project Structure">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.ProjectStructurePreferencePage"
+            class="com.simplifide.core.ui.preference.dirstructure.LibraryStructPreferencePage"
+            id="com.simplifide.core.ui.preference.LibraryStructPreferencePage"
+            name="Library Structure">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.ProjectStructurePreferencePage"
+            class="com.simplifide.core.ui.preference.dirstructure.SubProjectPreferencePage"
+            id="com.simplifide.core.ui.preference.SubProjectStructPreferencePage"
+            name="SubProject Structure">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.HeaderPreferencePage"
+            id="com.simplifide.core.ui.preference.HeaderPreferencePage"
+            name="File Header">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.ScriptingPreferencePage"
+            id="com.simplifide.core.ui.preference.ScriptingPreferencePage"
+            name="Scripting">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VerilogPreferencePage"
+            class="com.simplifide.core.ui.preference.VerilogFileTemplatePreferencePage"
+            id="com.simplifide.core.VhdlFileTemplatePreferencePage"
+            name="Verilog File Templates">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.VhdlPreferencePage"
+            class="com.simplifide.core.ui.preference.VhdlFileTemplatePreferencePage"
+            id="com.simplifide.core.VhdlFileTemplatePreferencePage"
+            name="VHDL File Templates">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.HyperlinkPreferencePage"
+            id="com.simplifide.core.editor.hyperlink"
+            name="Hyperlinks">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.EmacsPreferencePage"
+            id="com.simplifide.core.ui.preference.EmacsPreferencePage"
+            name="Emacs">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage/com.simplifide.core.ui.preference.EditorPreferencePage"
+            class="com.simplifide.core.ui.preference.editor.FormatPreferencePage"
+            id="com.simplifide.core.ui.preference.editor.FormatPreferencePage"
+            name="Format">
+      </page>
+      <page
+            category="com.simplifide.core.ui.preference.BasePage"
+            class="com.simplifide.core.ui.preference.RefactorPreferencePage"
+            id="com.simplifide.core.ui.preference.RefactorPreferencePage"
+            name="Refactor">
+      </page>
+     
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors.templates">
+      <contextType
+            class="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+            id="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+            name="Vhdl Template Context Type"/>
+      <resolver
+            class="com.simplifide.core.vhdl.editor.templates.VhdlTemplateVariableResolver"
+            contextTypeId="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+            name="Vhdl Template Variable Resolver"
+            type="com.simplifide.core.resolver3"/>
+      <include file="resource/vhdl.xml"/>
+      <contextType
+            class="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType"
+            id="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType"
+            name="Verilog Context Type"/>
+      <resolver
+            class="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType"
+            contextTypeId="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType"
+            name="Verilog Template Resolver"
+            type="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType"/>
+      <include file="resource/verilog.xml"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.simplifide.core.ui.preference.SourcePreferenceInitializer"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            describer="com.simplifide.core.vhdl.describer.VhdlDescriber"
+            file-extensions="vhd,vhdl"
+            id="com.simplifide.core.content-type.vhdl"
+            name="Vhdl "
+            priority="high"/>
+      <content-type
+            describer="com.simplifide.core.verilog.editor.describer.VerilogDescriber"
+            file-extensions="v,vt,sv,svh"
+            id="com.simplifide.core.content-type.verilog"
+            name="Verilog"
+            priority="high"/>
+   </extension>
+   <extension
+         point="org.eclipse.search.searchResultViewPages">
+       <viewPage
+            class="com.simplifide.core.editors.search.occurence.OccurenceSearchPage"
+            id="com.simplifide.core.editors.search.occurence.OccurenceSearchPage"
+            label="Occurences"
+            searchResultClass="com.simplifide.core.editors.search.occurence.OccurenceSearchResult"/>
+      <viewPage
+            class="com.simplifide.core.editors.search.reference.SourceSearchPage"
+            id="com.simplifide.core.editors.search.reference.SourceSearchPage"
+            label="References"
+            searchResultClass="com.simplifide.core.editors.search.reference.SourceSearchResult"/>
+      <viewPage
+            class="com.simplifide.core.editors.search.fan.FanInSearchPage"
+            id="com.simplifide.core.editors.search.fan.FanInSearchPage"
+            label="FanIn"
+            searchResultClass="com.simplifide.core.editors.search.fan.FanSearchResult">
+      </viewPage>
+   </extension>
+   <!--<extension
+         id="com.simplifide.core.source.actions"
+         name="Source Actions"
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="SimplifIDE Actions"
+            id="com.simplifide.core.actionset" 
+            label="SimplifIDE Action Set"
+            visible="true">
+         <action
+               class="com.simplifide.core.actions.GenerateHdlDocAction"
+               id="com.simplifide.core.action.hdldoc"
+               label="Generate HdlDoc"
+               menubarPath="simplifide/simplifide_document/content"
+               tooltip="Generate Hdl Doc for the Project"/>
+         <menu
+               id="simplifide"
+               label="SimplifIDE"
+               path="project">
+            <separator
+                  name="content">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.actions.SplitFileAction"
+               id="com.simplifide.core.actions.SplitFileAction"
+               label="Split Large Files"
+               menubarPath="simplifide/simplifide_large_files/content">
+         </action>
+         <action
+               class="com.simplifide.core.actions.CombineFileAction"
+               id="com.simplifide.core.actions.CombineFileAction"
+               label="Combine Large Files"
+               menubarPath="simplifide/simplifide_large_files/content">
+         </action>
+         <menu
+               id="simplifide_document"
+               label="Documentation"
+               path="simplifide/content">
+         </menu>
+         <menu
+               id="simplifide_library"
+               label="Libraries"
+               path="simplifide/content">
+         </menu>
+         <menu
+               id="simplifide_large_files"
+               label="LargeFiles"
+               path="simplifide/content">
+         </menu>
+      </actionSet>
+   </extension>-->
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewer
+            viewerId="com.simplifide.core.views.navigatorView">
+         <popupMenu
+               allowsPlatformContributions="true"
+               id="com.simplifide.core.views.navigatorView.popUpMenu">
+            <insertionPoint
+                  name="group.new"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.open"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.openWith">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.edit"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.reorganize"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.port"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.build"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.generate"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.search"
+                  separator="true">
+            </insertionPoint>
+            <insertionPoint
+                  name="additions">
+            </insertionPoint>
+            <insertionPoint
+                  name="group.properties">
+            </insertionPoint></popupMenu>
+      </viewer>
+      <viewerContentBinding
+            viewerId="com.simplifide.core.views.navigatorView">
+         <includes>
+           <contentExtension
+                  pattern="org.eclipse.ui.navigator.resourceContent">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.filters.*">
+            </contentExtension>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.*">
+            </actionExtension>
+            <contentExtension
+                  pattern="com.simplifide.core.navigator.content.*">
+            </contentExtension>
+            <contentExtension
+                  pattern="com.simplifide.core.navigator.filter.*">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding
+            viewerId="com.simplifide.core.views.navigatorView">
+         <includes>
+            <actionExtension
+                  pattern="com.simplifide.core.navigator.action.SuiteActionProvider">
+            </actionExtension>
+            <actionExtension
+                  pattern="com.simplifide.core.navigator.action.SuiteActionProvider">
+            </actionExtension>
+            <actionExtension pattern="org.eclipse.ui.navigator.resources.*"/>
+         </includes>
+      </viewerActionBinding>
+      <!--<viewerActionBinding
+            viewerId="com.simplifide.core.views.navigatorView">
+         <includes>
+            <actionExtension
+                  pattern="com.simplifide.core.navigator.action.SuiteActionProvider">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>-->
+   </extension>
+   <extension point="org.eclipse.ui.navigator.navigatorContent">
+      <navigatorContent
+            activeByDefault="true"
+            contentProvider="com.simplifide.core.navigator.NavigatorContentProvider"
+            icon="icons/module.gif"
+            id="com.simplifide.core.navigator.content.project"
+            labelProvider="com.simplifide.core.navigator.NavigatorLabelProvider"
+            name="Suite Content">
+         <triggerPoints>
+         <or>
+         	<and>
+            	<adapt
+                  type="org.eclipse.core.resources.IProject">
+            	</adapt>
+            	<test
+                  forcePluginActivation="true"
+                  property="org.eclipse.core.resources.projectNature"
+                  value="com.simplifide.core.project.HardwareNature">
+            	</test>
+         	</and>
+         	<instanceof value="com.simplifide.core.navigator.NavigatorInterface"/>
+         </or>
+         </triggerPoints>ovider>
+         
+      </navigatorContent>
+      <commonFilter
+            activeByDefault="true"
+            class="com.simplifide.core.navigator.filter.SuiteFilter"
+            id="com.simplifide.core.navigator.filter.SuiteFilter"
+            name="Suite Filter">
+      </commonFilter>
+      <actionProvider
+            class="com.simplifide.core.navigator.action.SuiteActionProvider"
+            id="com.simplifide.core.navigator.action.SuiteActionProvider">
+         <enablement></enablement>
+      </actionProvider>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.project.ProjectWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.project.LibraryWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.VhdlEntityWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.VhdlPackageWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.VerilogModuleWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="new"
+            wizardId="com.simplifide.core.ui.wizard.VhdlEntityArchWizard">
+         <enablement></enablement>
+      </commonWizard>
+      <commonWizard
+            menuGroupId="com.simplifide.core.views.navigatorView.popUpMenu"
+            type="import"
+            wizardId="com.simplifide.core.ui.wizard.VhdlArchWizard">
+         <enablement></enablement>
+      </commonWizard>
+   </extension>
+   <extension
+         id="Simplifide"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="SimplifIDE">
+         <property
+               name="appName"
+               value="SimplifIDE">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="Simplifide1"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Simplifide">
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="com.simplifide.core.project.preference.ProjectPreferencePage"
+            id="com.simplifide.core.project.preference.ProjectPreferencePage"
+            name="SimplifIDE Properties"
+            objectClass="org.eclipse.core.resources.IProject">
+      </page>
+      <page
+            class="com.simplifide.core.project.preference.FolderPropertyPage"
+            id="com.simplifide.core.FolderPage"
+            name="SimplifIDE Properties"
+            objectClass="org.eclipse.core.resources.IResource">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.cheatsheets.cheatSheetContent">
+      <category
+            id="com.simplifide.core.cheatsheet.category.hardware"
+            name="Hardware">
+      </category>
+      <cheatsheet
+            category="com.simplifide.core.cheatsheet.category.hardware"
+            composite="false"
+            contentFile="cheatsheets/xilinx_library.xml"
+            id="com.simplifide.core.cheatsheet.xilinx"
+            name="Xilinx Library Compilation">
+      </cheatsheet>
+   </extension>
+   <extension
+         id="com.simplifide.core.vhdl.popup"
+         name="Vhdl Popup"
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="com.simplifide.core.editor.contribution.vhdl"
+            targetID="#VhdlEditorContext">
+         <menu
+               id="com.simplifide.core.vhdl.editor.menu.new"
+               label="New"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.new1.NewComponentDelegateAction"
+               definitionId="com.simplifide.core.editor.action.new.component"
+               enablesFor="*"
+               id="com.simplifide.core.editor.vhdl.action.new.component"
+               label="Component"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.new/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.new1.NewInstanceDelegateAction"
+               definitionId="com.simplifide.core.editor.action.new.instance"
+               id="com.simplifide.core.editor.vhdl.action.new.instance"
+               label="Instance"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.new/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.new1.NewModuleDelegateAction"
+               definitionId="com.simplifide.core.editor.action.new.module"
+               id="com.simplifide.core.editor.vhdl.action.new.module"
+               label="Module"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.new/group1">
+         </action>
+         <menu
+               id="com.simplifide.core.vhdl.editor.menu.format"
+               label="Format"
+               path="additions">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CapActionDelegate$Capitalize"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.capitalize"
+               id="com.simplifide.core.editor.vhdl.action.format.capitalize"
+               label="Capitalize"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CapActionDelegate$UnCapitalize"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.uncapitalize"
+               id="com.simplifide.core.editor.vhdl.action.format.uncapitalize"
+               label="UnCapitalize"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CapFileActionDelegate$Capitalize"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.capitalize.file"
+               id="com.simplifide.core.editor.vhdl.action.format.capitalize.file"
+               label="Capitalize File"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CapFileActionDelegate$UnCapitalize"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.uncapitalize.file"
+               id="com.simplifide.core.editor.vhdl.action.format.uncapitalize.file"
+               label="UnCapitalize File"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CommentActionDelegate$Comment"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.comment"
+               id="com.simplifide.core.editor.vhdl.action.format.comment"
+               label="Comment"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.CommentActionDelegate$UnComment"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.uncomment"
+               id="com.simplifide.core.editor.vhdl.action.format.uncomment"
+               label="UnComment"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.format.TabsToSpacesActionDelegate"
+               definitionId="com.simplifide.core.editor.vhdl.action.tabs"
+               id="com.simplifide.core.editor.vhdl.action.format.tabs"
+               label="Convert Tabs To Spaces"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.format.FormatActionDelegate"
+               definitionId="com.simplifide.core.editor.vhdl.action.format.format"
+               id="com.simplifide.core.action1"
+               label="Indent"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.format/group2">
+         </action>
+         <menu
+               id="com.simplifide.core.vhdl.editor.menu.emacs"
+               label="Emacs"
+               path="additions">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.actions.emacs.VhdlBeautifyActionDelegate"
+               definitionId="com.simplifide.core.editor.vhdl.action.emacs.beautify"
+               id="com.simplifide.core.editor.vhdl.action.emacs.beautify"
+               label="Beautify"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.emacs/group2">
+         </action>
+         <menu
+               id="com.simplifide.core.vhdl.editor.menu.refactor"
+               label="Refactor"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+            <separator
+                  name="group2">
+            </separator>
+            <separator
+                  name="group3">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.RenameActionDelegate"
+               definitionId="com.simplifide.core.editor.action.refactor.rename"
+               id="com.simplifide.core.editor.vhdl.action.refactor.rename"
+               label="Rename"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Add"
+               definitionId="com.simplifide.core.editor.action.refactor.addports"
+               id="com.simplifide.core.editor.vhdl.action.refactor.addports"
+               label="Add Module Ports"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Remove"
+               definitionId="com.simplifide.core.editor.action.refactor.removeports"
+               id="com.simplifide.core.editor.vhdl.action.refactor.addports"
+               label="Remove Module Ports"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Connect"
+               definitionId="com.simplifide.core.editor.action.refactor.connectports"
+               id="com.simplifide.core.editor.vhdl.action.refactor.connectports"
+               label="Connect Module Ports"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.FunctionActionDelegate$ChangeMethodDelegate"
+               definitionId="com.simplifide.core.editor.action.refactor.vhdl.changemethod"
+               id="com.simplifide.core.editor.vhdl.action.refactor.changemethod"
+               label="Change Method Signature"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group3">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.FunctionActionDelegate$CreateActionDelegate"
+               definitionId="com.simplifide.core.editor.action.refactor.vhdl.createmethod"
+               id="com.simplifide.core.action2"
+               label="Create Method Head/Body"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.refactor/group3">
+         </action>
+         <menu
+               id="com.simplifide.core.vhdl.editor.menu.views"
+               label="View"
+               path="additions">
+         </menu>
+         <action
+               class="com.simplifide.core.actions.views.QuickHierarchyAction"
+               definitionId="com.simplifide.core.command.quick.hierarchy"
+               id="com.simplifide.core.editor.vhdl.action.quick.hierarchy"
+               label="Quick Hierarchy"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.views/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.views.QuickOutlineAction"
+               definitionId="com.simplifide.core.command.quick.outline"
+               id="com.simplifide.core.editor.vhdl.action.quick.outline"
+               label="Quick Outline"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.views/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.views.QuickGlobalTypeAction"
+               definitionId="com.simplifide.core.command.quick.type"
+               id="com.simplifide.core.editor.vhdl.action.quick.outline"
+               label="Quick Type"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.views/group1">
+         </action>
+         <menu
+               id="com.simplifide.core.copy.menu"
+               label="Power Copy"
+               path="additions">
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.copy.CopyInstanceDelegate"
+               definitionId="com.simplifide.core.action.power.copy"
+               id="com.simplifide.core.action.power.copy.delegate"
+               label="Copy Instance"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Component"
+               definitionId="com.simplifide.core.action.power.paste.component"
+               id="com.simplifide.core.action.paste.component"
+               label="Paste Component"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Entity"
+               definitionId="com.simplifide.core.action.power.paste.entity"
+               id="com.simplifide.core.action.paste.entity"
+               label="Paste Entity"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Instance"
+               definitionId="com.simplifide.core.action.power.paste.instance"
+               id="com.simplifide.core.action.paste.instance"
+               label="Paste Instance"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Signals"
+               definitionId="com.simplifide.core.action.power.paste.signals"
+               id="com.simplifide.core.action.paste.signals"
+               label="Paste Signals"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Testbench"
+               definitionId="com.simplifide.core.action.power.paste.testbench"
+               id="com.simplifide.core.action.paste.testbench"
+               label="Paste Testbench"
+               menubarPath="com.simplifide.core.copy.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.emacs.VhdlBeautifyActionDelegate$VhdlCustom1"
+               definitionId="com.simplifide.core.editor.vhdl.action.emacs.beautify"
+               id="com.simplifide.core.editor.vhdl.action.emacs.custom"
+               label="Custom Command"
+               menubarPath="com.simplifide.core.vhdl.editor.menu.emacs/group2">
+         </action>
+      </viewerContribution>
+      <viewerContribution
+            id="com.simplifide.core.editor.contribution.verilog"
+            targetID="#VerilogEditorContext">
+         <menu
+               id="com.simplifide.core.verilog.editor.menu.new"
+               label="New"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.new1.NewInstanceDelegateAction"
+               definitionId="com.simplifide.core.editor.action.verilog.new.instance"
+               id="com.simplifide.core.editor.verilog.action.new.instance"
+               label="Instance"
+               menubarPath="com.simplifide.core.verilog.editor.menu.new/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.new1.NewModuleDelegateAction"
+               definitionId="com.simplifide.core.editor.action.verilog.new.module"
+               id="com.simplifide.core.editor.verilog.action.new.module"
+               label="Module"
+               menubarPath="com.simplifide.core.verilog.editor.menu.new/group1">
+         </action>
+         <menu
+               id="com.simplifide.core.verilog.editor.menu.emacs"
+               label="Emacs"
+               path="additions">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$ExpandAuto"
+               definitionId="com.simplifide.core.editor.action.emacs.auto"
+               id="com.simplifide.core.editor.verilog.action.emacs.auto"
+               label="Expand Auto Statements"
+               menubarPath="com.simplifide.core.verilog.editor.menu.emacs/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$InjectAuto"
+               definitionId="com.simplifide.core.editor.action.emacs.inject"
+               id="com.simplifide.core.editor.verilog.action.emacs.inject"
+               label="Inject Auto Statements"
+               menubarPath="com.simplifide.core.verilog.editor.menu.emacs/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$DeleteAuto"
+               definitionId="com.simplifide.core.editor.action.emacs.delete"
+               id="com.simplifide.core.editor.verilog.action.emacs.delete"
+               label="Delete Auto Statements"
+               menubarPath="com.simplifide.core.verilog.editor.menu.emacs/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$IndentAuto"
+               definitionId="com.simplifide.core.editor.action.emacs.indent"
+               id="com.simplifide.core.editor.verilog.action.emacs.indent"
+               label="Indent"
+               menubarPath="com.simplifide.core.verilog.editor.menu.emacs/group1">
+         </action>
+         
+         <menu
+               id="com.simplifide.core.verilog.editor.menu.refactor"
+               label="Refactor"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.RenameActionDelegate"
+               definitionId="com.simplifide.core.editor.action.verilog.refactor.rename"
+               id="com.simplifide.core.editor.verilog.action.refactor.rename"
+               label="Rename"
+               menubarPath="com.simplifide.core.verilog.editor.menu.refactor/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Connect"
+               definitionId="com.simplifide.core.editor.action.verilog.refactor.connectports"
+               id="com.simplifide.core.editor.verilog.action.refactor.connectports"
+               label="Connect Ports"
+               menubarPath="com.simplifide.core.verilog.editor.menu.refactor/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Remove"
+               definitionId="com.simplifide.core.editor.action.verilog.refactor.removeports"
+               id="com.simplifide.core.editor.verilog.action.refactor.addports"
+               label="Remove Ports"
+               menubarPath="com.simplifide.core.verilog.editor.menu.refactor/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.refactor.PortActionDelegate$Add"
+               definitionId="com.simplifide.core.editor.action.verilog.refactor.addports"
+               id="com.simplifide.core.editor.verilog.action.refactor.addports"
+               label="Add Ports"
+               menubarPath="com.simplifide.core.verilog.editor.menu.refactor/group2">
+         </action>
+         <menu
+               id="com.simplifide.core.verilog.editor.menu.views"
+               label="View"
+               path="additions">
+         </menu>
+         <action
+               class="com.simplifide.core.actions.views.QuickHierarchyAction"
+               definitionId="com.simplifide.core.command.verilog.quick.hierarchy"
+               id="com.simplifide.core.editor.verilog.action.quick.hierarchy"
+               label="Quick Hierarchy"
+               menubarPath="com.simplifide.core.verilog.editor.menu.views/group2">
+         </action>
+         <action
+               class=" com.simplifide.core.actions.views.QuickClassHierarchyAction"
+               definitionId="com.simplifide.core.command.verilog.quick.class"
+               id="com.simplifide.core.editor.verilog.action.quick.class"
+               label="Quick Class Hierarchy"
+               menubarPath="com.simplifide.core.verilog.editor.menu.views/group2">
+         </action>
+         <action
+               class="com.simplifide.core.actions.views.QuickOutlineAction"
+               definitionId="com.simplifide.core.command.verilog.quick.outline"
+               id="com.simplifide.core.editor.verilog.action.quick.outline"
+               label="Quick Outline"
+               menubarPath="com.simplifide.core.verilog.editor.menu.views/group2">
+         </action>
+         <action
+               class="com.simplifide.core.actions.views.QuickGlobalTypeAction"
+               definitionId="com.simplifide.core.command.verilog.quick.outline"
+               id="com.simplifide.core.editor.verilog.action.quick.type"
+               label="Quick Type"
+               menubarPath="com.simplifide.core.verilog.editor.menu.views/group2">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.format.FormatActionDelegate"
+               definitionId="com.simplifide.core.editor.verilog.action.format"
+               id="com.simplifide.core.editor.verilog.action.format"
+               label="Indent"
+               menubarPath="additions">
+         </action>
+         <action
+               class="com.simplifide.core.baseeditor.actions.ExpandMacroActionDelegate"
+               definitionId="com.simplifide.core.editor.verilog.expand.macro"
+               id="com.simplifide.core.baseeditor.actions.ExpandMacroActionDelegate"
+               label="Expand Macros"
+               menubarPath="additions">
+         </action>
+         <menu
+               id="com.simplifide.core.copy.verilog.menu"
+               label="Power Copy">
+         </menu>
+         <action
+               class="com.simplifide.core.editors.actions.copy.CopyInstanceDelegate"
+               definitionId="com.simplifide.core.action.power.copy"
+               id="com.simplifide.core.action.power.copy.delegate"
+               label="Copy Instance"
+               menubarPath="com.simplifide.core.copy.verilog.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Entity"
+               definitionId="com.simplifide.core.action.power.paste.entity"
+               id="com.simplifide.core.action.paste.entity"
+               label="Paste Module"
+               menubarPath="com.simplifide.core.copy.verilog.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Instance"
+               definitionId="com.simplifide.core.action.power.paste.instance"
+               id="com.simplifide.core.action.paste.instance"
+               label="Paste Instance"
+               menubarPath="com.simplifide.core.copy.verilog.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Signals"
+               definitionId="com.simplifide.core.action.power.paste.signals"
+               id="com.simplifide.core.action.paste.signals"
+               label="Paste Signals"
+               menubarPath="com.simplifide.core.copy.verilog.menu/group1">
+         </action>
+         <action
+               class="com.simplifide.core.editors.actions.copy.PasteTopDelegate$Testbench"
+               definitionId="com.simplifide.core.action.power.paste.testbench"
+               id="com.simplifide.core.action.paste.testbench"
+               label="Paste Testbench"
+               menubarPath="com.simplifide.core.copy.verilog.menu/group1">
+         </action>
+        
+      </viewerContribution>
+   </extension>
+   <extension
+         name="Vhdl Commands"
+         point="org.eclipse.ui.commands">
+      <category
+            description="Simplifide Commands"
+            id="com.simplifide.core.command.category"
+            name="Simplifide">
+      </category>
+      <category
+            id="com.simplifide.core.command.category.new"
+            name="Vhdl -- New">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.new"
+            defaultHandler="com.simplifide.core.editors.actions.new1.NewComponentDelegateAction$ComponentHandler"
+            id="com.simplifide.core.editor.action.new.component"
+            name="Component">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.new"
+            defaultHandler="com.simplifide.core.editors.actions.new1.NewInstanceDelegateAction$NewHandler"
+            id="com.simplifide.core.editor.action.new.instance"
+            name="Instance">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.new"
+            defaultHandler="com.simplifide.core.editors.actions.new1.NewModuleDelegateAction$NewHandler"
+            id="com.simplifide.core.editor.action.new.module"
+            name="Module">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.format"
+            name="Vhdl -- Format">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.editors.actions.format.FormatActionDelegate$FormatHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.format"
+            name="Indent">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CapActionDelegate$CapitalizeHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.capitalize"
+            name="Capitalize">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CapActionDelegate$UnCapitalizerHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.uncapitalize"
+            name="UnCapitalize">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CapFileActionDelegate$CapitalizeHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.capitalize.file"
+            name="Capitalize File">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CapFileActionDelegate$UnCapitalizerHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.uncapitalize.file"
+            name="UnCapitalize File">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CommentActionDelegate$CommentHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.comment"
+            name="Comment">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.CommentActionDelegate$UnCommentHandler"
+            id="com.simplifide.core.editor.vhdl.action.format.uncomment"
+            name="UnComment">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.actions.emacs.VhdlBeautifyActionDelegate$Handler"
+            id="com.simplifide.core.editor.vhdl.action.emacs.beautify"
+            name="Beautify">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.baseeditor.actions.format.TabsToSpacesActionDelegate$TabsToSpacesHandler"
+            id="com.simplifide.core.editor.vhdl.action.tabs"
+            name="Convert Tabs to Spaces">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.refactor"
+            name="Vhdl -- Refactoring">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.RenameActionDelegate$Handler"
+            id="com.simplifide.core.editor.action.refactor.rename"
+            name="Rename">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$ConnectHandler"
+            id="com.simplifide.core.editor.action.refactor.connectports"
+            name="Connect Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$AddHandler"
+            id="com.simplifide.core.editor.action.refactor.addports"
+            name="Add Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$RemoveHandler"
+            id="com.simplifide.core.editor.action.refactor.removeports"
+            name="Remove Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.FunctionActionDelegate$ChangeMethodHandler"
+            id="com.simplifide.core.editor.action.refactor.vhdl.changemethod"
+            name="Change Method Signature">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.FunctionActionDelegate$CreateHandler"
+            id="com.simplifide.core.editor.action.refactor.vhdl.createmethod"
+            name="Create Method Head/Body">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.view"
+            name="Vhdl -- Views">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickHierarchyAction$ObjectHandler"
+            id="com.simplifide.core.command.quick.hierarchy"
+            name="Quick Hierarchy">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickClassHierarchyAction$ObjectHandler"
+            id="com.simplifide.core.command.quick.class"
+            name="Quick Class">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickOutlineAction$ObjectHandler"
+            id="com.simplifide.core.command.quick.outline"
+            name="Quick Outline">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickGlobalTypeAction$ObjectHandler"
+            id="com.simplifide.core.command.quick.type"
+            name="Quick Type">
+      </command>
+      <category
+            id="com.simplifide.core.copy.power"
+            name="Power Copy">
+      </category>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.CopyInstanceDelegate$CopyHandler"
+            id="com.simplifide.core.action.power.copy"
+            name="Copy Instance">
+      </command>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.PasteTopDelegate$ComponentHandler"
+            id="com.simplifide.core.action.power.paste.component"
+            name="Paste Component">
+      </command>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.PasteTopDelegate$EntityHandler"
+            id="com.simplifide.core.action.power.paste.entity"
+            name="Paste Entity">
+      </command>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.PasteTopDelegate$InstanceHandler"
+            id="com.simplifide.core.action.power.paste.instance"
+            name="Paste Instance">
+      </command>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.PasteTopDelegate$SignalHandler"
+            id="com.simplifide.core.action.power.paste.signals"
+            name="Paste Signals">
+      </command>
+      <command
+            category="com.simplifide.core.copy.power"
+            defaultHandler="com.simplifide.core.editors.actions.copy.PasteTopDelegate$TestbenchHandler"
+            id="com.simplifide.core.action.power.paste.testbench"
+            name="Paste Testbench">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.actions.emacs.VhdlBeautifyActionDelegate$Custom1Handler"
+            id="com.simplifide.core.editor.vhdl.action.emacs.custom"
+            name="Custom">
+      </command>
+      
+   </extension>
+   <extension
+         name="Verilog Commands"
+         point="org.eclipse.ui.commands">
+      <category
+            id="com.simplifide.core.command.category.verilog.new"
+            name="Verilog -- New">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.new"
+            defaultHandler="com.simplifide.core.editors.actions.new1.NewInstanceDelegateAction$NewHandler"
+            id="com.simplifide.core.editor.action.verilog.new.instance"
+            name="Instance">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.new"
+            defaultHandler="com.simplifide.core.editors.actions.new1.NewModuleDelegateAction$NewHandler"
+            id="com.simplifide.core.editor.action.verilog.new.module"
+            name="Module">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.verilog.emacs"
+            name="Verilog -- Emacs">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.verilog.emacs"
+            defaultHandler="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$AutoHandler"
+            id="com.simplifide.core.editor.verilog.action.emacs.auto"
+            name="Expand Auto Statements">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.format"
+            defaultHandler="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$IndentHandler"
+            id="com.simplifide.core.editor.verilog.action.emacs.inject"
+            name="Inject Auto Statements">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.emacs"
+            defaultHandler="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$DeleteHandler"
+            id="com.simplifide.core.editor.verilog.action.emacs.delete"
+            name="Delete Auto Statements">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.emacs"
+            defaultHandler="com.simplifide.core.actions.emacs.VerilogAutoEmacsDelegate$IndentHandler"
+            id="com.simplifide.core.editor.verilog.action.emacs.indent"
+            name="Indent">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.verilog.refactor"
+            name="Verilog Refactoring">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.verilog.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.RenameActionDelegate$Handler"
+            id="com.simplifide.core.editor.action.verilog.refactor.rename"
+            name="Rename">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$ConnectHandler"
+            id="com.simplifide.core.editor.action.verilog.refactor.connectports"
+            name="Connect Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$AddHandler"
+            id="com.simplifide.core.editor.action.verilog.refactor.addports"
+            name="Add Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.refactor"
+            defaultHandler="com.simplifide.core.editors.actions.refactor.PortActionDelegate$RemoveHandler"
+            id="com.simplifide.core.editor.action.verilog.refactor.removeports"
+            name="Remove Ports">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.view"
+            id="com.simplifide.core.command.quick.object"
+            name="Quick Objects">
+      </command>
+      <category
+            id="com.simplifide.core.command.category.verilog.view"
+            name="Verilog -- Views">
+      </category>
+      <command
+            category="com.simplifide.core.command.category.verilog.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickHierarchyAction$ObjectHandler"
+            id="com.simplifide.core.command.verilog.quick.hierarchy"
+            name="Quick Hierarchy">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickClassHierarchyAction$ObjectHandler"
+            id="com.simplifide.core.command.verilog.quick.class"
+            name="Quick Class">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickOutlineAction$ObjectHandler"
+            id="com.simplifide.core.command.verilog.quick.outline"
+            name="Quick Outline">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.view"
+            defaultHandler="com.simplifide.core.actions.views.QuickGlobalTypeAction$ObjectHandler"
+            id="com.simplifide.core.command.verilog.quick.type"
+            name="Quick Type">
+      </command>
+      <category
+            id="com.simplifide.core.editor.verilog.format"
+            name="Format">
+      </category>
+      <command
+            category="com.simplifide.core.editor.verilog.format"
+            defaultHandler="com.simplifide.core.editors.actions.format.FormatActionDelegate$FormatHandler"
+            id="com.simplifide.core.editor.verilog.action.format"
+            name="Format">
+      </command>
+      <command
+            category="com.simplifide.core.command.category.verilog.new"
+            defaultHandler="com.simplifide.core.baseeditor.actions.ExpandMacroActionDelegate$Handler"
+            id="com.simplifide.core.editor.verilog.expand.macro"
+            name="Expand Macros">
+      </command>
+   </extension>
+      <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.simplifide.core.editor.vhdl.action.format.comment"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+/">
+      </key>
+      <key
+            commandId="com.simplifide.core.editor.vhdl.action.format.uncomment"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+\">
+      </key>
+      <key
+            commandId="com.simplifide.core.editor.vhdl.action.format.capitalize"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+X">
+      </key>
+      <key
+            commandId="com.simplifide.core.editor.vhdl.action.format.uncapitalize"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+Y">
+      </key>
+      <key
+            commandId="com.simplifide.core.editor.action.refactor.rename"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+R">
+      </key>
+      <key
+            commandId="com.simplifide.core.editor.action.verilog.refactor.rename"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+R">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.quick.outline"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+O">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.quick.class"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F4">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.quick.type"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+T">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.quick.hierarchy"
+            contextId="#VhdlEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F3">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.simplifide.core.editor.action.verilog.refactor.rename"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+R">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.verilog.quick.outline"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+O">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.verilog.quick.class"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F4">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.verilog.quick.type"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+T">
+      </key>
+      <key
+            commandId="com.simplifide.core.command.verilog.quick.hierarchy"
+            contextId="#VerilogEditorContext"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F3">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            description="Vhdl  Editor Context"
+            id="#VhdlEditorContext"
+            name="Vhdl Editor"
+            parentId="#HdlEditorContext">
+      </context>
+      <context
+            description="Hdl Editor Context"
+            id="#HdlEditorContext"
+            name="Hdl Editor"
+            parentId="org.eclipse.ui.textEditorScope">
+      </context>
+      <context
+            description="Verilog Editor Context"
+            id="#VerilogEditorContext"
+            name="Verilog Editor"
+            parentId="#HdlEditorContext">
+      </context>
+   </extension>
+   <extension
+         point="org.eclipse.core.filesystem.filesystems">
+      <filesystem
+            scheme="har">
+         <run
+               class="com.simplifide.core.project.library.zip.ZipFileSystem">
+         </run>
+      </filesystem>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors.templates">
+      <contextType
+            class="com.simplifide.core.scripteditor.templates.ScriptTemplateContextType"
+            id="com.simplifide.core.script.context.type"
+            name="Script Context Type">
+      </contextType>
+      <resolver
+            class="com.simplifide.core.scripteditor.templates.ScriptTemplateContextType$Resolver"
+            contextTypeId="com.simplifide.core.script.context.type"
+            name="Script Template Variable Resolver"
+            type="com.simplifide.core.resolver4">
+      </resolver>
+   </extension>
+ 
+   <!--<extension
+         point="org.eclipse.wst.xml.core.catalogContributions">
+      <catalogContribution>
+         <system
+               systemId="http://simplifide.com/projectStructure/"
+               uri="schema/projectStructure.xsd">
+         </system></catalogContribution>
+   </extension>
+   <extension
+         point="org.eclipse.wst.xml.core.catalogContributions">
+      <catalogContribution>
+         <system
+               systemId="http://simplifide.com/suiteContents"
+               uri="schema/suiteContents.xsd">
+         </system>
+      </catalogContribution>
+   </extension>
+   <extension
+         point="org.eclipse.wst.xml.core.catalogContributions">
+      <catalogContribution>
+         <system
+               systemId="http://simplifide.com/projectContents"
+               uri="schema/projectContents.xsd">
+         </system>
+      </catalogContribution>
+   </extension>-->
+   <!--<extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="com.simplifide.core.viewerContribution1"
+            targetID="org.eclipse.ui.views.ResourceNavigator">
+         <menu
+               id="com.simplifide.core.simplifide.resource"
+               label="Simplifide"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.simplifide.core.actions.navigator.IgnoreFileActionDelegate"
+               enablesFor="1"
+               id="com.simplifide.core.actions.navigator.IgnoreFileActionDelegate"
+               label="Remove from Project"
+               menubarPath="com.simplifide.core.simplifide.resource/group1"
+               style="toggle">
+         </action>
+         <action
+               class="com.simplifide.core.actions.navigator.MainFileActionDelegate"
+               enablesFor="1"
+               id="com.simplifide.core.actions.navigator.MainFileActionDelegate"
+               label="Make Top Level Source"
+               menubarPath="com.simplifide.core.simplifide.resource/group1">
+         </action>
+         <action
+               class="com.simplifide.core.actions.navigator.MakeTestFileActionDelegate"
+               enablesFor="1"
+               id="com.simplifide.core.actions.navigator.MakeTestFileActionDelegate"
+               label="Make Test File"
+               menubarPath="com.simplifide.core.simplifide.resource/group1"
+               style="toggle">
+         </action>
+      </viewerContribution>
+   </extension>-->
+
+
+</plugin>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType" deleted="false" description="An alternative name for an existing object" enabled="true" name="alias" id="com.simplifide.core.template.alias">alias ${alias_name} : ${alias_type} is ${object_name};&#13;
+${cursor}</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Defines the relationships between the input and output elements"
+		enabled="true" name="architecture" id="com.simplifide.core.template.arch">
+		architecture ${architecture_name} of ${entity_name} is&#13; --
+		Declarations&#13; ${cursor}&#13; begin&#13; -- concurrent
+		statements&#13; end ${architecture_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Used to declare an array data type."
+		enabled="true" name="array" id="com.simplifide.core.template.array">
+		type ${type_name} is array (${range}) of ${element_type};&#13;
+		${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Indicates the beginning of an assert statement."
+		enabled="true" name="assert" id="com.simplifide.core.template.assert">
+		assert ${condition} report "${string}" severity
+		${severity_level};&#13; ${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Describes a characteristic of a given object."
+		enabled="true" name="attribute" id="com.simplifide.core.template.attribute">
+		attribute ${attribute_name} : string;&#13; attribute
+		${attribute_name} of ${attribute_desination} : lavel is
+		${value};&#13; ${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Concurrent statement used to represent a portion of a design."
+		enabled="true" name="block" id="com.simplifide.core.template.concurrent">
+		${label} : block&#13; -- declarations&#13; begin&#13;
+		${cursor}&#13; end block ${label};&#13;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Is a sequential statement" enabled="true"
+		name="case" id="com.simplifide.core.template.case">
+		case ${expression} is&#13; when ${choice} =&gt;
+		${sequential_statement};&#13; ${cursor}&#13; when others =&gt;
+		${sequential_statement};&#13; end case;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Is used to define the interface to a lower-level design"
+		enabled="true" name="component" id="com.simplifide.core.template.component">${label} : component ${component_name}&#13; generic ();&#13;
+		port (${port_list});&#13; end component;</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A declaration used to create a configuration for an entity."
+		enabled="true" name="configuration" id="com.simplifide.core.template.configuration">
+		configuration ${config_name} of ${entity_name} is&#13; for
+		${architecture_name}&#13; for ${nstance_label} :
+		${component_name}&#13; use entity
+		${library_name}.${entity_name}(${arch_name});&#13; for
+		${arch_name}&#13; ${cursor}&#13; &#13; end for;&#13; end
+		for;&#13; end for;&#13; end ${config_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Declares a constant of a type specified in the constant"
+		enabled="true" name="constant" id="com.simplifide.core.template.constant">
+		constant ${constant_name} : ${type_name} := ${value};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Declaration used to describe the interface of a design entity."
+		enabled="true" name="entity" id="com.simplifide.core.template.entity">
+		entity ${entity_name} is&#13; generic (&#13; -- generic
+		list&#13; );&#13; port (&#13; ${port_list}&#13; ${cursor}&#13;
+		);&#13; end ${entity_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement used in a loop to cause execution to jump"
+		enabled="true" name="exit" id="com.simplifide.core.template.exit">
+		-- Three possibilities:&#13; &#13; exit;&#13; &#13; exit
+		${loop_label};&#13; &#13; exit ${loop_label} when ${condition};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Declares a file." enabled="true"
+		name="file" id="com.simplifide.core.template.file">
+		file ${logical_name} : ${file_type} is ${mode} "${file_name}";
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="For loop statement" enabled="true"
+		name="for" id="com.simplifide.core.template.for">
+		${label} : for ${parameter} in ${range} loop&#13; ${cursor}&#13;
+		end loop ${label};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Defines a group of sequential statements that return a single"
+		enabled="true" name="function" id="com.simplifide.core.template.function">
+		function ${function_name} (${parameter_list}) return ${type}
+		is&#13; -- declarations&#13; begin&#13; ${cursor}&#13; end
+		${function_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Used to create regular structures or conditional structures during elaboration."
+		enabled="true" name="generate" id="com.simplifide.core.template.generate">
+		${label} : for ${parameter} in ${range} generate&#13;
+		${cursor}&#13; end generate ${label};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Used to parameterize a design entity."
+		enabled="true" name="generic" id="com.simplifide.core.template.generic">
+		generic (&#13; ${generic_name} : ${data_type} :=
+		${expression}&#13; );
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement which executes one branch from a set of branches."
+		enabled="true" name="if" id="com.simplifide.core.template.alias.if">
+		${label} : if (${condition_1}) then ${cursor} elsif
+		(${condition_2}) then
+
+		else
+
+		end if;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="An integer type represents a mathematical integer."
+		enabled="true" name="integer" id="com.simplifide.core.template.integer">
+		type ${name} is range ${range}; ${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Defines a library name." enabled="true"
+		name="library" id="com.simplifide.core.template.library">
+		library ${library_name}; ${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement used to execute a set of sequential statements"
+		enabled="true" name="loop" id="com.simplifide.core.template.loop">
+		${label} : loop&#13; ${cursor}&#13; end loop ${label};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement which jumps back to the top of a loop."
+		enabled="true" name="next" id="com.simplifide.core.template.next">
+		next ${loop_label} when ${condition};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement that does nothing." enabled="true"
+		name="null" id="com.simplifide.core.template.seq">
+		null;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Others" enabled="true" name="other"
+		id="com.simplifide.core.template.others">
+		(other =&gt; "${value}")${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="The package declaration defines the external interface to the package,"
+		enabled="true" name="package" id="com.simplifide.core.template.package">
+		package ${package_name} is&#13; ${cursor}&#13; end
+		${package_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="The package body typically contains the bodies of any functions or procedures."
+		enabled="true" name="package body" id="com.simplifide.core.template.package.body">
+		package body ${package_name}&#13; ${cursor}&#13; end
+		${package_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Used to group together executable, sequential statements."
+		enabled="true" name="procedure" id="com.simplifide.core.template.procedure">
+		procedure ${procedure_name} (${parameters}) is&#13; --
+		Declarations&#13; begin&#13; ${cursor}&#13; end
+		${procedure_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A concurrent statement which describes behaviour."
+		enabled="true" name="process" id="com.simplifide.core.template.process">
+		${label} : process (${sensitivity_list})&#13; --
+		Declarations&#13; begin&#13; ${cursor}&#13; end process
+		${label};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A range specifies a range of values belonging to an integer, floating, physical or enumeration type."
+		enabled="true" name="range down" id="com.simplifide.core.template.range.down">
+		${high} downto ${low}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A range specifies a range of values belonging to an integer, floating, physical or enumeration type."
+		enabled="true" name="range up" id="com.simplifide.core.template.range.up">
+		${low} to ${high}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A data type that represents a set of values of different types."
+		enabled="true" name="record" id="com.simplifide.core.template.record">
+		type ${new_name} is record&#13; ${element_1} :
+		${data_type_1};&#13; ${element_2} : ${data_type_2};&#13; &#13;
+		end record ${new_name};&#13;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement which writes out a text message to the simulator log."
+		enabled="true" name="report" id="com.simplifide.core.template.report">
+		report "${report_string}" severity ${expression};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement which causes execution to be returned from a"
+		enabled="true" name="return" id="com.simplifide.core.template.return">
+		return ${expression};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A concurrent statement which assigns one of several expressions to a signal."
+		enabled="true" name="select" id="com.simplifide.core.template.select">
+		${label} : with ${expression} select&#13; ${signal_name} &lt;=
+		${expression_1} when ${choise_1},&#13; ${expression_2} when
+		${choise_2},&#13; &#13; ${expression_n} when ${choise_n};&#13;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Used to declare a signal" enabled="true"
+		name="signal" id="com.simplifide.core.template.signal">
+		signal ${var_name} : ${type_name} := ${initial_value};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential or concurrent statement which creates events on a signal."
+		enabled="true" name="signal assignment" id="com.simplifide.core.template.signal.assign">
+		${signal_name} &lt;= ${expression} after ${delay};&#13;
+		${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Assigns a new value to the target"
+		enabled="true" name="signal concurrent" id="com.simplifide.core.template.signal.concurrent">
+		${signal_name} &lt;= ${expression};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Results in combinatorial logic."
+		enabled="true" name="signal conditional" id="com.simplifide.core.template.signal.conditional">
+		${signal_name} &lt;= ${expression_1} when (${condition_1})
+		else&#13; ${expression_2} when (${condition_2}) else&#13; &#13;
+		${expression_n};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Takes effect only when the process suspends."
+		enabled="true" name="signal sequential" id="com.simplifide.core.template.signal.sequential">
+		${signal_name} &lt;= ${expression} after ${delay};&#13;
+		${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Standard Logic Vector" enabled="true"
+		name="sldlv" id="com.simplifide.core.template.sldlv">
+		std_logic_vector(${top} downto ${bot})
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="Standard Logic" enabled="true" name="std"
+		id="com.simplifide.core.template.std">std_logic
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A string is a value for a one-dimensional array of characters."
+		enabled="true" name="string" id="com.simplifide.core.template.string">
+		"${string_value}";
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A subtype declaration is used to give an explicit name to a subtype."
+		enabled="true" name="subtype" id="com.simplifide.core.template.subtype">
+		subtype ${subtype_name} is ${base_type} range
+		${range_constraint};&#13; ${cursor}
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false" description="used to define a scalar type"
+		enabled="true" name="type" id="com.simplifide.core.template.type">
+		type ${type_name} is ${type_definition};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="Makes names defined in a library or package directly visible within another"
+		enabled="true" name="use" id="com.simplifide.core.template.use">
+		use ${select_name};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A variable stores a value within a process."
+		enabled="true" name="variable" id="com.simplifide.core.template.variable">
+		variable ${variable_name} : ${type_name} := ${initial_value};
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="A sequential statement which waits for an event on a signal in the sensitivity list, for a Condition to become true, or for a timeout."
+		enabled="true" name="wait" id="com.simplifide.core.template.wait">
+		wait on ${sensitivity_list};&#13; &#13; wait until
+		${condition};&#13; &#13; wait for ${time_expression};&#13; &#13;
+		wait;
+	</template>
+	<template autoinsert="true"
+		context="com.simplifide.core.vhdl.editor.templates.VhdlTemplateContextType"
+		deleted="false"
+		description="The statements inside the while loop are executed repeatedly while the condition is True."
+		enabled="true" name="while" id="com.simplifide.core.template.while">
+		${label} : while ${condition} loop&#13; ${cursor}&#13; end lopp
+		${label};
+	</template></templates>

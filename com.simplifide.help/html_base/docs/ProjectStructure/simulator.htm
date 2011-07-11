@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simulator Integration</title>
+</head>
+
+<body>
+<!--*** <h1>Simulator Integration</h1> ***-->
+
+<p>External tools can be hooked up to the editor to display errors and other information inside the editor screen. 
+This operation is performed every time a file is saved.
+Currently there is only support for ModelSim, but other simulators and tools will be added shortly. The support of integration
+of external tools is based on python (actually jython) and will in the long term be very configurable, but the API is not stable
+and so at this time it is strongly recommended to use this as is.  </p>
+<p><b>This feature requires 1.0.68 or greater</b></p>
+
+<h2>Enabling Support for ModelSim</h2>
+
+<p>Simulator integration is handled by a python file (Interface.py) in the script directory of the hardware suite. For 
+an existing project copy <a href = "Interface.py">Interface.py</a> to this location. The plugin knows the structure of the 
+design so there is no additional work to set this up. </p>
+
+<p>For example projects this is automatically included and for new projects this is part of the wizard shown below</p>
+<p><img alt="" src="../images/project/modelsim.png" /></p>
+</html>

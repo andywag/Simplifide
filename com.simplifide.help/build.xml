@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release" default="cop">
+	
+	
+	<target name="cop">
+		<copy todir = "/home/andy/simplifide_base/eclipse4">
+			<fileset dir = "/home/andy/simplifide_base/eclipse">
+				<exclude name = "**/*.svn"/>
+				<exclude name = "**/*.bin"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	
+
+</project>

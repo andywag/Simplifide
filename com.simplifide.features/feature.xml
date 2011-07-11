@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.simplifide.features"
+      label="Simplifide"
+      version="1.2.20.qualifier"
+      provider-name="SIMPLIFIDE">
+
+   <description url="http://www.example.com/description">
+      Support for hardware langages
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright © 2007-2010 Simplifide
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Software License Agreement and Limited Warranty 
+This is a legal agreement (this &amp;apos;License&amp;apos;) between you, 
+the end user, and SimplifIDE
+Opening the enclosed disk envelope or, if electronically 
+distributed, downloading and using the Software indicates 
+that you accept and agree to comply with these terms. 
+If you do not agree to these terms, (a) you may so notify 
+SimplifIDE. within thirty (30) days of downloading for a full 
+refund, or (b) you may write to SimplifIDE. with a request 
+to modify any term of this License. Please allow six 
+(6) weeks for a response.
+
+1. GRANT OF LICENSE. SimplifIDE grants to you a non-exclusive, 
+personal license to use the Software as provided in this 
+License. Each permitted copy of the Software may be stored 
+in memory (either temporary or &amp;apos;permanent&amp;apos;), on no more than 
+one computer at any one time. However, you may install the 
+Software on a network server for the sole purpose of valid 
+distribution to other computers.
+IT IS STRICTLY PROHIBITED TO refer your registration number to third 
+parties if you are a registered user.
+
+2. COPYRIGHT. The Software is owned by SimplifIDE or its 
+suppliers and is protected by United States copyright laws 
+and international treaty provisions. This means that you 
+must treat the Software like a book, musical recording or 
+any other copyrighted material. Nevertheless, SimplifIDE
+gives you the right to (a) make two copies of the 
+Software solely for backup or archival purposes, or 
+(b) transfer the Software to a single hard disk, provided 
+you keep the original solely for backup or archival purposes. 
+You may not copy the written materials accompanying the 
+Software (called the &amp;apos;Documentation&amp;apos;). You should be 
+aware that illegal copying or distribution of copyrighted 
+material is investigated by the FBI, and is punishable by 
+prison terms of up to 10 years. 
+
+3. OTHER RESTRICTIONS. You may not rent or lease the 
+Software, but you may permanently transfer the Software 
+and Documentation provided you retain no copies and the 
+recipient agrees to the terms of this Agreement. You may 
+not modify, reverse engineer, decompile, disassemble, or 
+create derivative works from the Software or Documentation.
+IF software includes SOURCE CODE, You may NOT make Software 
+SOURCE CODE publically or freely available. If SOFTWARE is BETA or PROMOTIONAL,
+You may not resell or re-distribute it.
+
+4. TERM. This License is effective until terminated. 
+You may terminate the license at any time by returning 
+the Software and all Documentation to SimplifIDE and by 
+removing the Software from the memory of the computer 
+into which the Software has been transferred. This 
+License may be terminated by SimplifIDE immediately and 
+without notice in the event that you fail to comply 
+with any term or condition hereof. Upon any termination, 
+you will return to SimplifIDE, at your expense, the 
+Software and Documentation and any copies whether or not 
+the copying was authorized. Should you fail to comply with any 
+of the above-mentioned your user&amp;apos;s rights would be automatically 
+terminated. This termination will be in addition to any 
+criminal, civil or other remedies.
+
+5. EXPORT LAW ASSURANCES. You agree that neither the 
+Software nor any direct product thereof is being or 
+will be acquired, shipped, transferred, or reexported, 
+directly or indirectly, into any country prohibited 
+by the United States Export Administration Act and 
+the regulations thereunder or will be used for any 
+purpose prohibited by the same.
+
+6. SEVERABILITY. If for any reason, any provision 
+or partial provision of this License is held invalid, 
+such invalidity shall not affect the remainder of 
+such provision or this License, and this License 
+shall, to the full extent consistent with law, 
+continue in full force and effect.
+
+7. GENERAL. The validity and performance of this 
+License shall be governed by United States law, 
+except for that body of law dealing with conflict 
+of laws and except as to copyrights, which are 
+governed by United States laws and international 
+treaties. This License constitutes the entire 
+agreement between the parties concerning the 
+subject matter hereof. Any waiver or amendment 
+of any provision of this License shall be 
+effective only if in writing and signed by you 
+and an officer of SimplifIDE No distributor, 
+dealer, or employee (other than an officer) 
+of SimplifIDE. is authorized to change or amend 
+any terms of this License. In the event of any 
+conflict between the terms of this License and 
+the terms of any license bound into any manual 
+packaged with the Software, this License shall 
+govern.
+LIMITED WARRANTY
+SimplifIDE. warrants that for thirty (30) days 
+following delivery of the Software to you: 
+(1) the Software, unless modified by you, will 
+perform substantially the functions described in 
+the Documentation provided by SimplifIDE.; and 
+(2) the media on which the Software is furnished 
+will be free from defects in materials and 
+workmanship under normal use.
+SimplifIDE. does not 
+warrant that the Software will meet your 
+requirements or that operation of the Software 
+will be uninterrupted or error-free. SimplifIDE. 
+is not responsible for any problem, including 
+any problem which would otherwise be a breach 
+of warranty, caused by (i) changes in the 
+operating characteristics of computer hardware 
+or computer operating systems which are made 
+after the release of the Software, 
+(ii) interaction of the Software with non-SimplifIDE. 
+software or (iii) accident, abuse, or misapplication.
+THE ABOVE WARRANTIES ARE MADE BY SIMPLIFIDE. 
+ALONE, AND THEY ARE THE ONLY WARRANTIES MADE 
+BY ANYONE REGARDING THE ENCLOSED SOFTWARE. 
+SIMPLIFIDE. AND ITS LICENSOR(S) MAKE NO OTHER 
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING 
+WITHOUT LIMITATION THE IMPLIED WARRANTIES 
+OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE, REGARDING THE ENCLOSED 
+SOFTWARE. EXCEPT AS OTHERWISE EXPRESSLY 
+PROVIDED ABOVE, SIMPLIFIDE. AND ITS LICENSOR(S) 
+DO NOT WARRANT, GUARANTEE OR MAKE ANY 
+REPRESENTATION REGARDING THE USE OR THE 
+RESULTS OF THE USE OF THE SOFTWARE IN TERMS 
+OF ITS CORRECTNESS, ACCURACY, RELIABILITY, 
+CURRENTNESS, OR OTHERWISE. THE ENTIRE RISK 
+AS TO THE RESULTS AND PERFORMANCE OF THE 
+SOFTWARE IS ASSUMED BY YOU. THE EXCLUSION 
+OF IMPLIED WARRANTIES IS NOT PERMITTED BY 
+SOME STATES OR JURISDICTIONS, SO THE ABOVE 
+EXCLUSION MAY NOT APPLY TO YOU. IN THAT 
+CASE, ANY IMPLIED WARRANTIES ARE LIMITED 
+IN DURATION TO THIRTY (30) DAYS FROM THE 
+DATE OF DELIVERY OF THE SOFTWARE. THERE MAY 
+BE OTHER RIGHTS THAT YOU MAY HAVE WHICH VARY 
+FROM JURISDICTION TO JURISDICTION.
+LIMITATION OF REMEDIES
+SimplifIDE.&amp;apos;s entire liability and your sole remedy under 
+the warranty during the thirty (30) day warranty period 
+is that SimplifIDE. shall, at its sole and exclusive 
+option, either replace the Software with a functionally 
+equivalent program at no charge to you or refund the 
+license fee of the Software. Any replacement Software 
+will be warranted for the remainder of the original 
+warranty period or thirty (30) days, whichever is 
+longer. These are your sole and exclusive remedies for 
+any breach of warranty during this ninety (90) day 
+period.
+REGARDLESS OF WHETHER OR NOT ANY REMEDY SET 
+FORTH HEREIN FAILS OF ITS ESSENTIAL PURPOSE, 
+IN NO EVENT WILL SIMPLIFIDE., ITS LICENSOR(S) 
+AND THE DIRECTORS, OFFICERS, EMPLOYEES OR 
+AGENTS OF ANY OF THEM BE LIABLE TO YOU FOR 
+ANY CONSEQUENTIAL, INCIDENTAL OR INDIRECT 
+DAMAGES (INCLUDING DAMAGES FOR LOSS OF 
+BUSINESS PROFITS, BUSINESS INTERRUPTION, 
+LOSS OF BUSINESS INFORMATION, AND THE LIKE) 
+ARISING OUT THE USE OR INABILITY TO USE 
+THE SOFTWARE EVEN IF SIMPLIFIDE. OR ITS LICENSOR(S) 
+HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGES. BECAUSE SOME STATES OR JURISDICTIONS 
+DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL 
+DAMAGES, THE ABOVE LIMITATIONS MAY NOT APPLY 
+TO YOU. SIMPLIFIDE. AND ITS LICENSOR(S) LIABILITY 
+TO YOU FOR ACTUAL DAMAGES FROM ANY CAUSE 
+WHATSOEVER, AND REGARDLESS OF THE FORM OF 
+THE ACTION (WHETHER IN CONTRACT, TORT [INCLUDING 
+NEGLIGENCE], PRODUCT LIABILITY OR OTHERWISE), 
+WILL BE LIMITED TO $50.
+   </license>
+
+   <url>
+      <update label="Simplifide" url="http://simplifide.com/html/updates"/>
+   </url>
+
+   <plugin
+         id="com.simplifide.base"
+         download-size="0"
+         install-size="0"
+         version="1.2.20.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.simplifide.core"
+         download-size="0"
+         install-size="0"
+         version="1.2.20.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.simplifide.scala2"
+         download-size="0"
+         install-size="0"
+         version="1.2.20.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.simplifide.generator"
+         download-size="0"
+         install-size="0"
+         version="1.2.20.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.simplifide.genint"
+         download-size="0"
+         install-size="0"
+         version="1.2.20.qualifier"
+         unpack="false"/>
+
+</feature>

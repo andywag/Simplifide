@@ -1,0 +1,8 @@
+Checkin before leaving
+--This line, and those below, will be ignored--
+
+M    META-INF/MANIFEST.MF
+M    external/scala-library.jar
+M    external/scala-compiler.jar
+M    com.simplifide.scala2.eml
+M    .scala_dependencies

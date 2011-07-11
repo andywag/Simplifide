@@ -1,0 +1,4 @@
+NET "DeSerClkA" TNM_NET = DeSerClkA;
+TIMESPEC TS_DeSerClkA = PERIOD "DeSerClkA" 200 MHz HIGH 50%;
+NET "DeSerClkB" TNM_NET = DeSerClkB;
+TIMESPEC TS_DeSerClkB = PERIOD "DeSerClkB" 200 MHz HIGH 50%;

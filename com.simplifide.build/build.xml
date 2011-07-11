@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release" default="create_zip">
+	<property name="BASEDIR"  value="/home/andy/simplifide_base/eclipse/com.simplifide.build"/>
+	<property name="REVISION"     value="1.2.20"/>
+	<property name="DATE"     value="201105170831"/>
+	<property name="RELEASE"  value="com.simplifide.features_${REVISION}.${DATE}"/>
+	
+	<property name="PLUGINDIR" value="../com.simplifide.updates/plugins"/>
+	<property name="SCALA"     value="com.simplifide.scala2_${REVISION}.${DATE}"/>
+	<property name="GENERATOR" value="com.simplifide.generator_${REVISION}.${DATE}"/>
+	<property name="GENINT" value="com.simplifide.genint_${REVISION}.${DATE}"/>
+	
+	<target name="fix_scala_jar">
+		<unzip src = "${PLUGINDIR}/${SCALA}.jar" dest = "${PLUGINDIR}/TEMP"/>
+		<delete file= "${PLUGINDIR}/${SCALA}.jar"/>
+		<delete dir = "${PLUGINDIR}/TEMP/com"/>
+		<copy todir = "${PLUGINDIR}/TEMP/com"><fileset dir="${PLUGINDIR}/TEMP/bin/com"/></copy>
+		<delete dir = "${PLUGINDIR}/TEMP/bin"/>
+		<zip zipfile ="${PLUGINDIR}/${SCALA}.jar" basedir="${PLUGINDIR}/TEMP"/>
+		<delete dir = "${PLUGINDIR}/TEMP"/>
+	</target>
+	
+	<target name="fix_generator_jar">
+		<unzip src = "${PLUGINDIR}/${GENERATOR}.jar" dest = "${PLUGINDIR}/TEMP"/>
+		<delete file= "${PLUGINDIR}/${GENERATOR}.jar"/>
+		<delete dir = "${PLUGINDIR}/TEMP/com"/>
+		<copy todir = "${PLUGINDIR}/TEMP/com"><fileset dir="${PLUGINDIR}/TEMP/bin/com"/></copy>
+		<delete dir = "${PLUGINDIR}/TEMP/bin"/>
+		<zip zipfile ="${PLUGINDIR}/${GENERATOR}.jar" basedir="${PLUGINDIR}/TEMP"/>
+		<delete dir = "${PLUGINDIR}/TEMP"/>
+	</target>
+	
+	<target name="create_zip" depends="fix_generator_jar,fix_scala_jar">
+		<echo>Converting Release Files to tar.gz</echo> 
+		<mkdir dir="${RELEASE}"/>
+		<copy todir="${RELEASE}">
+			<fileset dir="../com.simplifide.updates"/>
+		</copy>
+		
+		<tar tarfile="${RELEASE}.tar" basedir="${RELEASE}"/>
+		<gzip zipfile="${RELEASE}.tar.gz" src="${RELEASE}.tar" /> 
+		<zip zipfile="${RELEASE}.zip" basedir="${RELEASE}" /> 
+	</target>
+	
+	<target name="update_alpha">
+		<ftp server="simplifide.com" userid ="andywagner" password="mira1234" remotedir="simplifide.com/html/updates_alpha">
+			<fileset dir ="../com.simplifide.updates"/>
+		</ftp>
+	</target>
+	
+	<target name="update_alpha_dist">
+		<ftp server="simplifide.com" userid ="andywagner" password="mira1234" remotedir="simplifide.com/html/updates_alpha/dist">
+			<fileset dir =".">
+				<include name="${RELEASE}.tar.gz"/>
+				<include name="${RELEASE}.zip"/>
+			</fileset>
+		</ftp>
+	</target>
+	
+	<target name="update_release">
+		<ftp server="simplifide.com" userid ="andywagner" password="mira1234" remotedir="simplifide.com/html/updates">
+			<fileset dir ="../com.simplifide.updates"/>
+		</ftp>
+	</target>
+	
+	<target name="update_release_dist">
+		<ftp server="simplifide.com" userid ="andywagner" password="mira1234" remotedir="simplifide.com/html/updates/dist">
+			<fileset dir =".">
+				<include name="${RELEASE}.tar.gz"/>
+				<include name="${RELEASE}.zip"/>
+			</fileset>
+		</ftp>
+	</target>
+	
+	<target name="update_full_release" depends = "update_release,update_release_dist"/>
+	
+
+</project>

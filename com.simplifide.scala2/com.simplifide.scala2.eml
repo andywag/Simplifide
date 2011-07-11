@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="djep-1.0.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.scala2/external/djep-1.0.0.jar!/"/>
+	</lib>
+	<lib name="jep-2.3.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.scala2/external/jep-2.3.1.jar!/"/>
+	</lib>
+	<lib name="scala-compiler.jar" scope="COMPILE">
+		<srcroot url="file://C:/Program Files/scala/src/scala-compiler-src.jar"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.scala2/external/scala-compiler.jar!/"/>
+	</lib>
+	<lib name="scala-library.jar" scope="COMPILE">
+		<srcroot url="file://C:/Program Files/scala/src/scala-library-src.jar"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.scala2/external/scala-library.jar!/"/>
+	</lib>
+</component>

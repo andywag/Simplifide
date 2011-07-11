@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jython.jar" scope="COMPILE">
+		<srcroot url="file://C:/software/jython2.5.1/src"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.core/external/jython.jar!/"/>
+	</lib>
+	<lib name="freemarker.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.core/external/freemarker.jar!/"/>
+	</lib>
+	<lib name="ctabletree.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/com.simplifide.core/ctabletree.jar!/"/>
+	</lib>
+</component>

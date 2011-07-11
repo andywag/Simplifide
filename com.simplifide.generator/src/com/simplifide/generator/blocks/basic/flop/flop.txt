@@ -1,0 +1,11 @@
+clock_head alpha {
+    clock               "clock"        posedge
+    reset               "reset"      sync             active_low
+    enable              "enable"
+}
+
+flop base{
+	clock_head          alpha
+	body                "output1" <- "input1"
+    	                "output2" <- ("(reset2","input2")
+}

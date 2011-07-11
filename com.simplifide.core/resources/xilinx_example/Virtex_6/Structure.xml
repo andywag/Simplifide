@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://www.simplifide.com/projectStructure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.simplifide.com/projectStructure projectStructure.xsd "> 
+ 	<suite>
+ 		<basedir>
+ 			<dir name="Documents" link="docs"/>
+			<dir name="Projects" link="projects"/>
+			<dir name="Libraries" link="libraries">
+				<dir name="pcores" link="libraries"/></dir>
+			<dir name="ZipFiles"></dir>
+			<dir name="Scripts" link="script"></dir>
+ 		</basedir>
+ 	</suite>
+ 	<project>
+ 		<basedir>
+ 			<dir name="Documents" link="docs"/>
+			<dir name="Ise" link="synthesis" />
+			<dir name="Simscripts" link="test" />
+			<dir name="Simulation" link="build" ></dir>
+			<dir name="Synthesis"/>
+			<dir name="Ucf"/>
+			<dir name="Vhdl" link="design"></dir>
+			<dir name="ZipFiles"/>
+			<dir name="Libraries" link="subprojects">
+				<dir name="pcores"/>
+			</dir>
+ 		</basedir>
+ 	</project>
+ 	<library>
+ 		<basedir>
+ 			<dir name="Documents" link="docs"/>
+			<dir name="Ise" link="synthesis" />
+			<dir name="Simscripts" link="test" />
+			<dir name="Simulation" link="build" ></dir>
+			<dir name="Synthesis"/>
+			<dir name="Ucf"/>
+			<dir name="Vhdl" link="design"/>
+			<dir name="ZipFiles"></dir>
+ 		</basedir>
+ 	</library>
+ 	<subproject>
+ 		<basedir>
+ 			<dir name="Documents" link="docs"/>
+			<dir name="Ise" link="synthesis" />
+			<dir name="Simscripts" link="test" />
+			<dir name="Simulation" link="build" ></dir>
+			<dir name="Synthesis"/>
+			<dir name="Ucf"/>
+			<dir name="Vhdl" link="design"/>
+			<dir name="ZipFiles"></dir>
+ 		</basedir>
+ 	</subproject>
+ 	
+</root>

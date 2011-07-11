@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Hardware Help">
+	<topic label="Introduction" href="html/docs/Introduction/introduction.htm"/>
+	<topic label="Getting Started"  href="html/docs/GettingStarted/getting_started.htm"> 
+		<topic label="Installation" href="html/docs/GettingStarted/installation.htm"/>
+		<topic label="Vhdl Demo Project" href="html/docs/GettingStarted/vhdl_example_suite.htm"/>
+		<topic label="Creating Your Own Project" href="html/docs/GettingStarted/create_project.htm"/>
+		<topic label="Editting Outside of Project" href="html/docs/GettingStarted/edit_out_of_project.htm"/>
+	</topic>
+	<topic label="Project" href="html/docs/ProjectStructure/project_structure.htm">
+		<topic label="Suite" href="html/docs/ProjectStructure/suite.htm"/>
+		<topic label="Project" href="html/docs/ProjectStructure/project.htm"/>
+		<topic label="Library" href="html/docs/ProjectStructure/library.htm"/>
+		<topic label="Design Files" href="html/docs/ProjectStructure/design_files.htm"/>
+		<topic label="Resource Linking" href="html/docs/ProjectStructure/resource_linking.htm"/>
+	</topic>
+	<topic label="User Interface" href="html/docs/UserInterface/user_interface.htm">
+		<topic label="Views" href="html/docs/UserInterface/hardware_perspective.htm"/>
+		<topic label="Editing" href="html/docs/Editing/editing.htm"/>
+		<topic label="Preferences" href="html/docs/UserInterface/simplifide_preference.htm"/>
+	</topic>
+	
+	
+	
+</toc>

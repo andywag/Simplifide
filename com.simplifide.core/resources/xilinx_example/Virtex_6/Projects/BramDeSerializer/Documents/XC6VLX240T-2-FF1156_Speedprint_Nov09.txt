@@ -1,0 +1,1323 @@
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment D:\CaeTools\Xilinx\ISE.
+Family virtex6, Device xc6vlx240t
+
+Block delay report for device: xc6vlx240t-ff1156,  speed grade: -2,  Stepping Level: 0
+
+Version identification for speed file is: ADVANCED 1.01 2009-08-24
+
+Speed grades available for this device:   -3    -2    -1  
+Absolute minimum speed data is not available for this device.
+
+
+Power Temperature range for this device: C
+
+Operating condition ranges for this device:
+    Voltage     0.950000 to 1.050000 volts
+    Temperature 0.000000 to 85.000000 degrees Celsius
+
+This speed grade does not support reporting delays for specific 
+voltage and temperature conditions.
+
+Default System Jitter for this device is 50.00 picoseconds.
+
+
+Setup/Hold Calculation Support
+
+   Delay Adjustment Factors:  
+
+	 Note: This speed file does not contain any delay adjustment factors.
+
+
+The following list of packages have individual package flight times for each pin on the device:
+
+		ff784
+		ff1156
+		ff1759
+
+No external setup and hold delays
+
+
+This report is intended to present the effect of different speed
+grades and voltage/temperature adjustments on block delays.
+For specific situations use the Timing Analyzer report instead.
+
+Delays are reported in picoseconds.
+
+When a block is placed in a site normally used for another type of block,
+for example, an IOB placed in a Clock IOB site, small variations in delay
+may occur which are not included in this report.
+
+NOTE: This architecture supports Multi-Corner Timing Analysis. For each
+timing delay name, speedprint will report minimum and maximum values
+for both fast silicon and slow silicon.  If all paths for a given delay
+name have the same value then the output will look like:
+
+       Timing Delay Name   (fmin/fmax)             (smin/smax)
+
+A single timing delay name may be used for different paths, and can have
+different values.  In the case where a timing delay name has more than
+one set of values, speedprint will report two sets of max and min values
+representing the slowest path information and the fastest path information
+as such:
+
+       Timing Delay Name   (fmin/fmax, fmin/fmax) (smin/smax, smin/smax)
+
+Key
+fmin: miniumum delay for fast silicon
+fmax: maximum delay for fast silicon
+smin: miniumum delay for slow silicon
+smax: maximum delay for slow silicon
+
+
+                          Fast Corner                          Slow Corner
+                          Min/Max, Min/Max(when applicable)     Min/Max, Min/Max(when applicable)
+
+BUFG
+
+Tbgcko_O                  (33/35)                               (71/75)
+
+BUFGCTRL
+
+Tbccck_CE                 (91/91)                               (125/125)
+Tbccck_S                  (91/91)                               (125/125)
+Tbcckc_CE                 (0/0)                                 (0/0)
+Tbcckc_S                  (0/0)                                 (0/0)
+Tbccko_O                  (33/35)                               (71/75)
+
+BUFHCE
+
+Tbhcck_CE                 (28/28)                               (31/31)
+Tbhckc_CE                 (24/24)                               (36/36)
+Tbhcko_O                  (41/44)                               (95/101)
+
+BUFIODQS
+
+Tbiocko_O                 (65/76)                               (138/162)
+Tbiodo_O                  (0/0)                                 (0/0)
+
+BUFO
+
+Tbocko_O                  (59/69)                               (124/146)
+
+BUFR
+
+Tbrcko_O                  (120/141, 258/303)                    (267/314, 544/638)
+Tbrdo_O                   (359/422)                             (645/757)
+
+CAPTURE
+
+Tcapckd_CAP               (0/0)                                 (0/0)
+Tcapdck_CAP               (653/653)                             (2250/2250)
+
+DNA_PORT
+
+Tdnackd_DIN               (0/0)                                 (0/0)
+Tdnackd_READ              (0/0)                                 (0/0)
+Tdnackd_SHIFT             (0/0)                                 (0/0)
+Tdnacko_DOUT              (270/311)                             (1131/1302)
+Tdnadck_DIN               (279/279)                             (2209/2209)
+Tdnadck_READ              (739/739)                             (3237/3237)
+Tdnadck_SHIFT             (739/739)                             (3237/3237)
+
+DSP48E1
+
+Tdspckd_ACIN_ADREG                  (22/22)                               (-1/-1)
+Tdspckd_ACIN_AREG                   (144/144)                             (293/293)
+Tdspckd_ACIN_MREG_MULT              (-54/-54, -21/-21)                    (-183/-183, -106/-106)
+Tdspckd_ACIN_PREG                   (-23/-23, 8/8)                        (-97/-97, -23/-23)
+Tdspckd_ACIN_PREG_MULT              (-222/-222, 8/8)                      (-585/-585, -23/-23)
+Tdspckd_ALUMODE_ALUMODEREG          (124/124)                             (250/250)
+Tdspckd_ALUMODE_PREG                (-117/-117, -86/-86)                  (-262/-262, -188/-188)
+Tdspckd_A_ADREG                     (22/22)                               (-1/-1)
+Tdspckd_A_AREG                      (144/144)                             (293/293)
+Tdspckd_A_MREG_MULT                 (-54/-54, -21/-21)                    (-183/-183, -106/-106)
+Tdspckd_A_PREG                      (-23/-23, 8/8)                        (-97/-97, -23/-23)
+Tdspckd_A_PREG_MULT                 (-222/-222, 8/8)                      (-585/-585, -23/-23)
+Tdspckd_BCIN_BREG                   (141/141)                             (283/283)
+Tdspckd_BCIN_MREG_MULT              (11/11)                               (-24/-24)
+Tdspckd_BCIN_PREG                   (30/30, 62/62)                        (-102/-102, -27/-27)
+Tdspckd_BCIN_PREG_MULT              (-156/-156, 62/62)                    (-426/-426, -27/-27)
+Tdspckd_B_BREG                      (141/141)                             (283/283)
+Tdspckd_B_MREG_MULT                 (11/11)                               (-24/-24)
+Tdspckd_B_PREG                      (-24/-24, 7/7)                        (-102/-102, -27/-27)
+Tdspckd_B_PREG_MULT                 (-156/-156, 7/7)                      (-426/-426, -27/-27)
+Tdspckd_CARRYCASCIN_PREG            (-61/-61, -30/-30)                    (-174/-174, -100/-100)
+Tdspckd_CARRYINSEL_CARRYINSELREG    (131/131)                             (263/263)
+Tdspckd_CARRYINSEL_PREG             (-51/-51, -19/-19)                    (-162/-162, -88/-88)
+Tdspckd_CARRYIN_CARRYINREG          (49/49)                               (95/95)
+Tdspckd_CARRYIN_PREG                (-133/-133, -101/-101)                (-369/-369, -295/-295)
+Tdspckd_CEAD_ADREG                  (65/65)                               (125/125)
+Tdspckd_CEALUMODE_ALUMODEREG        (52/52)                               (99/99)
+Tdspckd_CEA_AREG                    (97/97)                               (205/205)
+Tdspckd_CEB_BREG                    (103/103)                             (211/211)
+Tdspckd_CECARRYIN_CARRYINREG        (108/108)                             (199/199)
+Tdspckd_CECTRL_CARRYINSELREG        (89/89)                               (194/194)
+Tdspckd_CECTRL_OPMODEREG            (89/89)                               (194/194)
+Tdspckd_CEC_CREG                    (92/92)                               (196/196)
+Tdspckd_CED_DREG                    (63/63)                               (123/123)
+Tdspckd_CEINMODE_INMODEREG          (-33/-33)                             (-105/-105)
+Tdspckd_CEM_MREG                    (101/101)                             (209/209)
+Tdspckd_CEP_PREG                    (13/13)                               (19/19)
+Tdspckd_C_CREG                      (118/118)                             (213/213)
+Tdspckd_C_PREG                      (12/12, 44/44)                        (-33/-33, 42/42)
+Tdspckd_D_ADREG                     (78/78)                               (119/119)
+Tdspckd_D_DREG                      (167/167)                             (333/333)
+Tdspckd_D_MREG_MULT                 (2/2)                                 (-64/-64)
+Tdspckd_D_PREG_MULT                 (-166/-166, -136/-136)                (-465/-465, -390/-390)
+Tdspckd_INMODE_INMODEREG            (55/55)                               (92/92)
+Tdspckd_MULTSIGNIN_PREG             (-38/-38, -6/-6)                      (-111/-111, -36/-36)
+Tdspckd_OPMODE_OPMODEREG            (130/130)                             (254/254)
+Tdspckd_OPMODE_PREG                 (-61/-61, -30/-30)                    (-183/-183, -109/-109)
+Tdspckd_PCIN_PREG                   (-38/-38, -6/-6)                      (-111/-111, -36/-36)
+Tdspckd_RSTALLCARRYIN_CARRYINREG    (103/103)                             (212/212)
+Tdspckd_RSTALLCARRYIN_MREG          (100/100)                             (212/212)
+Tdspckd_RSTALUMODE_ALUMODEREG       (39/39)                               (64/64)
+Tdspckd_RSTA_AREG                   (92/92)                               (186/186)
+Tdspckd_RSTB_BREG                   (92/92)                               (185/185)
+Tdspckd_RSTCTRL_CARRYINSELREG       (33/33)                               (52/52)
+Tdspckd_RSTCTRL_OPMODEREG           (33/33)                               (52/52)
+Tdspckd_RSTC_CREG                   (39/39)                               (77/77)
+Tdspckd_RSTD_ADREG                  (74/74)                               (159/159)
+Tdspckd_RSTD_DREG                   (74/74)                               (159/159)
+Tdspckd_RSTINMODE_INMODEREG         (104/104)                             (220/220)
+Tdspckd_RSTM_MREG                   (124/124)                             (259/259)
+Tdspckd_RSTP_PREG                   (16/16)                               (38/38)
+Tdspcko_ACOUT_ACASCREG              (281/335)                             (492/749)
+Tdspcko_ACOUT_AREG                  (281/335)                             (492/749)
+Tdspcko_BCOUT_BCASCREG              (286/337)                             (492/751)
+Tdspcko_BCOUT_BREG                  (286/337)                             (492/751)
+Tdspcko_CARRYCASCOUT_ADREG_MULT     (441/1424)                            (1006/3255)
+Tdspcko_CARRYCASCOUT_ALUMODEREG     (356/883)                             (776/1938)
+Tdspcko_CARRYCASCOUT_AREG           (351/901)                             (784/2028)
+Tdspcko_CARRYCASCOUT_AREG_MULT      (351/1533, 523/1984)                  (784/3543, 1197/4621)
+Tdspcko_CARRYCASCOUT_BREG           (350/898)                             (773/2027)
+Tdspcko_CARRYCASCOUT_BREG_MULT      (350/1455, 452/1455)                  (773/3366, 1020/3366)
+Tdspcko_CARRYCASCOUT_CARRYINREG     (349/728)                             (809/1655)
+Tdspcko_CARRYCASCOUT_CARRYINSELREG  (290/660)                             (645/1470)
+Tdspcko_CARRYCASCOUT_CREG           (352/886)                             (811/2024)
+Tdspcko_CARRYCASCOUT_DREG_MULT      (505/1966)                            (1174/4533)
+Tdspcko_CARRYCASCOUT_INMODEREG_MULT (492/2004, 512/1552)                  (1137/4626, 1167/3548)
+Tdspcko_CARRYCASCOUT_MREG           (359/910)                             (845/2055)
+Tdspcko_CARRYCASCOUT_OPMODEREG      (345/905)                             (766/2007)
+Tdspcko_CARRYCASCOUT_PREG           (207/246)                             (368/558)
+Tdspcko_CARRYOUT_ADREG_MULT         (442/1372)                            (1018/3120)
+Tdspcko_CARRYOUT_ALUMODEREG         (357/832)                             (787/1802)
+Tdspcko_CARRYOUT_AREG               (352/849)                             (796/1893)
+Tdspcko_CARRYOUT_AREG_MULT          (352/1481, 524/1933)                  (796/3409, 1209/4487)
+Tdspcko_CARRYOUT_BREG               (351/846)                             (784/1892)
+Tdspcko_CARRYOUT_BREG_MULT          (351/1404, 453/1404)                  (784/3232, 1031/3232)
+Tdspcko_CARRYOUT_CARRYINREG         (350/677)                             (821/1520)
+Tdspcko_CARRYOUT_CARRYINSELREG      (291/609)                             (657/1335)
+Tdspcko_CARRYOUT_CREG               (353/834)                             (823/1889)
+Tdspcko_CARRYOUT_DREG_MULT          (506/1914)                            (1186/4399)
+Tdspcko_CARRYOUT_INMODEREG_MULT     (492/1952, 513/1501)                  (1148/4491, 1179/3413)
+Tdspcko_CARRYOUT_MREG               (360/858)                             (856/1920)
+Tdspcko_CARRYOUT_OPMODEREG          (346/853)                             (778/1873)
+Tdspcko_CARRYOUT_PREG               (133/166)                             (306/373)
+Tdspcko_MULTSIGNOUT_ADREG_MULT      (472/1380)                            (1060/3125)
+Tdspcko_MULTSIGNOUT_ALUMODEREG      (388/840)                             (829/1808)
+Tdspcko_MULTSIGNOUT_AREG            (383/858)                             (838/1898)
+Tdspcko_MULTSIGNOUT_AREG_MULT       (383/1490, 555/1942)                  (838/3413, 1251/4491)
+Tdspcko_MULTSIGNOUT_BREG            (382/855)                             (827/1897)
+Tdspcko_MULTSIGNOUT_BREG_MULT       (382/1412, 484/1412)                  (827/3236, 1074/3236)
+Tdspcko_MULTSIGNOUT_CARRYINREG      (381/685)                             (863/1525)
+Tdspcko_MULTSIGNOUT_CARRYINSELREG   (322/618)                             (699/1340)
+Tdspcko_MULTSIGNOUT_CREG            (384/843)                             (865/1894)
+Tdspcko_MULTSIGNOUT_DREG_MULT       (537/1923)                            (1228/4403)
+Tdspcko_MULTSIGNOUT_INMODEREG_MULT  (523/1961, 543/1509)                  (1190/4496, 1221/3418)
+Tdspcko_MULTSIGNOUT_MREG            (391/867)                             (899/1924)
+Tdspcko_MULTSIGNOUT_OPMODEREG       (376/862)                             (820/1877)
+Tdspcko_MULTSIGNOUT_PREG            (86/125)                              (189/266)
+Tdspcko_OVERFLOW_PREG               (188/329)                             (460/758)
+Tdspcko_PATDET_ADREG_MULT           (490/1541)                            (1128/3512)
+Tdspcko_PATDET_ALUMODEREG           (405/1002)                            (899/2194)
+Tdspcko_PATDET_AREG                 (400/1018)                            (906/2286)
+Tdspcko_PATDET_AREG_MULT            (400/1650, 572/2103)                  (906/3801, 1319/4879)
+Tdspcko_PATDET_BREG                 (399/1015)                            (895/2284)
+Tdspcko_PATDET_BREG_MULT            (399/1574, 501/1574)                  (895/3624, 1142/3624)
+Tdspcko_PATDET_CARRYINREG           (398/847)                             (932/1913)
+Tdspcko_PATDET_CARRYINSELREG        (339/779)                             (768/1727)
+Tdspcko_PATDET_CREG                 (401/1004)                            (934/2281)
+Tdspcko_PATDET_DREG_MULT            (554/2083)                            (1296/4791)
+Tdspcko_PATDET_INMODEREG_MULT       (540/2122, 561/1670)                  (1259/4883, 1290/3805)
+Tdspcko_PATDET_MREG                 (408/1028)                            (968/2312)
+Tdspcko_PATDET_OPMODEREG            (394/1022)                            (888/2265)
+Tdspcko_PATDET_PREG                 (145/277)                             (336/602)
+Tdspcko_PCOUT_ADREG_MULT            (476/1427)                            (1074/3231)
+Tdspcko_PCOUT_ALUMODEREG            (392/887)                             (845/1914)
+Tdspcko_PCOUT_AREG                  (388/905)                             (852/2004)
+Tdspcko_PCOUT_AREG_MULT             (388/1537, 559/1988)                  (852/3519, 1265/4597)
+Tdspcko_PCOUT_BREG                  (386/902)                             (841/2003)
+Tdspcko_PCOUT_BREG_MULT             (386/1459, 489/1459)                  (841/3344, 1089/3344)
+Tdspcko_PCOUT_CARRYINREG            (386/732)                             (878/1631)
+Tdspcko_PCOUT_CARRYINSELREG         (325/665)                             (714/1447)
+Tdspcko_PCOUT_CREG                  (388/889)                             (880/2000)
+Tdspcko_PCOUT_DREG_MULT             (541/1969)                            (1242/4509)
+Tdspcko_PCOUT_INMODEREG_MULT        (527/2008, 548/1556)                  (1205/4602, 1236/3525)
+Tdspcko_PCOUT_MREG                  (396/914)                             (914/2031)
+Tdspcko_PCOUT_OPMODEREG             (381/908)                             (834/1983)
+Tdspcko_PCOUT_PREG                  (192/210)                             (342/479)
+Tdspcko_P_ADREG_MULT                (447/1384)                            (1026/3153)
+Tdspcko_P_ALUMODEREG                (363/844)                             (797/1836)
+Tdspcko_P_AREG                      (358/861)                             (804/1926)
+Tdspcko_P_AREG_MULT                 (358/1493, 530/1946)                  (804/3441, 1217/4519)
+Tdspcko_P_BREG                      (357/858)                             (794/1925)
+Tdspcko_P_BREG_MULT                 (357/1415, 459/1415)                  (794/3265, 1041/3265)
+Tdspcko_P_CARRYINREG                (356/688)                             (830/1553)
+Tdspcko_P_CARRYINSELREG             (296/622)                             (666/1368)
+Tdspcko_P_CREG                      (359/847)                             (832/1922)
+Tdspcko_P_DREG_MULT                 (512/1926)                            (1195/4431)
+Tdspcko_P_INMODEREG_MULT            (497/1965, 518/1513)                  (1158/4524, 1188/3447)
+Tdspcko_P_MREG                      (366/870)                             (866/1953)
+Tdspcko_P_OPMODEREG                 (351/865)                             (787/1905)
+Tdspcko_P_PREG                      (134/202)                             (309/424)
+Tdspcko_UNDERFLOW_PREG              (178/254)                             (433/580)
+Tdspdck_ACIN_ADREG                  (530/530)                             (1311/1311)
+Tdspdck_ACIN_AREG                   (90/90)                               (227/227)
+Tdspdck_ACIN_MREG_MULT              (618/618, 1069/1069)                  (1495/1495, 2573/2573)
+Tdspdck_ACIN_PREG                   (534/534, 617/617)                    (1283/1283, 1464/1464)
+Tdspdck_ACIN_PREG_MULT              (1161/1161, 1696/1696)                (2767/2767, 4027/4027)
+Tdspdck_ALUMODE_ALUMODEREG          (38/38)                               (116/116)
+Tdspdck_ALUMODE_PREG                (596/596, 678/678)                    (1365/1365, 1547/1547)
+Tdspdck_A_ADREG                     (599/599)                             (1439/1439)
+Tdspdck_A_AREG                      (90/90)                               (227/227)
+Tdspdck_A_MREG_MULT                 (686/686, 1139/1139)                  (1623/1623, 2701/2701)
+Tdspdck_A_PREG                      (604/604, 686/686)                    (1411/1411, 1593/1593)
+Tdspdck_A_PREG_MULT                 (1231/1231, 1765/1765)                (2895/2895, 4155/4155)
+Tdspdck_BCIN_BREG                   (90/90)                               (218/218)
+Tdspdck_BCIN_MREG_MULT              (535/535)                             (1283/1283)
+Tdspdck_BCIN_PREG                   (424/424, 506/506)                    (1236/1236, 1417/1417)
+Tdspdck_BCIN_PREG_MULT              (1079/1079, 1161/1161)                (2555/2555, 2736/2736)
+Tdspdck_B_BREG                      (90/90)                               (218/218)
+Tdspdck_B_MREG_MULT                 (616/616)                             (1439/1439)
+Tdspdck_B_PREG                      (601/601, 683/683)                    (1391/1391, 1573/1573)
+Tdspdck_B_PREG_MULT                 (1160/1160, 1242/1242)                (2711/2711, 2892/2892)
+Tdspdck_CARRYCASCIN_PREG            (370/370, 452/452)                    (876/876, 1058/1058)
+Tdspdck_CARRYINSEL_CARRYINSELREG    (19/19)                               (97/97)
+Tdspdck_CARRYINSEL_PREG             (491/491, 574/574)                    (1208/1208, 1390/1390)
+Tdspdck_CARRYIN_CARRYINREG          (63/63)                               (269/269)
+Tdspdck_CARRYIN_PREG                (483/483, 566/566)                    (1163/1163, 1344/1344)
+Tdspdck_CEAD_ADREG                  (28/28)                               (175/175)
+Tdspdck_CEALUMODE_ALUMODEREG        (69/69)                               (269/269)
+Tdspdck_CEA_AREG                    (20/20)                               (150/150)
+Tdspdck_CEB_BREG                    (15/15)                               (143/143)
+Tdspdck_CECARRYIN_CARRYINREG        (4/4)                                 (124/124)
+Tdspdck_CECTRL_CARRYINSELREG        (32/32)                               (175/175)
+Tdspdck_CECTRL_OPMODEREG            (32/32)                               (175/175)
+Tdspdck_CEC_CREG                    (28/28)                               (162/162)
+Tdspdck_CED_DREG                    (30/30)                               (175/175)
+Tdspdck_CEINMODE_INMODEREG          (171/171)                             (506/506)
+Tdspdck_CEM_MREG                    (38/38)                               (178/178)
+Tdspdck_CEP_PREG                    (132/132)                             (371/371)
+Tdspdck_C_CREG                      (37/37)                               (120/120)
+Tdspdck_C_PREG                      (536/536, 618/618)                    (1200/1200, 1381/1381)
+Tdspdck_D_ADREG                     (498/498)                             (1169/1169)
+Tdspdck_D_DREG                      (-24/-24)                             (86/86)
+Tdspdck_D_MREG_MULT                 (1037/1037)                           (2429/2429)
+Tdspdck_D_PREG_MULT                 (1582/1582, 1664/1664)                (3701/3701, 3883/3883)
+Tdspdck_INMODE_INMODEREG            (111/111)                             (336/336)
+Tdspdck_MULTSIGNIN_PREG             (480/480, 562/562)                    (1125/1125, 1306/1306)
+Tdspdck_OPMODE_OPMODEREG            (74/74)                               (228/228)
+Tdspdck_OPMODE_PREG                 (649/649, 731/731)                    (1516/1516, 1697/1697)
+Tdspdck_PCIN_PREG                   (480/480, 562/562)                    (1125/1125, 1306/1306)
+Tdspdck_RSTALLCARRYIN_CARRYINREG    (23/23)                               (76/76)
+Tdspdck_RSTALLCARRYIN_MREG          (24/24)                               (78/78)
+Tdspdck_RSTALUMODE_ALUMODEREG       (95/95)                               (223/223)
+Tdspdck_RSTA_AREG                   (119/119)                             (264/264)
+Tdspdck_RSTB_BREG                   (132/132)                             (308/308)
+Tdspdck_RSTCTRL_CARRYINSELREG       (123/123)                             (276/276)
+Tdspdck_RSTCTRL_OPMODEREG           (123/123)                             (276/276)
+Tdspdck_RSTC_CREG                   (88/88)                               (195/195)
+Tdspdck_RSTD_ADREG                  (139/139)                             (317/317)
+Tdspdck_RSTD_DREG                   (138/138)                             (315/315)
+Tdspdck_RSTINMODE_INMODEREG         (11/11)                               (180/180)
+Tdspdck_RSTM_MREG                   (102/102)                             (221/221)
+Tdspdck_RSTP_PREG                   (119/119)                             (276/276)
+Tdspdo_ACIN_ACOUT                   (135/168)                             (307/412)
+Tdspdo_ACIN_CARRYCASCOUT            (213/751)                             (492/1726)
+Tdspdo_ACIN_CARRYCASCOUT_MULT       (213/1378, 412/1829)                  (492/3210, 980/4288)
+Tdspdo_ACIN_CARRYOUT                (214/699)                             (503/1592)
+Tdspdo_ACIN_CARRYOUT_MULT           (214/1326, 413/1778)                  (503/3076, 991/4154)
+Tdspdo_ACIN_MULTSIGNOUT             (245/708)                             (546/1596)
+Tdspdo_ACIN_MULTSIGNOUT_MULT        (245/1335, 444/1787)                  (546/3080, 1033/4158)
+Tdspdo_ACIN_P                       (220/711)                             (513/1624)
+Tdspdo_ACIN_PATDET                  (262/868)                             (614/1984)
+Tdspdo_ACIN_PATDET_MULT             (262/1496, 461/1947)                  (614/3468, 1102/4546)
+Tdspdo_ACIN_PCOUT                   (249/754)                             (561/1702)
+Tdspdo_ACIN_PCOUT_MULT              (249/1381, 448/1834)                  (561/3187, 1048/4264)
+Tdspdo_ACIN_P_MULT                  (220/1338, 419/1790)                  (513/3109, 1000/4186)
+Tdspdo_ALUMODE_CARRYCASCOUT         (299/797)                             (639/1782)
+Tdspdo_ALUMODE_CARRYOUT             (300/746)                             (651/1647)
+Tdspdo_ALUMODE_MULTSIGNOUT          (330/754)                             (693/1652)
+Tdspdo_ALUMODE_P                    (305/758)                             (660/1680)
+Tdspdo_ALUMODE_PATDET               (286/786)                             (606/1745)
+Tdspdo_ALUMODE_PCOUT                (334/801)                             (708/1758)
+Tdspdo_A_ACOUT                      (114/240)                             (251/540)
+Tdspdo_A_CARRYCASCOUT               (213/821)                             (492/1854)
+Tdspdo_A_CARRYCASCOUT_MULT          (213/1447, 412/1899)                  (492/3338, 980/4416)
+Tdspdo_A_CARRYOUT                   (214/769)                             (503/1720)
+Tdspdo_A_CARRYOUT_MULT              (214/1396, 413/1847)                  (503/3204, 991/4282)
+Tdspdo_A_MULTSIGNOUT                (245/778)                             (546/1724)
+Tdspdo_A_MULTSIGNOUT_MULT           (245/1404, 444/1856)                  (546/3208, 1033/4286)
+Tdspdo_A_P                          (220/781)                             (513/1752)
+Tdspdo_A_PATDET                     (262/938)                             (614/2112)
+Tdspdo_A_PATDET_MULT                (262/1565, 427/1565)                  (614/3596, 1024/3596)
+Tdspdo_A_PATDET_PREADD_MULT         (262/2017, 461/2017)                  (614/4674, 1102/4674)
+Tdspdo_A_PCOUT                      (249/824)                             (561/1830)
+Tdspdo_A_PCOUT_MULT                 (249/1451, 414/1451)                  (561/3314, 971/3314)
+Tdspdo_A_PCOUT_PREADD_MULT          (249/1902, 448/1902)                  (561/4392, 1048/4392)
+Tdspdo_A_P_MULT                     (220/1407, 385/1407)                  (513/3236, 923/3236)
+Tdspdo_A_P_PREADD_MULT              (220/1860, 419/1860)                  (513/4314, 1000/4314)
+Tdspdo_BCIN_BCOUT                   (132/170)                             (301/397)
+Tdspdo_BCIN_CARRYCASCOUT            (156/638)                             (489/1676)
+Tdspdo_BCIN_CARRYCASCOUT_MULT       (156/1292, 344/1292)                  (489/2995, 812/2995)
+Tdspdo_BCIN_CARRYOUT                (157/586)                             (499/1541)
+Tdspdo_BCIN_CARRYOUT_MULT           (157/1241, 345/1241)                  (499/2861, 823/2861)
+Tdspdo_BCIN_MULTSIGNOUT             (188/595)                             (541/1546)
+Tdspdo_BCIN_MULTSIGNOUT_MULT        (188/1249, 375/1249)                  (541/2865, 865/2865)
+Tdspdo_BCIN_P                       (163/598)                             (509/1575)
+Tdspdo_BCIN_PATDET                  (205/755)                             (611/1933)
+Tdspdo_BCIN_PATDET_MULT             (205/1410, 393/1410)                  (611/3253, 934/3253)
+Tdspdo_BCIN_PCOUT                   (193/642)                             (557/1653)
+Tdspdo_BCIN_PCOUT_MULT              (193/1296, 379/1296)                  (557/2971, 880/2971)
+Tdspdo_BCIN_P_MULT                  (163/1253, 350/1253)                  (509/2893, 832/2893)
+Tdspdo_B_BCOUT                      (134/251)                             (295/553)
+Tdspdo_B_CARRYCASCOUT               (211/814)                             (489/1832)
+Tdspdo_B_CARRYCASCOUT_MULT          (211/1374, 344/1374)                  (489/3151, 812/3151)
+Tdspdo_B_CARRYOUT                   (212/762)                             (499/1697)
+Tdspdo_B_CARRYOUT_MULT              (212/1322, 345/1322)                  (499/3016, 823/3016)
+Tdspdo_B_MULTSIGNOUT                (243/772)                             (541/1702)
+Tdspdo_B_MULTSIGNOUT_MULT           (243/1331, 375/1331)                  (541/3021, 865/3021)
+Tdspdo_B_P                          (218/775)                             (509/1731)
+Tdspdo_B_PATDET                     (260/932)                             (611/2089)
+Tdspdo_B_PATDET_MULT                (260/1491, 393/1491)                  (611/3408, 934/3408)
+Tdspdo_B_PCOUT                      (247/818)                             (557/1809)
+Tdspdo_B_PCOUT_MULT                 (247/1377, 379/1377)                  (557/3127, 880/3127)
+Tdspdo_B_P_MULT                     (218/1334, 350/1334)                  (509/3049, 832/3049)
+Tdspdo_CARRYCASCIN_CARRYCASCOUT     (180/527)                             (427/1202)
+Tdspdo_CARRYCASCIN_CARRYOUT         (181/475)                             (439/1068)
+Tdspdo_CARRYCASCIN_MULTSIGNOUT      (212/484)                             (481/1072)
+Tdspdo_CARRYCASCIN_P                (187/488)                             (448/1100)
+Tdspdo_CARRYCASCIN_PATDET           (229/645)                             (549/1460)
+Tdspdo_CARRYCASCIN_PCOUT            (216/530)                             (495/1179)
+Tdspdo_CARRYINSEL_CARRYCASCOUT      (230/699)                             (534/1638)
+Tdspdo_CARRYINSEL_CARRYOUT          (231/648)                             (545/1504)
+Tdspdo_CARRYINSEL_MULTSIGNOUT       (262/656)                             (588/1508)
+Tdspdo_CARRYINSEL_P                 (236/660)                             (555/1536)
+Tdspdo_CARRYINSEL_PATDET            (279/817)                             (656/1896)
+Tdspdo_CARRYINSEL_PCOUT             (266/703)                             (603/1614)
+Tdspdo_CARRYIN_CARRYCASCOUT         (180/527)                             (427/1202)
+Tdspdo_CARRYIN_CARRYOUT             (181/475)                             (439/1068)
+Tdspdo_CARRYIN_MULTSIGNOUT          (212/484)                             (481/1072)
+Tdspdo_CARRYIN_P                    (187/488)                             (448/1100)
+Tdspdo_CARRYIN_PATDET               (229/645)                             (549/1460)
+Tdspdo_CARRYIN_PCOUT                (216/530)                             (495/1179)
+Tdspdo_C_CARRYCASCOUT               (188/756)                             (448/1656)
+Tdspdo_C_CARRYOUT                   (189/704)                             (460/1522)
+Tdspdo_C_MULTSIGNOUT                (220/713)                             (502/1526)
+Tdspdo_C_P                          (195/717)                             (469/1554)
+Tdspdo_C_PATDET                     (237/874)                             (571/1914)
+Tdspdo_C_PCOUT                      (225/760)                             (517/1632)
+Tdspdo_D_CARRYCASCOUT_MULT          (367/1808)                            (876/4168)
+Tdspdo_D_CARRYOUT_MULT              (368/1757)                            (888/4034)
+Tdspdo_D_MULTSIGNOUT_MULT           (398/1765)                            (930/4038)
+Tdspdo_D_PATDET_MULT                (416/1926)                            (999/4426)
+Tdspdo_D_PCOUT_MULT                 (368/1757)                            (888/4034)
+Tdspdo_D_P_MULT                     (373/1769)                            (898/4066)
+Tdspdo_INMODE_CARRYCASCOUT_MULT     (427/1932, 438/1480)                  (1003/4479, 1012/3402)
+Tdspdo_INMODE_CARRYOUT_MULT         (428/1880, 439/1429)                  (1015/4345, 1023/3268)
+Tdspdo_INMODE_MULTSIGNOUT_MULT      (459/1890, 469/1437)                  (1057/4349, 1066/3272)
+Tdspdo_INMODE_PATDET_MULT           (476/2050, 487/1598)                  (1125/4737, 1134/3660)
+Tdspdo_INMODE_PCOUT_MULT            (463/1936, 474/1484)                  (1071/4456, 1081/3378)
+Tdspdo_INMODE_P_MULT                (433/1893, 444/1441)                  (1024/4377, 1033/3300)
+Tdspdo_MULTSIGNIN_CARRYCASCOUT      (156/638)                             (365/1451)
+Tdspdo_MULTSIGNIN_CARRYOUT          (157/586)                             (375/1316)
+Tdspdo_MULTSIGNIN_MULTSIGNOUT       (188/595)                             (418/1321)
+Tdspdo_MULTSIGNIN_P                 (163/598)                             (385/1349)
+Tdspdo_MULTSIGNIN_PATDET            (205/755)                             (487/1708)
+Tdspdo_MULTSIGNIN_PCOUT             (193/642)                             (433/1427)
+Tdspdo_OPMODE_CARRYCASCOUT          (247/853)                             (564/1939)
+Tdspdo_OPMODE_CARRYOUT              (248/802)                             (576/1804)
+Tdspdo_OPMODE_MULTSIGNOUT           (278/810)                             (618/1809)
+Tdspdo_OPMODE_P                     (252/814)                             (585/1837)
+Tdspdo_OPMODE_PATDET                (296/971)                             (686/2196)
+Tdspdo_OPMODE_PCOUT                 (282/857)                             (633/1915)
+Tdspdo_PCIN_CARRYCASCOUT            (156/638)                             (365/1451)
+Tdspdo_PCIN_CARRYOUT                (157/586)                             (375/1316)
+Tdspdo_PCIN_MULTSIGNOUT             (188/595)                             (418/1321)
+Tdspdo_PCIN_P                       (163/598)                             (385/1349)
+Tdspdo_PCIN_PATDET                  (205/755)                             (487/1708)
+Tdspdo_PCIN_PCOUT                   (193/642)                             (433/1427)
+
+FIFO18E1
+
+Trcck_RDEN                (271/271)                             (491/491)
+Trcck_REGCE               (106/106)                             (187/187)
+Trcck_RSTREG              (136/136)                             (239/239)
+Trcck_WREN                (271/271)                             (498/498)
+Trckc_RDEN                (192/192)                             (205/205)
+Trckc_REGCE               (154/154)                             (267/267)
+Trckc_RSTREG              (174/174)                             (237/237)
+Trckc_WREN                (206/206)                             (241/241)
+Trckd_DIA                 (198/198)                             (312/312)
+Trckd_DIB                 (198/198)                             (312/312)
+Trcko_AEMPTY              (241/269)                             (486/747)
+Trcko_AFULL               (270/301)                             (536/806)
+Trcko_DO                  (454/807)                             (694/1784)
+Trcko_DOPB                (454/807)                             (694/1784)
+Trcko_DOP_REG             (184/256)                             (396/652)
+Trcko_DO_REG              (184/256)                             (396/652)
+Trcko_EMPTY               (238/266)                             (485/744)
+Trcko_FULL                (264/294)                             (525/794)
+Trcko_RDCOUNT             (307/372)                             (614/955)
+Trcko_RDERR               (253/283)                             (516/777)
+Trcko_WRCOUNT             (321/386)                             (640/972)
+Trcko_WRERR               (264/294)                             (529/792)
+Trco_RST                  (239/266, 342/389)                    (478/732, 676/980)
+Trdck_DIA                 (402/402)                             (687/687)
+Trdck_DIB                 (402/402)                             (687/687)
+Trrec_RST                 (216/216)                             (262/262)
+Trrem_RST                 (216/216)                             (266/266)
+
+FIFO36E1
+
+Trcck_CLK                 (362/362)                             (1014/1014)
+Trcck_RDEN                (271/271)                             (491/491)
+Trcck_REGCE               (106/106)                             (187/187)
+Trcck_RSTREG              (136/136)                             (239/239)
+Trcck_WREN                (271/271)                             (498/498)
+Trckc_CLK                 (201/201)                             (273/273)
+Trckc_RDEN                (192/192)                             (205/205)
+Trckc_REGCE               (154/154)                             (267/267)
+Trckc_RSTREG              (174/174)                             (237/237)
+Trckc_WREN                (206/206)                             (241/241)
+Trckd_DIA                 (198/198)                             (312/312)
+Trckd_DIB                 (198/198)                             (312/312)
+Trckd_DIB_ECC             (198/198)                             (312/312)
+Trckd_DIPA                (198/198)                             (312/312)
+Trckd_DIPB                (198/198)                             (312/312)
+Trcko_AEMPTY              (241/269)                             (486/747)
+Trcko_AFULL               (270/301)                             (536/806)
+Trcko_DO                  (454/807, 454/1103)                   (694/1784, 694/2890)
+Trcko_DOA_REG             (184/256, 184/263)                    (396/652, 396/762)
+Trcko_DOB                 (454/1103)                            (694/2890)
+Trcko_DOP                 (454/1103)                            (694/2890)
+Trcko_DOPA_REG            (184/256)                             (396/652)
+Trcko_DOPB_REG            (201/231, 844/985)                    (405/673, 1796/2414)
+Trcko_DOP_REG             (184/256)                             (396/652)
+Trcko_DO_REG              (184/256)                             (396/652)
+Trcko_EMPTY               (238/266)                             (485/744)
+Trcko_FULL                (264/294)                             (525/794)
+Trcko_RDCOUNT             (307/372)                             (614/955)
+Trcko_RDERR               (253/283)                             (516/777)
+Trcko_WRCOUNT             (321/386)                             (640/972)
+Trcko_WRERR               (264/294)                             (529/792)
+Trco_RST                  (239/266, 342/389)                    (478/732, 676/980)
+Trdck_DIA                 (402/402)                             (687/687)
+Trdck_DIB                 (402/402)                             (687/687)
+Trdck_DIB_ECC             (428/428)                             (944/944)
+Trdck_DIPA                (402/402)                             (687/687)
+Trdck_DIPB                (428/428)                             (944/944)
+Trrec_RST                 (216/216)                             (262/262)
+Trrem_RST                 (216/216)                             (266/266)
+
+GTXE1
+
+Tgtxcck_ADDR              (184/184)                             (701/701)
+Tgtxcck_BYPASS            (0/0)                                 (260/260)
+Tgtxcck_CHARDISPM         (0/0)                                 (260/260)
+Tgtxcck_CHARDISPV         (0/0)                                 (260/260)
+Tgtxcck_CHBONDI           (0/0)                                 (260/260)
+Tgtxcck_CHBONDL           (0/0)                                 (260/260)
+Tgtxcck_CHBONDM           (0/0)                                 (260/260)
+Tgtxcck_CHBONDS           (0/0)                                 (260/260)
+Tgtxcck_CLKADJ            (0/0)                                 (260/260)
+Tgtxcck_COM               (0/0)                                 (260/260)
+Tgtxcck_COMMADET          (0/0)                                 (260/260)
+Tgtxcck_COMMALIGN         (0/0)                                 (260/260)
+Tgtxcck_DECODE            (0/0)                                 (260/260)
+Tgtxcck_DEN               (184/184)                             (701/701)
+Tgtxcck_DFEDLYOVRD        (0/0)                                 (260/260)
+Tgtxcck_DI                (184/184)                             (701/701)
+Tgtxcck_DWE               (184/184)                             (701/701)
+Tgtxcck_ELECIDLE          (0/0)                                 (260/260)
+Tgtxcck_ENCHANSYNC        (0/0)                                 (260/260)
+Tgtxcck_ENCODE            (0/0)                                 (260/260)
+Tgtxcck_HEADER            (0/0)                                 (260/260)
+Tgtxcck_PCI               (0/0)                                 (260/260)
+Tgtxcck_POLARITY          (0/0)                                 (260/260)
+Tgtxcck_PRBS              (0/0)                                 (260/260)
+Tgtxcck_RXGEARBOX         (0/0)                                 (260/260)
+Tgtxcck_RXRATE            (0/0)                                 (260/260)
+Tgtxcck_RXSLIDE           (0/0)                                 (260/260)
+Tgtxcck_SAMPLE            (0/0)                                 (260/260)
+Tgtxcck_SCANIN            (0/0)                                 (260/260)
+Tgtxcck_SEQ               (0/0)                                 (260/260)
+Tgtxcck_STRTSEQ           (0/0)                                 (260/260)
+Tgtxcck_TXCHARISK         (0/0)                                 (260/260)
+Tgtxcck_TXDATA            (0/0)                                 (260/260)
+Tgtxcck_TXINHIBIT         (0/0)                                 (260/260)
+Tgtxcck_TXPWRDN           (0/0)                                 (260/260)
+Tgtxcck_TXRATE            (0/0)                                 (260/260)
+Tgtxcck_USRCODR           (0/0)                                 (260/260)
+Tgtxcco_GEARBOX           (381/447)                             (350/411)
+Tgtxckc_CHARDISPM         (204/204)                             (802/802)
+Tgtxckc_CHARDISPV         (204/204)                             (802/802)
+Tgtxckc_CHBONDI           (204/204)                             (802/802)
+Tgtxckc_CHBONDL           (204/204)                             (802/802)
+Tgtxckc_CHBONDM           (204/204)                             (802/802)
+Tgtxckc_CHBONDS           (204/204)                             (802/802)
+Tgtxckc_CLKADJ            (204/204)                             (802/802)
+Tgtxckc_COM               (204/204)                             (802/802)
+Tgtxckc_COMMADET          (204/204)                             (802/802)
+Tgtxckc_COMMALIGN         (204/204)                             (802/802)
+Tgtxckc_DADDR             (81/81)                               (519/519)
+Tgtxckc_DECODE            (204/204)                             (802/802)
+Tgtxckc_DEN               (81/81)                               (519/519)
+Tgtxckc_DFEDLYOVRD        (204/204)                             (802/802)
+Tgtxckc_DI                (81/81)                               (519/519)
+Tgtxckc_DWE               (81/81)                               (519/519)
+Tgtxckc_ELECIDLE          (204/204)                             (802/802)
+Tgtxckc_ENCHANSYNC        (204/204)                             (802/802)
+Tgtxckc_ENCODE            (204/204)                             (802/802)
+Tgtxckc_HEADER            (204/204)                             (802/802)
+Tgtxckc_PCI               (204/204)                             (802/802)
+Tgtxckc_POLARITY          (204/204)                             (802/802)
+Tgtxckc_PRBS              (204/204)                             (802/802)
+Tgtxckc_RXGEARBOX         (204/204)                             (802/802)
+Tgtxckc_RXRATE            (204/204)                             (802/802)
+Tgtxckc_RXSLIDE           (204/204)                             (802/802)
+Tgtxckc_SAMPLE            (204/204)                             (802/802)
+Tgtxckc_SCANIN            (204/204)                             (802/802)
+Tgtxckc_SEQ               (204/204)                             (802/802)
+Tgtxckc_STRTSEQ           (204/204)                             (802/802)
+Tgtxckc_TXBYPASS          (204/204)                             (802/802)
+Tgtxckc_TXCHARISK         (204/204)                             (802/802)
+Tgtxckc_TXDATA            (204/204)                             (802/802)
+Tgtxckc_TXINHIBIT         (204/204)                             (802/802)
+Tgtxckc_TXPWRDN           (204/204)                             (802/802)
+Tgtxckc_TXRATE            (204/204)                             (802/802)
+Tgtxckc_USRCODR           (204/204)                             (802/802)
+Tgtxcko_CHBONDO           (381/447)                             (350/411)
+Tgtxcko_COMFINISH         (381/447)                             (350/411)
+Tgtxcko_COMINITDET        (381/447)                             (350/411)
+Tgtxcko_COMSASDET         (381/447)                             (350/411)
+Tgtxcko_COMWAKEDET        (381/447)                             (350/411)
+Tgtxcko_DFEADJMON         (381/447)                             (350/411)
+Tgtxcko_DFEEDACMON        (381/447)                             (350/411)
+Tgtxcko_DFETAP            (0/0, 204/204)                        (260/260, 802/802)
+Tgtxcko_DO                (607/713)                             (774/908)
+Tgtxcko_DRDY              (607/713)                             (774/908)
+Tgtxcko_HEADER            (381/447)                             (350/411)
+Tgtxcko_ISCOMMA           (381/447)                             (350/411)
+Tgtxcko_MGTREFCLK         (564/599)                             (752/799)
+Tgtxcko_PHYSTATUS         (381/447)                             (350/411)
+Tgtxcko_PRBS              (381/447)                             (350/411)
+Tgtxcko_RXCHARISK         (381/447)                             (350/411)
+Tgtxcko_RXCOMMADET        (381/447)                             (350/411)
+Tgtxcko_RXDATA            (381/447)                             (350/411)
+Tgtxcko_RXDISPERR         (381/447)                             (350/411)
+Tgtxcko_RXHDERVALID       (381/447)                             (350/411)
+Tgtxcko_RXLOSSOFSYNC      (381/447)                             (350/411)
+Tgtxcko_RXNOTINTABLE      (381/447)                             (350/411)
+Tgtxcko_RXRATEDONE        (381/447)                             (350/411)
+Tgtxcko_RXREALIGN         (381/447)                             (350/411)
+Tgtxcko_RXRSTDONE         (381/447)                             (350/411)
+Tgtxcko_RXRUNDISP         (381/447)                             (350/411)
+Tgtxcko_RXSTATUS          (381/447)                             (350/411)
+Tgtxcko_RXSTRTSEQ         (381/447)                             (350/411)
+Tgtxcko_SAMPLE            (381/447)                             (350/411)
+Tgtxcko_SCANOUT           (381/447)                             (350/411)
+Tgtxcko_SENSCAL           (381/447)                             (350/411)
+Tgtxcko_TAPMON            (381/447)                             (350/411)
+Tgtxcko_TXKERR            (381/447)                             (350/411)
+Tgtxcko_TXRATEDONE        (381/447)                             (350/411)
+Tgtxcko_TXRSTDONE         (381/447)                             (350/411)
+Tgtxcko_TXRUNDISP         (381/447)                             (350/411)
+
+IBUFDS_GTXE1
+
+Tbgcko_O                  (564/599)                             (752/799)
+Tbgcko_ODIV2              (564/599)                             (752/799)
+
+ICAP
+
+Tcapcck_CS                (1221/1221)                           (3615/3615)
+Tcapcck_RDWR              (1221/1221)                           (3615/3615)
+Tcapckc_CS                (0/0)                                 (0/0)
+Tcapckc_RDWR              (0/0)                                 (0/0)
+Tcapckd_I                 (0/0)                                 (0/0)
+Tcapcko_BUSY              (3073/3535)                           (5782/6652)
+Tcapcko_O                 (637/733)                             (1164/1339)
+Tcapdck_I                 (520/520)                             (1685/1685)
+
+IDELAYCTRL
+
+Tdlycco_RDY               (2764360/3244500)                     (2764360/3244500)
+
+ILOGICE1
+
+Tice1ck                   (81/81, 82/82)                        (210/210, 212/212)
+Tickce1                   (-5/-5, -3/-3)                        (30/30, 32/32)
+Tickq                     (200/235, 230/271)                    (437/513, 514/603)
+Ticksr                    (-74/-74, -72/-72)                    (-93/-93, -91/-91)
+Tidi                      (52/59, 84/98)                        (111/128, 180/211)
+Tidivfb                   (-178/-178, -82/-82)                  (-347/-347, -120/-120)
+Tidlo                     (122/144, 206/242)                    (277/325, 460/540)
+Tidlod                    (174/203, 218/256)                    (388/453, 492/577)
+Tidock                    (-84/-84, 31/31)                      (-197/-197, 78/78)
+Tidockd                   (-25/-25, 45/45)                      (-69/-69, 115/115)
+Tifbdiv                   (251/251, 316/316)                    (481/481, 646/646)
+Tifbo                     (286/335, 327/383)                    (541/633, 670/783)
+Tifbq                     (408/479, 449/527)                    (857/1003, 947/1108)
+Tiockd                    (65/65, 204/204)                      (140/140, 460/460)
+Tiockdd                   (53/53, 152/152)                      (108/108, 349/349)
+Tirsrck                   (201/201, 202/202)                    (406/406, 408/408)
+Tisrck                    (273/273, 274/274)                    (772/772, 774/774)
+Trq                       (331/389, 342/402)                    (823/965, 839/984)
+
+IOB
+
+Tiodi                     (3/3)                                 (3/3)
+Tioop                     (3/3)                                 (3/3)
+Tiopi                     (2/2)                                 (2/2)
+Tiopp                     (2/2)                                 (2/2)
+Tiotp                     (3/3)                                 (3/3)
+Tiotphz                   (578/678)                             (776/910)
+
+IOBM
+
+Tiodi                     (5/5)                                 (5/5)
+Tiood                     (1/1)                                 (1/1)
+Tioop                     (4/4, 6/6)                            (4/4, 6/6)
+Tiopi                     (3/3)                                 (3/3)
+Tiopp                     (2/2)                                 (2/2)
+Tiotp                     (3/3, 5/5)                            (3/3, 5/5)
+Tiotphz                   (578/678, 579/679)                    (776/910, 777/911)
+
+IOBS
+
+Tiodi                     (5/5)                                 (5/5)
+Tiodp                     (1/1, 3/3)                            (1/1, 3/3)
+Tioop                     (3/3, 4/4)                            (3/3, 4/4)
+Tiopi                     (3/3)                                 (3/3)
+Tiopp                     (2/2)                                 (2/2)
+Tiotp                     (3/3, 4/4)                            (3/3, 4/4)
+Tiotphz                   (578/678, 579/679)                    (776/910, 777/911)
+
+IODELAYE1
+
+Tiodcck_CE                (187/187)                             (526/526)
+Tiodcck_CNTVAL            (311/311)                             (367/367)
+Tiodcck_INC               (109/109)                             (261/261)
+Tiodcck_RST               (280/280)                             (615/615)
+Tiodckc_CE                (-44/-44)                             (-97/-97)
+Tiodckc_CNTVAL            (17/17)                               (115/115)
+Tiodckc_INC               (-1/-1)                               (-17/-17)
+Tiodckc_RST               (-51/-51)                             (-86/-86)
+Tiodcko_CNTVAL            (238/279)                             (472/554)
+Tiodcko_DATAOUT           (337/396, 482/566)                    (675/792, 1072/1258)
+Tioddo_CNTVAL             (415/487)                             (774/908)
+Tioddo_DATAIN             (361/424)                             (711/835)
+Tioddo_DATAOUT            (625/733)                             (1374/1613)
+Tioddo_IDATAIN            (269/316, 1431/1680)                  (532/624, 2954/3467)
+Tioddo_ODATAIN            (493/579)                             (1004/1179)
+Tioddo_T                  (677/795)                             (1537/1804)
+Tiodto_CNTVAL             (436/512)                             (939/1102)
+
+IPAD
+
+Tipadpo                   (1/1)                                 (1/1)
+
+ISERDESE1
+
+Tiscck_BITSLIP            (36/36)                               (77/77)
+Tiscck_CE                 (-14/-14, 59/59)                      (-24/-24, 163/163)
+Tiscck_RST_SYNC           (250/250, 251/251)                    (613/613, 725/725)
+Tisckc_BITSLIP            (74/74)                               (152/152)
+Tisckc_CE                 (-13/-13, 137/137)                    (9/9, 283/283)
+Tisckc_RST_SYNC           (-87/-87, -84/-84)                    (-124/-124, -129/-129)
+Tisckd_D                  (53/53)                               (110/110)
+Tisckd_DDLY               (39/39)                               (73/73)
+Tisckd_DDLY_DDR           (39/39)                               (73/73)
+Tisckd_D_DDR              (53/53)                               (110/110)
+Tisckd_OFB                (-124/-124)                           (-224/-224)
+Tisckd_OFB_DDR            (-124/-124)                           (-224/-224)
+Tiscko_Q                  (185/217)                             (406/477)
+Tisdck_D                  (8/8)                                 (29/29)
+Tisdck_DDLY               (22/22)                               (66/66)
+Tisdck_DDLY_DDR           (22/22)                               (66/66)
+Tisdck_D_DDR              (8/8)                                 (29/29)
+Tisdck_OFB                (185/185)                             (363/363)
+Tisdck_OFB_DDR            (185/185)                             (363/363)
+Tisdo_DO                  (84/98)                               (180/211)
+Tisdo_OFBO                (234/275)                             (429/504)
+
+MMCM_ADV
+
+Tmmcmckd_DADDR            (0/0)                                 (0/0)
+Tmmcmckd_DEN              (0/0)                                 (0/0)
+Tmmcmckd_DI               (0/0)                                 (0/0)
+Tmmcmckd_DWE              (0/0)                                 (0/0)
+Tmmcmckd_PSEN             (0/0)                                 (0/0)
+Tmmcmckd_PSINCDEC         (0/0)                                 (0/0)
+Tmmcmcko_CLKFBOUT         (100/115)                             (100/115)
+Tmmcmcko_CLKOUT           (100/115)                             (100/115)
+Tmmcmcko_DO               (0/1560)                              (0/3016)
+Tmmcmcko_DRDY             (194/224)                             (293/337)
+Tmmcmcko_PSDONE           (194/224)                             (293/337)
+Tmmcmco_CLKFBSTOPPED      (154/177)                             (301/346)
+Tmmcmco_CLKINSTOPPED      (154/177)                             (301/346)
+Tmmcmdck_DADDR            (584/584)                             (1398/1398)
+Tmmcmdck_DEN              (584/584)                             (1398/1398)
+Tmmcmdck_DI               (584/584)                             (1398/1398)
+Tmmcmdck_DWE              (584/584)                             (1398/1398)
+Tmmcmdck_PSEN             (1040/1040)                           (1040/1040)
+Tmmcmdck_PSINCDEC         (1040/1040)                           (1040/1040)
+
+OLOGICE1
+
+Tdoq                      (336/395, 341/400)                    (716/840, 739/867)
+Tockd                     (-133/-133, -53/-53)                  (-299/-299, -93/-93)
+Tockoce                   (-3/-3)                               (-43/-43)
+Tockq                     (210/246, 232/272)                    (437/512, 513/602)
+Tocksr                    (-140/-140, -138/-138)                (-265/-265, -261/-261)
+Tockt                     (-134/-134, -53/-53)                  (-285/-285, -88/-88)
+Tocktce                   (-3/-3)                               (-47/-47)
+Todck                     (165/165, 199/199)                    (363/363, 437/437)
+Todlq                     (362/425, 366/429)                    (768/901, 789/926)
+Tooceck                   (34/34)                               (67/67)
+Torecsck                  (331/331, 331/331)                    (730/730, 732/732)
+Toremsck                  (0/0)                                 (0/0)
+Tosrck                    (216/216, 216/216)                    (561/561, 563/563)
+Totceck                   (34/34)                               (72/72)
+Totck                     (165/165, 199/199)                    (363/363, 430/430)
+Trq                       (312/365, 348/409)                    (703/825, 761/893)
+
+OPAD
+
+Topadip                   (1/1)                                 (1/1)
+
+OSERDESE1
+
+Toscck_OCE                (34/34)                               (67/67)
+Toscck_SR_SYNC            (332/332)                             (727/727)
+Toscck_TCE                (34/34)                               (72/72)
+Tosckc_OCE                (-3/-3)                               (-43/-43)
+Tosckc_SR_SYNC            (-184/-184)                           (-333/-333)
+Tosckc_TCE                (-3/-3)                               (-47/-47)
+Tosckd_D                  (-49/-49)                             (-112/-112)
+Tosckd_T                  (-134/-134, -55/-55)                  (-285/-285, -98/-98)
+Tosckd_WC                 (11/11)                               (57/57)
+Toscko_OQ                 (194/227, 276/323)                    (454/533, 598/702)
+Toscko_TQ                 (194/227, 276/323)                    (454/533, 598/702)
+Tosdck_D                  (125/125)                             (254/254)
+Tosdck_T                  (137/137, 199/199)                    (269/269, 430/430)
+Tosdck_WC                 (68/68)                               (63/63)
+Tosdo_TTQ                 (335/394)                             (715/839)
+
+PCIE_2_0
+
+Tpcicck_MGT0              (54/54, 137/137)                      (-48/-48, 85/85)
+Tpcicck_MGT1              (141/141, 227/227)                    (77/77, 211/211)
+Tpcicck_MGT2              (58/58, 98/98)                        (-36/-36, 8/8)
+Tpcicck_MGT3              (113/113, 206/206)                    (25/25, 173/173)
+Tpcicck_MGT4              (54/54, 93/93)                        (-49/-49, 9/9)
+Tpcicck_MGT5              (99/99, 206/206)                      (16/16, 161/161)
+Tpcicck_MGT6              (61/61, 109/109)                      (-37/-37, 25/25)
+Tpcicck_MGT7              (136/136, 197/197)                    (71/71, 159/159)
+Tpcicck_PWR               (103/103, 127/127)                    (29/29, 60/60)
+Tpcicck_SCAN              (32/32, 2219/2219)                    (-36/-36, 1894/1894)
+Tpcickc_MGT0              (443/443, 488/488)                    (601/601, 697/697)
+Tpcickc_MGT1              (408/408, 442/442)                    (574/574, 619/619)
+Tpcickc_MGT2              (460/460, 489/489)                    (649/649, 695/695)
+Tpcickc_MGT3              (398/398, 462/462)                    (544/544, 651/651)
+Tpcickc_MGT4              (464/464, 489/489)                    (680/680, 699/699)
+Tpcickc_MGT5              (411/411, 469/469)                    (554/554, 671/671)
+Tpcickc_MGT6              (433/433, 491/491)                    (612/612, 699/699)
+Tpcickc_MGT7              (407/407, 445/445)                    (562/562, 623/623)
+Tpcickc_PWR               (438/438, 451/451)                    (612/612, 638/638)
+Tpcickc_SCAN              (369/369, 548/548)                    (462/462, 761/761)
+Tpcickd_CFG               (375/375, 503/503)                    (475/475, 710/710)
+Tpcickd_DBG               (366/366, 465/465)                    (470/470, 651/651)
+Tpcickd_DRP               (286/286, 366/366)                    (320/320, 435/435)
+Tpcickd_LL2               (444/444, 465/465)                    (612/612, 668/668)
+Tpcickd_PL                (371/371, 409/409)                    (493/493, 562/562)
+Tpcickd_PL2               (435/435, 458/458)                    (609/609, 630/630)
+Tpcickd_RSTN              (431/431, 459/459)                    (627/627, 661/661)
+Tpcickd_RXRAM             (441/441, 482/482)                    (641/641, 672/672)
+Tpcickd_TL2               (425/425, 448/448)                    (563/563, 617/617)
+Tpcickd_TRN               (362/362, 487/487)                    (493/493, 690/690)
+Tpcickd_TXRAM             (379/379, 505/505)                    (499/499, 713/713)
+Tpcicko_CFG               (51/304, 347/837)                     (132/367, 728/1264)
+Tpcicko_DBG               (51/310, 225/643)                     (132/363, 483/925)
+Tpcicko_DRP               (133/484, 226/647)                    (308/731, 484/924)
+Tpcicko_LL2               (55/330, 75/363)                      (139/385, 178/435)
+Tpcicko_MGT               (0/329, 0/509)                        (0/389, 98/628)
+Tpcicko_MGT0              (0/326, 0/389)                        (0/389, 12/485)
+Tpcicko_MGT1              (0/327, 7/467)                        (5/400, 136/597)
+Tpcicko_MGT2              (0/319, 0/392)                        (1/379, 11/515)
+Tpcicko_MGT3              (0/340, 0/467)                        (6/411, 77/566)
+Tpcicko_MGT4              (0/326, 0/402)                        (0/375, 15/523)
+Tpcicko_MGT5              (0/326, 0/471)                        (3/398, 112/580)
+Tpcicko_MGT6              (0/324, 0/380)                        (0/375, 11/478)
+Tpcicko_MGT7              (0/334, 0/492)                        (11/416, 117/621)
+Tpcicko_MSG               (56/322, 132/491)                     (145/401, 288/629)
+Tpcicko_PL                (89/399, 155/476)                     (195/476, 315/610)
+Tpcicko_PL2               (62/337, 69/353)                      (153/398, 163/428)
+Tpcicko_PWR               (54/311, 374/870)                     (140/383, 786/1424)
+Tpcicko_RSTN              (84/386, 116/413)                     (195/463, 252/530)
+Tpcicko_RXRAM             (0/0, 0/424)                          (0/0, 196/524)
+Tpcicko_TL2               (63/364, 66/340)                      (160/452, 156/398)
+Tpcicko_TRN               (56/321, 136/495)                     (139/375, 298/624)
+Tpcicko_TXRAM             (0/0, 36/512)                         (0/0, 300/627)
+Tpcidck_CFG               (57/57, 310/310)                      (-37/-37, 313/313)
+Tpcidck_DBG               (84/84, 275/275)                      (-36/-36, 301/301)
+Tpcidck_DRP               (206/206, 310/310)                    (263/263, 428/428)
+Tpcidck_LL2               (83/83, 136/136)                      (-7/-7, 62/62)
+Tpcidck_PL                (201/201, 274/274)                    (176/176, 309/309)
+Tpcidck_PL2               (114/114, 121/121)                    (25/25, 42/42)
+Tpcidck_RSTN              (111/111, 170/170)                    (55/55, 97/97)
+Tpcidck_RXRAM             (78/78, 114/114)                      (2/2, 45/45)
+Tpcidck_TL2               (157/157, 167/167)                    (86/86, 123/123)
+Tpcidck_TRN               (66/66, 471/471)                      (-25/-25, 565/565)
+Tpcidck_TXRAM             (57/57, 267/267)                      (-36/-36, 322/322)
+Tpcido_SCAN               (0/0, 523/602)                        (0/0, 588/676)
+
+RAMB18E1
+
+Trcck_ADDRA               (200/200)                             (410/410)
+Trcck_ADDRB               (200/200)                             (410/410)
+Trcck_RDEN                (167/167)                             (347/347)
+Trcck_REGCEA              (106/106)                             (187/187)
+Trcck_REGCEB              (106/106)                             (187/187)
+Trcck_RSTRAM              (175/175)                             (352/352)
+Trcck_WEA                 (221/221)                             (469/469)
+Trcck_WEB                 (221/221)                             (469/469)
+Trcck_WREN                (167/167)                             (347/347)
+Trckc_ADDRA               (193/193)                             (287/287)
+Trckc_ADDRB               (193/193)                             (287/287)
+Trckc_RDEN                (190/190)                             (270/270)
+Trckc_REGCEA              (154/154)                             (267/267)
+Trckc_REGCEB              (154/154)                             (267/267)
+Trckc_RSTRAM              (149/149)                             (239/239)
+Trckc_WEA                 (127/127)                             (196/196)
+Trckc_WEB                 (127/127)                             (196/196)
+Trckc_WREN                (190/190)                             (270/270)
+Trckd_DIA                 (198/198)                             (312/312)
+Trckd_DIB                 (198/198)                             (312/312)
+Trckd_DIPA                (198/198)                             (312/312)
+Trckd_DIPB                (198/198)                             (312/312)
+Trcko_DOA                 (454/807)                             (694/1784)
+Trcko_DOA_REG             (184/256)                             (396/652)
+Trcko_DOB                 (454/807)                             (694/1784)
+Trcko_DOB_REG             (184/256)                             (396/652)
+Trcko_DOPB                (454/807)                             (694/1784)
+Trcko_DOPB_REG            (184/256)                             (396/652)
+Trcko_DOP_REG             (184/256)                             (396/652)
+Trdck_DIA                 (261/261, 402/402)                    (251/251, 687/687)
+Trdck_DIB                 (261/261, 402/402)                    (251/251, 687/687)
+Trdck_DIPA                (261/261, 402/402)                    (251/251, 687/687)
+Trdck_DIPB                (261/261, 402/402)                    (251/251, 687/687)
+
+RAMB36E1
+
+Trcck_ADDRA               (200/200, 266/266)                    (410/410, 529/529)
+Trcck_ADDRB               (200/200, 266/266)                    (410/410, 529/529)
+Trcck_CLK                 (362/362)                             (1014/1014)
+Trcck_RDEN                (167/167)                             (347/347)
+Trcck_REGCE               (106/106)                             (187/187)
+Trcck_REGCEB              (106/106)                             (187/187)
+Trcck_RSTRAM              (175/175)                             (352/352)
+Trcck_RSTREG              (136/136)                             (239/239)
+Trcck_WEA                 (221/221)                             (469/469)
+Trcck_WEB                 (221/221)                             (469/469)
+Trcck_WREN                (167/167)                             (347/347)
+Trckc_ADDRA               (191/191, 193/193)                    (274/274, 287/287)
+Trckc_ADDRB               (191/191, 193/193)                    (274/274, 287/287)
+Trckc_CLK                 (201/201)                             (273/273)
+Trckc_RDEN                (190/190)                             (270/270)
+Trckc_REGCE               (154/154)                             (267/267)
+Trckc_REGCEB              (154/154)                             (267/267)
+Trckc_RSTRAM              (149/149)                             (239/239)
+Trckc_RSTREG              (174/174)                             (237/237)
+Trckc_WEA                 (127/127)                             (196/196)
+Trckc_WEB                 (127/127)                             (196/196)
+Trckc_WREN                (190/190)                             (270/270)
+Trckd_DIA                 (198/198)                             (312/312)
+Trckd_DIB                 (198/198)                             (312/312)
+Trckd_DIB_ECC             (198/198)                             (312/312)
+Trckd_DIPA                (198/198)                             (312/312)
+Trckd_DIPB                (198/198)                             (312/312)
+Trcko_CASCOUT             (183/259, 453/919)                    (395/742, 693/2157)
+Trcko_DO                  (454/807, 454/1103)                   (694/1784, 694/2890)
+Trcko_DOA_REG             (184/256, 184/263)                    (396/652, 396/762)
+Trcko_DOB                 (454/807, 454/1103)                   (694/1784, 694/2890)
+Trcko_DOB_REG             (184/256)                             (396/652)
+Trcko_DOP                 (454/1103)                            (694/2890)
+Trcko_DOPA_REG            (184/256)                             (396/652)
+Trcko_DOPB_REG            (184/256, 844/985)                    (396/652, 1796/2414)
+Trcko_DOP_REG             (184/256)                             (396/652)
+Trcko_DO_REG              (184/256)                             (396/652)
+Trcko_RDADDREC            (194/285)                             (398/790)
+Trcko_RDADDREC_REG        (224/296)                             (459/817)
+Trdck_DIA                 (260/260, 422/422)                    (515/515, 744/744)
+Trdck_DIB                 (261/261, 402/402)                    (251/251, 687/687)
+Trdck_DIB_ECC             (260/260, 422/422)                    (515/515, 744/744)
+Trdck_DIPA                (260/260, 422/422)                    (515/515, 744/744)
+Trdck_DIPB                (260/260, 422/422)                    (515/515, 744/744)
+Trdo_CASCINDO             (1/352)                               (1/716)
+
+SLICEL
+
+Tad                       (150/174, 301/346)                    (313/360, 607/700)
+Tad_logic                 (150/174, 301/346)                    (313/360, 607/700)
+Tah                       (-132/-132, 53/53)                    (-225/-225, 118/118)
+Tas                       (20/20, 210/210)                      (30/30, 377/377)
+Taxa                      (102/117, 150/172)                    (186/215, 287/331)
+Taxb                      (118/136, 168/192)                    (219/251, 318/366)
+Taxc                      (152/176, 180/207)                    (307/352, 362/416)
+Taxcy                     (101/116, 118/135)                    (210/241, 227/261)
+Taxd                      (174/201, 194/224)                    (366/422, 388/448)
+Tbxb                      (98/112, 140/160)                     (176/203, 280/322)
+Tbxc                      (138/159, 151/174)                    (269/309, 321/369)
+Tbxcy                     (89/103, 95/109)                      (171/197, 202/232)
+Tbxd                      (161/185, 172/198)                    (322/371, 363/418)
+Tbyp                      (28/32)                               (59/68)
+Tceck                     (74/74, 86/86)                        (210/210, 241/241)
+Tceo                      (186/213)                             (411/473)
+Tcina                     (86/99, 101/115)                      (160/186, 204/235)
+Tcinb                     (86/99, 108/125)                      (162/186, 211/242)
+Tcinc                     (93/107, 107/124)                     (181/208, 215/248)
+Tcinck                    (14/14, 79/79)                        (49/49, 153/153)
+Tcind                     (104/119, 118/136)                    (209/241, 243/280)
+Tckce                     (-15/-15, -9/-9)                      (-35/-35, -30/-30)
+Tckcin                    (-18/-18, 33/33)                      (-31/-31, 85/85)
+Tckdi                     (-94/-94, 68/68)                      (-176/-176, 151/151)
+Tcklo                     (103/119, 108/125)                    (256/294, 260/299)
+Tcko                      (101/115, 106/121)                    (242/278, 246/283)
+Tcksr                     (-80/-80, -69/-69)                    (-133/-133, -125/-125)
+Tcxb                      (121/140)                             (231/267)
+Tcxc                      (102/118, 112/129)                    (188/217, 216/249)
+Tcxcy                     (63/73, 66/76)                        (117/134, 142/163)
+Tcxd                      (123/141, 142/163)                    (241/278, 292/336)
+Tdick                     (1/1, 167/167)                        (-8/-8, 321/321)
+Tdxcy                     (61/70, 62/72)                        (115/132, 133/153)
+Tdxd                      (137/157, 138/159)                    (265/305, 283/326)
+Tilo                      (37/43, 143/165)                      (53/61, 267/308)
+Tito                      (133/153, 263/303)                    (270/311, 558/644)
+Tito_logic                (133/153, 263/303)                    (270/311, 558/644)
+Topaa                     (139/160, 164/188)                    (251/289, 316/364)
+Topab                     (155/179, 205/235)                    (296/341, 369/424)
+Topac                     (194/225, 218/250)                    (385/441, 428/493)
+Topad                     (216/250, 234/269)                    (444/511, 460/529)
+Topba                     (136/157)                             (253/291)
+Topbb                     (137/158, 193/221)                    (252/290, 379/436)
+Topbc                     (182/210, 213/245)                    (349/401, 422/486)
+Topbd                     (205/236, 231/266)                    (402/463, 456/525)
+Topcb                     (162/187)                             (310/358)
+Topcc                     (141/162, 160/184)                    (265/304, 288/332)
+Topcd                     (163/187, 204/235)                    (325/374, 407/468)
+Topcya                    (143/165, 158/182)                    (288/330, 310/356)
+Topcyb                    (133/154, 155/179)                    (251/289, 306/352)
+Topcyc                    (105/122, 128/148)                    (195/223, 257/295)
+Topcyd                    (103/119, 123/141)                    (192/220, 242/279)
+Topdb                     (161/185)                             (306/354)
+Topdc                     (142/163)                             (263/304)
+Topdd                     (138/159, 199/228)                    (265/306, 392/452)
+Trck                      (119/119, 133/133)                    (250/250, 339/339)
+Tremck                    (-79/-79, -73/-73)                    (-172/-172, -167/-167)
+Trq                       (178/205, 242/278)                    (405/466, 503/579)
+Tshcko                    (138/159, 140/161)                    (309/356, 310/357)
+Tsrck                     (176/176, 183/183)                    (422/422, 431/431)
+
+SLICEM
+
+Tad                       (150/174, 314/360)                    (297/342, 630/724)
+Tad_logic                 (150/174, 314/360)                    (297/342, 630/724)
+Tah                       (-120/-120, 280/280)                  (-200/-200, 589/589)
+Tas                       (-120/-120, 200/200)                  (-206/-206, 356/356)
+Taxa                      (109/126, 158/181)                    (200/230, 304/350)
+Taxb                      (122/140, 179/205)                    (243/280, 339/390)
+Taxc                      (155/179, 192/220)                    (311/358, 382/439)
+Taxcy                     (101/116, 125/144)                    (210/241, 241/278)
+Taxd                      (174/201, 202/233)                    (367/423, 404/465)
+Tbxb                      (105/120, 146/168)                    (187/214, 279/320)
+Tbxc                      (145/167, 157/181)                    (283/325, 327/376)
+Tbxcy                     (93/107, 99/113)                      (180/207, 205/236)
+Tbxd                      (166/191, 175/200)                    (331/381, 352/406)
+Tbyp                      (28/32)                               (59/68)
+Tceck                     (32/32, 139/139)                      (64/64, 327/327)
+Tceo                      (190/219)                             (417/479)
+Tcina                     (87/100, 101/115)                     (160/186, 204/235)
+Tcinb                     (89/103, 111/128)                     (167/191, 216/249)
+Tcinc                     (96/110, 110/127)                     (185/213, 220/253)
+Tcinck                    (-5/-5, 61/61)                        (13/13, 112/112)
+Tcind                     (104/119, 119/137)                    (206/238, 244/281)
+Tckce                     (-21/-21, -3/-3)                      (-23/-23, -18/-18)
+Tckcin                    (2/2, 53/53)                          (12/12, 123/123)
+Tckclk                    (-715/-715, 884/884)                  (-1273/-1273, 1590/1590)
+Tckdi                     (-81/-81, 79/79)                      (-148/-148, 170/170)
+Tcklo                     (127/147, 133/153)                    (277/318, 282/323)
+Tcko                      (118/137, 124/143)                    (276/317, 281/322)
+Tckrlo                    (463/533, 909/1044)                   (1186/1364, 1703/1958)
+Tcksr                     (-59/-59, -48/-48)                    (-93/-93, -86/-86)
+Tcxb                      (130/150)                             (247/283)
+Tcxc                      (110/126, 123/141)                    (224/257, 234/269)
+Tcxcy                     (66/76, 71/81)                        (143/164, 129/149)
+Tcxd                      (125/143, 147/168)                    (264/304, 276/319)
+Tdh                       (-143/-143, 87/87)                    (-308/-308, 191/191)
+Tdick                     (-8/-8, 157/157)                      (-6/-6, 296/296)
+Tds                       (-25/-25, 311/311)                    (-56/-56, 751/751)
+Tdxcy                     (63/73, 65/75)                        (137/157, 124/142)
+Tdxd                      (139/160, 141/162)                    (284/327, 271/312)
+Tilo                      (37/43, 147/169)                      (53/61, 271/312)
+Tito                      (146/168, 275/317)                    (295/340, 578/664)
+Tito_logic                (146/168, 275/317)                    (295/340, 578/664)
+Topaa                     (137/158, 172/197)                    (248/286, 310/356)
+Topab                     (157/181, 216/248)                    (297/341, 393/451)
+Topac                     (197/228, 228/262)                    (390/448, 436/501)
+Topad                     (216/250, 241/276)                    (446/513, 456/525)
+Topba                     (136/157)                             (253/291)
+Topbb                     (139/160, 196/225)                    (255/295, 384/442)
+Topbc                     (189/218, 214/246)                    (363/418, 424/488)
+Topbd                     (210/242, 232/267)                    (411/474, 453/522)
+Topcb                     (166/191)                             (314/361)
+Topcc                     (144/165, 170/195)                    (267/307, 312/358)
+Topcd                     (164/188, 204/235)                    (326/376, 403/464)
+Topcya                    (143/165, 163/187)                    (289/331, 296/340)
+Topcyb                    (137/158, 156/180)                    (260/300, 306/352)
+Topcyc                    (108/125, 128/148)                    (222/254, 256/294)
+Topcyd                    (105/122, 123/141)                    (215/246, 240/277)
+Topdb                     (165/189)                             (311/358)
+Topdc                     (146/167)                             (268/309)
+Topdd                     (139/160, 199/228)                    (263/304, 387/447)
+Trck                      (98/98, 114/114)                      (210/210, 296/296)
+Treg                      (432/496, 840/965)                    (1083/1245, 1525/1755)
+Tremck                    (-58/-58, -52/-52)                    (-131/-131, -126/-126)
+Trq                       (179/205, 242/278)                    (400/460, 504/580)
+Tshcko                    (158/181, 553/635)                    (343/394, 1346/1549)
+Tsrck                     (153/153, 161/161)                    (373/373, 381/381)
+Twh                       (-10/-10, -4/-4)                      (-13/-13, -8/-8)
+Twosco                    (420/484, 764/878)                    (1101/1266, 1378/1585)
+Tws                       (20/20, 127/127)                      (53/53, 316/316)
+
+SYSMON
+
+Tmoncck_DEN               (236/236)                             (550/550)
+Tmoncck_DWE               (216/216)                             (524/524)
+Tmonckc_DEN               (-162/-162)                           (-375/-375)
+Tmonckc_DWE               (-154/-154)                           (-373/-373)
+Tmonckd_DADR              (-125/-125)                           (-324/-324)
+Tmonckd_DI                (-139/-139)                           (-344/-344)
+Tmoncko_ALARM             (396/492)                             (836/1016)
+Tmoncko_BUSY              (441/545)                             (886/1101)
+Tmoncko_CHANNEL           (378/526)                             (808/1082)
+Tmoncko_DO                (244/329)                             (516/638)
+Tmoncko_EOC               (394/487)                             (819/986)
+Tmoncko_EOS               (407/520)                             (867/1068)
+Tmoncko_JTAG              (265/344, 287/373)                    (562/670, 605/744)
+Tmoncko_OT                (396/514)                             (835/1055)
+Tmoncko_RDY               (265/356)                             (564/695)
+Tmondck_DADR              (209/209)                             (508/508)
+Tmondck_DI                (234/234)                             (572/572)
+
+TEMAC_SINGLE
+
+Tmaccck_DCRABUS           (156/156)                             (156/156)
+Tmaccck_DCRDBUS           (260/260)                             (468/468)
+Tmacckc_DCRABUS           (281/281)                             (489/489)
+Tmacckc_DCRDBUS           (281/281)                             (489/489)
+Tmacckd_CHAR              (229/229)                             (458/458)
+Tmacckd_COL               (291/291)                             (603/603)
+Tmacckd_COMMA             (281/281)                             (489/489)
+Tmacckd_CORCNT            (291/291)                             (603/603)
+Tmacckd_CRS               (302/302)                             (614/614)
+Tmacckd_DCMLOCK           (364/364)                             (884/884)
+Tmacckd_DCRRW             (177/177, 218/218)                    (281/281, 260/260)
+Tmacckd_DELAY             (343/343)                             (863/863)
+Tmacckd_DETECT            (291/291)                             (603/603)
+Tmacckd_DISP              (281/281)                             (489/489)
+Tmacckd_ENABLE            (187/187)                             (229/229)
+Tmacckd_ERROR             (281/281, 343/343)                    (489/489, 863/863)
+Tmacckd_HOST              (166/166, 281/281)                    (187/187, 489/489)
+Tmacckd_MDIN              (270/270)                             (478/478)
+Tmacckd_NOTINT            (270/270)                             (520/520)
+Tmacckd_PAUSE             (343/343, 364/364)                    (863/863, 884/884)
+Tmacckd_PHYAD             (270/270)                             (520/520)
+Tmacckd_RXD               (250/250)                             (478/478)
+Tmacckd_STATUS            (250/250)                             (478/478)
+Tmacckd_TIBUS             (250/250, 312/312)                    (478/478, 520/520)
+Tmacckd_TST               (281/281, 291/291)                    (489/489, 603/603)
+Tmacckd_TXD               (354/354, 364/364)                    (874/874, 884/884)
+Tmacckd_VALID             (333/333, 354/354)                    (541/541, 874/874)
+Tmaccko_ACK               (244/281, 253/291)                    (1085/1248, 503/578)
+Tmaccko_CHAR              (325/374)                             (678/780)
+Tmaccko_CLKOUT            (208/239, 750/863)                    (542/624, 1627/1872)
+Tmaccko_COMMA             (371/426)                             (806/928)
+Tmaccko_DCRDBUS           (533/614)                             (834/959)
+Tmaccko_DCRDONE           (298/343)                             (622/716)
+Tmaccko_DISP              (325/374, 325/374)                    (665/765, 669/770)
+Tmaccko_DOUT              (344/395, 434/499)                    (429/493, 429/493)
+Tmaccko_EN                (289/333, 380/437)                    (732/842, 823/946)
+Tmaccko_ERROR             (226/260, 380/437)                    (886/1019, 819/942)
+Tmaccko_FRAME             (316/364, 334/385)                    (669/770, 734/844)
+Tmaccko_HOST              (398/458, 461/530)                    (846/973, 1022/1175)
+Tmaccko_IRQ               (398/458)                             (779/896)
+Tmaccko_LOOPBACK          (425/489)                             (797/917)
+Tmaccko_MDTRI             (344/395, 434/499)                    (416/478, 416/478)
+Tmaccko_POWER             (416/478)                             (810/932)
+Tmaccko_RESET             (344/395, 353/406)                    (727/836, 745/857)
+Tmaccko_RETRANS           (217/250)                             (886/1019)
+Tmaccko_RXD               (334/385, 334/385)                    (709/815, 725/834)
+Tmaccko_SPEED             (190/218)                             (573/659)
+Tmaccko_STATS             (344/395, 425/489)                    (904/1040, 1110/1277)
+Tmaccko_SYNC              (353/406)                             (767/882)
+Tmaccko_TOBUS             (515/593)                             (1269/1460)
+Tmaccko_TST               (371/426)                             (839/965)
+Tmaccko_TXCLK             (190/218)                             (340/391)
+Tmaccko_TXD               (316/364, 407/468)                    (796/915, 886/1019)
+Tmaccko_VALID             (253/291, 371/426)                    (705/811, 987/1136)
+Tmacdck_CHAR              (156/156)                             (156/156)
+Tmacdck_COL               (156/156)                             (156/156)
+Tmacdck_COMMA             (156/156)                             (156/156)
+Tmacdck_CORCNT            (156/156)                             (156/156)
+Tmacdck_CRS               (156/156)                             (156/156)
+Tmacdck_DCMLOCK           (52/52)                               (52/52)
+Tmacdck_DCRRW             (156/156)                             (156/156)
+Tmacdck_DELAY             (156/156)                             (156/156)
+Tmacdck_DETECT            (156/156)                             (156/156)
+Tmacdck_DISP              (156/156)                             (239/239)
+Tmacdck_ENABLE            (156/156)                             (156/156)
+Tmacdck_ERROR             (156/156, 177/177)                    (156/156, 312/312)
+Tmacdck_HOST              (260/260, 468/468)                    (520/520, 780/780)
+Tmacdck_MDIN              (156/156)                             (156/156)
+Tmacdck_NOTINT            (468/468)                             (884/884)
+Tmacdck_PAUSE             (52/52, 156/156)                      (73/73, 156/156)
+Tmacdck_PHYAD             (156/156)                             (364/364)
+Tmacdck_RXD               (364/364)                             (728/728)
+Tmacdck_STATUS            (156/156)                             (156/156)
+Tmacdck_TIBUS             (156/156)                             (156/156)
+Tmacdck_TST               (156/156, 676/676)                    (156/156, 1404/1404)
+Tmacdck_TXD               (52/52, 156/156)                      (150/150, 156/156)
+Tmacdck_VALID             (62/62, 156/156)                      (125/125, 156/156)
+Tmacrec_RESET             (416/416)                             (936/936)
+Tmacrem_RESET             (312/312)                             (624/624)
+
+Iostandard adjustments:
+To use the following  numbers, add the adjustment you are using to the delays reported for the IOBs
+                                         Input          Output
+ Standard Name         Slew    Drive    Adjustment     Adjustment
+ =============         ====    =====    ==========     ==========
+ LVCMOS25              SLOW       12           598           1939
+ LVCMOS25              FAST       12           598           1868
+ LVCMOS25              SLOW        2           598           5454
+ LVCMOS25              FAST        2           598           5483
+ LVCMOS25              SLOW        4           598           3487
+ LVCMOS25              FAST        4           598           3491
+ LVCMOS25              SLOW        6           598           2798
+ LVCMOS25              FAST        6           598           2726
+ LVCMOS25              SLOW        8           598           2407
+ LVCMOS25              FAST        8           598           2318
+ LVCMOS25              SLOW       16           598           2044
+ LVCMOS25              FAST       16           598           1909
+ LVCMOS25              SLOW       24           598           1814
+ LVCMOS25              FAST       24           598           1786
+ LVCMOS18              SLOW       12           642           1980
+ LVCMOS18              FAST       12           642           1796
+ LVCMOS18              SLOW        2           642           4467
+ LVCMOS18              FAST        2           642           4220
+ LVCMOS18              SLOW        4           642           2948
+ LVCMOS18              FAST        4           642           2753
+ LVCMOS18              SLOW        6           642           2427
+ LVCMOS18              FAST        6           642           2268
+ LVCMOS18              SLOW        8           642           2106
+ LVCMOS18              FAST        8           642           1982
+ LVCMOS18              SLOW       16           642           1939
+ LVCMOS18              FAST       16           642           1736
+ LVCMOS15              SLOW       12           762           1902
+ LVCMOS15              FAST       12           762           1761
+ LVCMOS15              SLOW        2           762           3767
+ LVCMOS15              FAST        2           762           3767
+ LVCMOS15              SLOW        4           762           2778
+ LVCMOS15              FAST        4           762           2526
+ LVCMOS15              SLOW        6           762           2311
+ LVCMOS15              FAST        6           762           2041
+ LVCMOS15              SLOW        8           762           1973
+ LVCMOS15              FAST        8           762           1893
+ LVCMOS15              SLOW       16           762           1820
+ LVCMOS15              FAST       16           762           1748
+ LVCMOS12              SLOW        6           847           2105
+ LVCMOS12              FAST        6           847           1886
+ LVCMOS12              SLOW        2           847           3380
+ LVCMOS12              FAST        2           847           2974
+ LVCMOS12              SLOW        4           847           2619
+ LVCMOS12              FAST        4           847           2154
+ LVCMOS12              SLOW        8           847           2013
+ LVCMOS12              FAST        8           847           1814
+ LVDCI_25                                      598           2129
+ LVDCI_18                                      642           2225
+ LVDCI_15                                      762           2000
+ HSLVDCI_25                                    958           2129
+ HSLVDCI_18                                    958           2225
+ HSLVDCI_15                                    958           2000
+ LVDCI_DV2_25                                  598           1826
+ LVDCI_DV2_18                                  642           1804
+ LVDCI_DV2_15                                  762           1763
+ HSTL_I                                        958           1551
+ HSTL_II                                       958           1553
+ HSTL_III                                      958           1528
+ HSTL_I_DCI                                    958           1497
+ HSTL_II_DCI                                   958           1487
+ HSTL_II_T_DCI                                 958           1497
+ HSTL_III_DCI                                  958           1444
+ HSTL_I_18                                     958           1573
+ HSTL_II_18                                    958           1616
+ HSTL_III_18                                   958           1530
+ HSTL_I_DCI_18                                 958           1518
+ HSTL_II_DCI_18                                958           1454
+ HSTL_II_T_DCI_18                              958           1518
+ HSTL_III_DCI_18                               958           1528
+ HSTL_I_12                                     958           1589
+ SSTL2_I                                       958           1594
+ SSTL2_II                                      958           1534
+ SSTL18_I                                      958           1573
+ SSTL18_II                                     958           1494
+ SSTL15                                        958           1529
+ SSTL2_I_DCI                                   958           1523
+ SSTL2_II_DCI                                  958           1495
+ SSTL2_II_T_DCI                                958           1523
+ SSTL18_I_DCI                                  958           1501
+ SSTL18_II_DCI                                 958           1460
+ SSTL18_II_T_DCI                               958           1501
+ SSTL15_DCI                                    958           1511
+ SSTL15_T_DCI                                  958           1511
+ BLVDS_25                                      993           1495
+ LVPECL_25                                     993           1481
+ DIFF_HSTL_I                                   993           1551
+ DIFF_HSTL_II                                  993           1553
+ DIFF_HSTL_I_18                                993           1573
+ DIFF_HSTL_II_18                               993           1616
+ DIFF_SSTL2_I                                  993           1594
+ DIFF_SSTL2_II                                 993           1534
+ DIFF_SSTL18_I                                 993           1573
+ DIFF_SSTL18_II                                993           1494
+ DIFF_SSTL15                                   958           1529
+ DIFF_HSTL_I_DCI                               993           1497
+ DIFF_HSTL_II_DCI                              993           1487
+ DIFF_HSTL_II_T_DCI                            993           1497
+ DIFF_HSTL_I_DCI_18                            993           1518
+ DIFF_HSTL_II_DCI_18                           993           1454
+ DIFF_HSTL_II_T_DCI_18                         993           1518
+ DIFF_SSTL2_I_DCI                              993           1523
+ DIFF_SSTL2_II_DCI                             993           1495
+ DIFF_SSTL2_II_T_DCI                           993           1523
+ DIFF_SSTL18_I_DCI                             993           1501
+ DIFF_SSTL18_II_DCI                            993           1460
+ DIFF_SSTL18_II_T_DCI                          993           1501
+ DIFF_SSTL15_DCI                               958           1511
+ DIFF_SSTL15_T_DCI                             958           1511
+ LVDS_25                                       993           1536
+ RSDS_25                                       993           1536
+ LVDSEXT_25                                    993           1646
+ HT_25                                         993           1608

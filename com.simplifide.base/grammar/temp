@@ -1,0 +1,159 @@
+Unable to locate tools.jar. Expected to find it in C:\Program Files (x86)\Java\jre1.6.0_05\lib\tools.jar
+Buildfile: build.xml
+
+clean:
+
+verilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+     [copy] Copying 1 file to D:\eclipse_dev3\com.simplifide.base\grammar\verilog
+
+systemverilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:24:9: warning:Redefinition of token in tokens {...}: MODULEITEM
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:127:17: warning:Redefinition of token in tokens {...}: PORTLIST
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39:     k==1:IDENTIFIER
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39:     k==2:EOF,"`ifdef","`ifndef","`define","`include","`timescale","module","macromodule",LPAREN,IDENTIFIER,"generate","primitive","task","function","automatic","integer","real","tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","assign","defparam","and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1",POUND,"initial","always","specify","specparam",ESCAPED_IDENTIFIER,"input","inout","output","parameter","localparam","typedef","time","shortreal","realtime","shortint","longint","logic","reg","wire","genvar","static","interface","endinterface","extern","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62:     k==1:EOF,"`ifdef","`ifndef","`define","`include","`timescale","module","macromodule",LPAREN,IDENTIFIER,"generate","primitive","task","function","automatic","integer","real","tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","assign","defparam","and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1","initial","always","specify","specparam",ESCAPED_IDENTIFIER,"input","inout","output","parameter","localparam","typedef","time","shortreal","realtime","shortint","longint","logic","reg","wire","genvar","static","interface","endinterface","extern","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62:     k==2:EOF,ROOT,DESIGNUNIT,CONTEXTCLAUSE,CONTEXTITEM,DEFINEDIRECTIVE,INCLUDEDIRECTIVE,MODULE,MODULEHEAD,MODULEBODY,MODULEITEM,MODULEDEC,MODULENAME,PORTCLAUSE,PORTLIST,PORTELEMENT,PORTTOP,PORT,PORTNODOT,PORTDOT,PORTEXPRESSION,VARDEC,VARTYPE,VARRANGE,VARLIST,VARNAME,REGMEM,REGMEMARRAY,PARDEC,PARASSIGN,CONTINUOUS_ASSIGN,ASSIGNLIST,ASSIGNMENT,IDENTRANGE,SEGMENTRANGE,QUESTTOP,QUESTIONSEGMENT,PAROP,UNOP,BINOP,BINOPSMALL,CONCAT,ALWAYSTOP,ALWAYSHEAD,EVENTCONTROL,EVENTEXPRESSION,EVENTEXPRESSIONSUB,TOTALASSIGN,CONDITIONTOP,CONDITIONHEAD,CONDITIONELSE,CASETOP,CASEHEAD,CASELIST,CASEEXPRESSION,CASENORMAL,CASEDEFAULT,BEGENDBLOCK,SEQBLOCKNAMEQ,STATELIST,MODITEM,MODINSTANCETOP,MODINSTANCE,INSTANCENAME,INSTANCEPORTLIST,INSTANCEPORT,PORTCON,IDENTIFIERPATH,NAME,NAMERANGE,NAMEDOT,NAMEEXPRESSION,DRIVESTRENGTHQ,DELAYQ,DELAYOREVENTCONTROLQ,TASK,FUNCTION,TASKVARDECLARATION,FUNCTIONVARDECLARATION,RANGEORTYPE,PARAMETEROVERRIDE,IFDEFDIRECTIVE,IFDEFHEAD,IFDEFCOND,TIMESCALEDIRECTIVE,"`ifdef","`ifndef","`else","`endif","`define","`include","`timescale",GENERATEITEM,RANGEPARAM,PRIMITIVEDEFINITION,TABLEDEFINITION,SPECIFYBLOCK,SPECIFYITEM,SPECPARAMDECLARATION,PATHDECLARATION,EDGESENSITIVEPATHDECLARATION,SDPD,SIMPLEPATHDECLARATION,PARALLELPATHDECLARATION,FULLPATHDESCRIPTOR,LEVELSENSITIVEPATHDECLARATION,RANGEORTYPEQ,AUTOMATICQ,"endmodule","module","macromodule",SEMI,LPAREN,RPAREN,COMMA,IDENTIFIER,LBRACE,RBRACE,LBRACK,COLON,RBRACK,"generate","endgenerate","1'b0","1'b1","1'bx",NUMBER,"primitive","endprimitive","table","endtable","task","endtask","function","endfunction","automatic","integer","real","QQQQQDDDDDEEEEEEEFFFFFFFf","PPPPPQQDDDDDEEEEEEEFFFFFFFf",ASSIGN,"tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","scalared","vectored","assign","defparam","small","medium","large","strong0","pull0","weak0","highz0","strong1","pull1","weak1","highz1",PLUS,MINUS,"and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1",POUND,DEFINE,DOT,"initial","always",LE,"if","else","endcase","default","case","casez","casex","forever","repeat","while","for","wait",TRIGGER,"disable","begin","end","fork","join","deassign","force","release","specify","endspecify","specparam",PPATH,FPATH,"$setup","$hold","$period","$width","$skew","$recovery","$setuphold","&&&","posedge","negedge","edge","0x","1x",LCURLY,RCURLY,STRING,QUESTION,LNOT,BNOT,BAND,RNAND,BOR,RNOR,BXOR,RXNOR,STAR,DIV,MOD,EQUAL,NOT_EQ,EQ_CASE,NOT_EQ_CASE,LAND,LOR,LT_,GT,GE,BXNOR,SR,SL,SRS,SLS,POW,ESCAPED_IDENTIFIER,AT,DOUBLE_COLON,ESC,HEX_DIGIT,VOCAB,SIZED_NUMBER,SIZE,BASE,SIZED_DIGIT,UNSIZED_NUMBER,DIGIT,HEXDIGIT,EXPONENT,WS_,NEWLINE_,SL_COMMENT,ML_COMMENT,OTHER_SPECIAL_CHARACTER,IMPORTCLAUSE,SYSVARDEC,SYSVARTYPE,SIGNTYPE,IOPORTDEC,IODEC,SYSNODEC,STRUCTDEF,PACKTYPE,STRUCTTYPE,TOPDEC,CONSTDEC,INPUTOUTPUTDEC,SYSDEC,STRUCTDEC,ENUMDEC,DECTYPE,DECNOTYPE,ENUMLIST,STRUCTLIST,ENUMELEMENT,RANGETOP,PACKAGE,IMPORTSTATE,VARIDENT,FIRSTIDENT,LOCALIDENT,MODULEDECLARATION,MODULEINSTANTIATION,MODULEINSTANCE,NAMEOFINSTANCE,LISTOFPORTORDERED,LISTOFPORTNAMED,NAMEPORTSTAR,NAMEPORTEXPR,NAMEPORTIDENT,PARAMETERVALUEASSIGNMENT,ORDEREDPARAMETERLIST,NAMEDPARAMETERLIST,ORDEREDPARAMETERASSIGNMENT,NAMEDPARAMETERASSIGNMENT,PARAMETERPORTLIST,ANSIPORTLIST,NOANSIPORTLIST,DATATYPEORNULL,PARAMETERDIMENSIONNODE,TYPEDECINTEGERVECTOR,TYPEDECINTEGERATOM,TYPEDECIDENTIFIER,TYPEDECNONINTEGER,SIGNING,PACKEDDIMENSION,PORTTYPENET,PORTTYPETRIREG,PORTTYPEEMPTY,RANGEQ,TYPEDEF,TYPEDEFDATATYPE,LIFETIME,VARIABLEDECLARATION,LISTOFVARIABLEIDENTIFIERS,VARIABLEIDENT,IODECLARATIONTOP,IODECLARATION,NETDECLARATION,LISTOFNETDECLASSIGNMENTS,NETDECLARATIONASSIGNMENT,PARAMETERDECLARATION,PARAMETERDECLARATIONSEMI,LISTOFPARAMASSIGNMENTS,PARAMASSIGNMENT,ANSIPORTLISTQ,GENERATEIF,GENERATECASE,GENERATEFOR,GENERATEMODULEBLOCK,GENERATEMODULEBLOCKIDENT,COLONIDENTIFIERQ,GENVARASSIGNMENT,GENVARDECLASSIGNMENT,"input","inout","output","ref","parameter","localparam","typedef","time","shortreal","realtime","integer_vector_type","integer_atom_type","shortint","longint","logic","reg","wire","genvar","signed","unsigned","static",INDENTIFIER,"++","--","interface","endinterface","extern","modport","clocking","import","export","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:36: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:36:     k==1:IDENTIFIER
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:36:     k==2:EOF,LPAREN,POUND
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:59: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:59:     k==1:EOF,LPAREN
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:59:     k==2:EOF,RPAREN,COMMA,IDENTIFIER,"input","inout","output"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:82: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:82:     k==1:EOF
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:408:82:     k==2:EOF
+
+cleanbuild:
+
+vhdl:
+
+copyfiles:
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\verilog
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\system
+
+total:
+     [echo] Ant Done
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Unable to locate tools.jar. Expected to find it in C:\Program Files (x86)\Java\jre1.6.0_05\lib\tools.jar
+Buildfile: build.xml
+
+clean:
+
+verilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+     [copy] Copying 1 file to D:\eclipse_dev3\com.simplifide.base\grammar\verilog
+
+systemverilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:24:9: warning:Redefinition of token in tokens {...}: MODULEITEM
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:127:17: warning:Redefinition of token in tokens {...}: PORTLIST
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39:     k==1:IDENTIFIER
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:39:     k==2:EOF,"`ifdef","`ifndef","`define","`include","`timescale","module","macromodule",LPAREN,IDENTIFIER,"generate","primitive","task","function","automatic","integer","real","tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","assign","defparam","and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1",POUND,"initial","always","specify","specparam",ESCAPED_IDENTIFIER,"input","inout","output","parameter","localparam","typedef","time","shortreal","realtime","shortint","longint","logic","reg","wire","genvar","static","interface","endinterface","extern","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62:     k==1:EOF,"`ifdef","`ifndef","`define","`include","`timescale","module","macromodule",LPAREN,IDENTIFIER,"generate","primitive","task","function","automatic","integer","real","tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","assign","defparam","and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1","initial","always","specify","specparam",ESCAPED_IDENTIFIER,"input","inout","output","parameter","localparam","typedef","time","shortreal","realtime","shortint","longint","logic","reg","wire","genvar","static","interface","endinterface","extern","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:62:     k==2:EOF,ROOT,DESIGNUNIT,CONTEXTCLAUSE,CONTEXTITEM,DEFINEDIRECTIVE,INCLUDEDIRECTIVE,MODULE,MODULEHEAD,MODULEBODY,MODULEITEM,MODULEDEC,MODULENAME,PORTCLAUSE,PORTLIST,PORTELEMENT,PORTTOP,PORT,PORTNODOT,PORTDOT,PORTEXPRESSION,VARDEC,VARTYPE,VARRANGE,VARLIST,VARNAME,REGMEM,REGMEMARRAY,PARDEC,PARASSIGN,CONTINUOUS_ASSIGN,ASSIGNLIST,ASSIGNMENT,IDENTRANGE,SEGMENTRANGE,QUESTTOP,QUESTIONSEGMENT,PAROP,UNOP,BINOP,BINOPSMALL,CONCAT,ALWAYSTOP,ALWAYSHEAD,EVENTCONTROL,EVENTEXPRESSION,EVENTEXPRESSIONSUB,TOTALASSIGN,CONDITIONTOP,CONDITIONHEAD,CONDITIONELSE,CASETOP,CASEHEAD,CASELIST,CASEEXPRESSION,CASENORMAL,CASEDEFAULT,BEGENDBLOCK,SEQBLOCKNAMEQ,STATELIST,MODITEM,MODINSTANCETOP,MODINSTANCE,INSTANCENAME,INSTANCEPORTLIST,INSTANCEPORT,PORTCON,IDENTIFIERPATH,NAME,NAMERANGE,NAMEDOT,NAMEEXPRESSION,DRIVESTRENGTHQ,DELAYQ,DELAYOREVENTCONTROLQ,TASK,FUNCTION,TASKVARDECLARATION,FUNCTIONVARDECLARATION,RANGEORTYPE,PARAMETEROVERRIDE,IFDEFDIRECTIVE,IFDEFHEAD,IFDEFCOND,TIMESCALEDIRECTIVE,"`ifdef","`ifndef","`else","`endif","`define","`include","`timescale",GENERATEITEM,RANGEPARAM,PRIMITIVEDEFINITION,TABLEDEFINITION,SPECIFYBLOCK,SPECIFYITEM,SPECPARAMDECLARATION,PATHDECLARATION,EDGESENSITIVEPATHDECLARATION,SDPD,SIMPLEPATHDECLARATION,PARALLELPATHDECLARATION,FULLPATHDESCRIPTOR,LEVELSENSITIVEPATHDECLARATION,RANGEORTYPEQ,AUTOMATICQ,"endmodule","module","macromodule",SEMI,LPAREN,RPAREN,COMMA,IDENTIFIER,LBRACE,RBRACE,LBRACK,COLON,RBRACK,"generate","endgenerate","1'b0","1'b1","1'bx",NUMBER,"primitive","endprimitive","table","endtable","task","endtask","function","endfunction","automatic","integer","real","QQQQQDDDDDEEEEEEEFFFFFFFf","PPPPPQQDDDDDEEEEEEEFFFFFFFf",ASSIGN,"tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","scalared","vectored","assign","defparam","small","medium","large","strong0","pull0","weak0","highz0","strong1","pull1","weak1","highz1",PLUS,MINUS,"and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1",POUND,DEFINE,DOT,"initial","always",LE,"if","else","endcase","default","case","casez","casex","forever","repeat","while","for","wait",TRIGGER,"disable","begin","end","fork","join","deassign","force","release","specify","endspecify","specparam",PPATH,FPATH,"$setup","$hold","$period","$width","$skew","$recovery","$setuphold","&&&","posedge","negedge","edge","0x","1x",LCURLY,RCURLY,STRING,QUESTION,LNOT,BNOT,BAND,RNAND,BOR,RNOR,BXOR,RXNOR,STAR,DIV,MOD,EQUAL,NOT_EQ,EQ_CASE,NOT_EQ_CASE,LAND,LOR,LT_,GT,GE,BXNOR,SR,SL,SRS,SLS,POW,ESCAPED_IDENTIFIER,AT,DOUBLE_COLON,ESC,HEX_DIGIT,VOCAB,SIZED_NUMBER,SIZE,BASE,SIZED_DIGIT,UNSIZED_NUMBER,DIGIT,HEXDIGIT,EXPONENT,WS_,NEWLINE_,SL_COMMENT,ML_COMMENT,OTHER_SPECIAL_CHARACTER,IMPORTCLAUSE,SYSVARDEC,SYSVARTYPE,SIGNTYPE,IOPORTDEC,IODEC,SYSNODEC,STRUCTDEF,PACKTYPE,STRUCTTYPE,TOPDEC,CONSTDEC,INPUTOUTPUTDEC,SYSDEC,STRUCTDEC,ENUMDEC,DECTYPE,DECNOTYPE,ENUMLIST,STRUCTLIST,ENUMELEMENT,RANGETOP,PACKAGE,IMPORTSTATE,VARIDENT,FIRSTIDENT,LOCALIDENT,MODULEDECLARATION,MODULEINSTANTIATION,MODULEINSTANCE,NAMEOFINSTANCE,LISTOFPORTORDERED,LISTOFPORTNAMED,NAMEPORTSTAR,NAMEPORTEXPR,NAMEPORTIDENT,PARAMETERVALUEASSIGNMENT,ORDEREDPARAMETERLIST,NAMEDPARAMETERLIST,ORDEREDPARAMETERASSIGNMENT,NAMEDPARAMETERASSIGNMENT,PARAMETERPORTLIST,ANSIPORTLIST,NOANSIPORTLIST,DATATYPEORNULL,PARAMETERDIMENSIONNODE,TYPEDECINTEGERVECTOR,TYPEDECINTEGERATOM,TYPEDECIDENTIFIER,TYPEDECNONINTEGER,SIGNING,PACKEDDIMENSION,PORTTYPENET,PORTTYPETRIREG,PORTTYPEEMPTY,RANGEQ,TYPEDEF,TYPEDEFDATATYPE,LIFETIME,VARIABLEDECLARATION,LISTOFVARIABLEIDENTIFIERS,VARIABLEIDENT,IODECLARATIONTOP,IODECLARATION,NETDECLARATION,LISTOFNETDECLASSIGNMENTS,NETDECLARATIONASSIGNMENT,PARAMETERDECLARATION,PARAMETERDECLARATIONSEMI,LISTOFPARAMASSIGNMENTS,PARAMASSIGNMENT,ANSIPORTLISTQ,GENERATEIF,GENERATECASE,GENERATEFOR,GENERATEMODULEBLOCK,GENERATEMODULEBLOCKIDENT,COLONIDENTIFIERQ,GENVARASSIGNMENT,GENVARDECLASSIGNMENT,"input","inout","output","ref","parameter","localparam","typedef","time","shortreal","realtime","integer_vector_type","integer_atom_type","shortint","longint","logic","reg","wire","genvar","signed","unsigned","static",INDENTIFIER,"++","--","interface","endinterface","extern","modport","clocking","import","export","timeunit","timeprecision"
+
+cleanbuild:
+
+vhdl:
+
+copyfiles:
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\verilog
+     [copy] Copying 4 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\system
+
+total:
+     [echo] Ant Done
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Unable to locate tools.jar. Expected to find it in C:\Program Files (x86)\Java\jre1.6.0_05\lib\tools.jar
+Buildfile: build.xml
+
+clean:
+
+verilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+     [copy] Copying 1 file to D:\eclipse_dev3\com.simplifide.base\grammar\verilog
+
+systemverilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:24:9: warning:Redefinition of token in tokens {...}: MODULEITEM
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:127:17: warning:Redefinition of token in tokens {...}: PORTLIST
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:59: warning:nondeterminism between alts 1 and 2 of block upon
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:59:     k==1:EOF,"`ifdef","`ifndef","`define","`include","`timescale","module","macromodule",LPAREN,IDENTIFIER,"generate","primitive","task","function","automatic","integer","real","tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","assign","defparam","and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1","initial","always","specify","specparam",ESCAPED_IDENTIFIER,"input","inout","output","parameter","localparam","typedef","time","shortreal","realtime","shortint","longint","logic","reg","wire","genvar","static","interface","endinterface","extern","timeunit","timeprecision"
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:406:59:     k==2:EOF,ROOT,DESIGNUNIT,CONTEXTCLAUSE,CONTEXTITEM,DEFINEDIRECTIVE,INCLUDEDIRECTIVE,MODULE,MODULEHEAD,MODULEBODY,MODULEITEM,MODULEDEC,MODULENAME,PORTCLAUSE,PORTLIST,PORTELEMENT,PORTTOP,PORT,PORTNODOT,PORTDOT,PORTEXPRESSION,VARDEC,VARTYPE,VARRANGE,VARLIST,VARNAME,REGMEM,REGMEMARRAY,PARDEC,PARASSIGN,CONTINUOUS_ASSIGN,ASSIGNLIST,ASSIGNMENT,IDENTRANGE,SEGMENTRANGE,QUESTTOP,QUESTIONSEGMENT,PAROP,UNOP,BINOP,BINOPSMALL,CONCAT,ALWAYSTOP,ALWAYSHEAD,EVENTCONTROL,EVENTEXPRESSION,EVENTEXPRESSIONSUB,TOTALASSIGN,CONDITIONTOP,CONDITIONHEAD,CONDITIONELSE,CASETOP,CASEHEAD,CASELIST,CASEEXPRESSION,CASENORMAL,CASEDEFAULT,BEGENDBLOCK,SEQBLOCKNAMEQ,STATELIST,MODITEM,MODINSTANCETOP,MODINSTANCE,INSTANCENAME,INSTANCEPORTLIST,INSTANCEPORT,PORTCON,IDENTIFIERPATH,NAME,NAMERANGE,NAMEDOT,NAMEEXPRESSION,DRIVESTRENGTHQ,DELAYQ,DELAYOREVENTCONTROLQ,TASK,FUNCTION,TASKVARDECLARATION,FUNCTIONVARDECLARATION,RANGEORTYPE,PARAMETEROVERRIDE,IFDEFDIRECTIVE,IFDEFHEAD,IFDEFCOND,TIMESCALEDIRECTIVE,"`ifdef","`ifndef","`else","`endif","`define","`include","`timescale",GENERATEITEM,RANGEPARAM,PRIMITIVEDEFINITION,TABLEDEFINITION,SPECIFYBLOCK,SPECIFYITEM,SPECPARAMDECLARATION,PATHDECLARATION,EDGESENSITIVEPATHDECLARATION,SDPD,SIMPLEPATHDECLARATION,PARALLELPATHDECLARATION,FULLPATHDESCRIPTOR,LEVELSENSITIVEPATHDECLARATION,RANGEORTYPEQ,AUTOMATICQ,"endmodule","module","macromodule",SEMI,LPAREN,RPAREN,COMMA,IDENTIFIER,LBRACE,RBRACE,LBRACK,COLON,RBRACK,"generate","endgenerate","1'b0","1'b1","1'bx",NUMBER,"primitive","endprimitive","table","endtable","task","endtask","function","endfunction","automatic","integer","real","QQQQQDDDDDEEEEEEEFFFFFFFf","PPPPPQQDDDDDEEEEEEEFFFFFFFf",ASSIGN,"tri","tri1","supply0","wand","triand","tri0","supply1","wor","trior","trireg","scalared","vectored","assign","defparam","small","medium","large","strong0","pull0","weak0","highz0","strong1","pull1","weak1","highz1",PLUS,MINUS,"and","nand","or","nor","xor","xnor","buf","bufif0","bufif1","not","notif0","notif1","pulldown","pullup","nmos","rnmos","pmos","rpmos","cmos","rcmos","tran","rtran","rtranif0","tranif1","rtranif1",POUND,DEFINE,DOT,"initial","always",LE,"if","else","endcase","default","case","casez","casex","forever","repeat","while","for","wait",TRIGGER,"disable","begin","end","fork","join","deassign","force","release","specify","endspecify","specparam",PPATH,FPATH,"$setup","$hold","$period","$width","$skew","$recovery","$setuphold","&&&","posedge","negedge","edge","0x","1x",LCURLY,RCURLY,STRING,QUESTION,LNOT,BNOT,BAND,RNAND,BOR,RNOR,BXOR,RXNOR,STAR,DIV,MOD,EQUAL,NOT_EQ,EQ_CASE,NOT_EQ_CASE,LAND,LOR,LT_,GT,GE,BXNOR,SR,SL,SRS,SLS,POW,ESCAPED_IDENTIFIER,AT,DOUBLE_COLON,ESC,HEX_DIGIT,VOCAB,SIZED_NUMBER,SIZE,BASE,SIZED_DIGIT,UNSIZED_NUMBER,DIGIT,HEXDIGIT,EXPONENT,WS_,NEWLINE_,SL_COMMENT,ML_COMMENT,OTHER_SPECIAL_CHARACTER,IMPORTCLAUSE,SYSVARDEC,SYSVARTYPE,SIGNTYPE,IOPORTDEC,IODEC,SYSNODEC,STRUCTDEF,PACKTYPE,STRUCTTYPE,TOPDEC,CONSTDEC,INPUTOUTPUTDEC,SYSDEC,STRUCTDEC,ENUMDEC,DECTYPE,DECNOTYPE,ENUMLIST,STRUCTLIST,ENUMELEMENT,RANGETOP,PACKAGE,IMPORTSTATE,VARIDENT,FIRSTIDENT,LOCALIDENT,MODULEDECLARATION,MODULEINSTANTIATION,MODULEINSTANCE,NAMEOFINSTANCE,LISTOFPORTORDERED,LISTOFPORTNAMED,NAMEPORTSTAR,NAMEPORTEXPR,NAMEPORTIDENT,PARAMETERVALUEASSIGNMENT,ORDEREDPARAMETERLIST,NAMEDPARAMETERLIST,ORDEREDPARAMETERASSIGNMENT,NAMEDPARAMETERASSIGNMENT,PARAMETERPORTLIST,ANSIPORTLIST,NOANSIPORTLIST,DATATYPEORNULL,PARAMETERDIMENSIONNODE,TYPEDECINTEGERVECTOR,TYPEDECINTEGERATOM,TYPEDECIDENTIFIER,TYPEDECNONINTEGER,SIGNING,PACKEDDIMENSION,PORTTYPENET,PORTTYPETRIREG,PORTTYPEEMPTY,RANGEQ,TYPEDEF,TYPEDEFDATATYPE,LIFETIME,VARIABLEDECLARATION,LISTOFVARIABLEIDENTIFIERS,VARIABLEIDENT,IODECLARATIONTOP,IODECLARATION,NETDECLARATION,LISTOFNETDECLASSIGNMENTS,NETDECLARATIONASSIGNMENT,PARAMETERDECLARATION,PARAMETERDECLARATIONSEMI,LISTOFPARAMASSIGNMENTS,PARAMASSIGNMENT,ANSIPORTLISTQ,GENERATEIF,GENERATECASE,GENERATEFOR,GENERATEMODULEBLOCK,GENERATEMODULEBLOCKIDENT,COLONIDENTIFIERQ,GENVARASSIGNMENT,GENVARDECLASSIGNMENT,"input","inout","output","ref","parameter","localparam","typedef","time","shortreal","realtime","integer_vector_type","integer_atom_type","shortint","longint","logic","reg","wire","genvar","signed","unsigned","static",INDENTIFIER,"++","--","interface","endinterface","extern","modport","clocking","import","export","timeunit","timeprecision"
+
+cleanbuild:
+
+vhdl:
+
+copyfiles:
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\verilog
+     [copy] Copying 3 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\system
+
+total:
+     [echo] Ant Done
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Unable to locate tools.jar. Expected to find it in C:\Program Files (x86)\Java\jre1.6.0_05\lib\tools.jar
+Buildfile: build.xml
+
+clean:
+
+verilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+     [copy] Copying 1 file to D:\eclipse_dev3\com.simplifide.base\grammar\verilog
+
+systemverilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:24:9: warning:Redefinition of token in tokens {...}: MODULEITEM
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:127:17: warning:Redefinition of token in tokens {...}: PORTLIST
+
+cleanbuild:
+
+vhdl:
+
+copyfiles:
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\verilog
+     [copy] Copying 3 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\system
+
+total:
+     [echo] Ant Done
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Unable to locate tools.jar. Expected to find it in C:\Program Files (x86)\Java\jre1.6.0_05\lib\tools.jar
+Buildfile: build.xml
+
+clean:
+
+verilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+     [copy] Copying 1 file to D:\eclipse_dev3\com.simplifide.base\grammar\verilog
+
+systemverilog:
+    [antlr] ANTLR Parser Generator   Version 2.7.7 (2006-11-01)   1989-2005
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:24:9: warning:Redefinition of token in tokens {...}: MODULEITEM
+    [antlr] D:\eclipse_dev3\com.simplifide.base\grammar\system\expandedsystemverilog.g:127:17: warning:Redefinition of token in tokens {...}: PORTLIST
+
+cleanbuild:
+
+vhdl:
+
+copyfiles:
+     [copy] Copying 2 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\verilog
+     [copy] Copying 4 files to D:\eclipse_dev3\com.simplifide.base\src\com\simplifide\base\verilog\parse\grammar\system
+
+total:
+     [echo] Ant Done
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

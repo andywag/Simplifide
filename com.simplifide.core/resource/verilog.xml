@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Parameter Declaration" 
+	id="com.simplifide.core.verilog.editors.templates.parameterdec" 
+	name="pad">parameter ${name} = ${value};</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Wire Declaration" 
+	id="com.simplifide.core.verilog.editors.templates.regdec" 
+	name="red">reg [${top}:${bot}] ${name};</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Wire Declaration" 
+	id="com.simplifide.core.verilog.editors.templates.wiredec" 
+	name="wid">wire [${top}:${bot}] ${name};</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Always Statement" 
+	id="com.simplifide.core.verilog.editors.templates.always" 
+	name="alw">always @(${head}) begin
+    ${cursor}
+end
+</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="If Statement" 
+	id="com.simplifide.core.verilog.editors.templates.ifstatement" 
+	name="ifs">if (${head}) begin
+    ${cursor}
+end
+</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="If Else Statement" 
+	id="com.simplifide.core.verilog.editors.templates.ifelsestatement" 
+	name="ife">if (${head}) begin
+    ${cursor}
+end
+</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Flop with Asynchronous Reset" 
+	id="com.simplifide.core.verilog.editors.templates.aflop" 
+	name="fla">always @(posedge ${clk} or negedge ${reset}) begin
+    if (!${reset}) begin
+        ${var} &lt;= 0;
+    end
+    else begin
+        ${var} &lt;= ${res};
+    end
+end
+</template>
+
+    <template 
+	context="com.simplifide.core.verilog.editor.templates.VerilogTemplateContextType" 
+	description="Flop with Synchronous Reset " 
+	id="com.simplifide.core.verilog.editors.templates.sflop" 
+	name="fls">always @(posedge ${clk}) begin
+    if (!${reset}) begin
+        ${var} &lt;= 0;
+    end
+    else begin
+        ${var} &lt;= ${res};
+    end
+end
+</template>
+
+</templates>
+

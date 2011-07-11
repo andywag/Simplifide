@@ -1,0 +1,526 @@
+--------------------------------------------------------------------------------
+Release 11.5 Trace  (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+D:\CaeTools\Xilinx\ISE\bin\nt\unwrapped\trce.exe -ise
+E:/Projects/BramTricks/Virtex_6/Projects/BramDeSerializer/Ise/BramDeSerializer/BramDeSerializer.ise
+-intstyle ise -v 3 -s 2 -fastpaths -xml DeSerializer.twx DeSerializer.ncd -o
+DeSerializer.twr DeSerializer.pcf
+
+Design file:              DeSerializer.ncd
+Physical constraint file: DeSerializer.pcf
+Device,package,speed:     xc6vlx240t,ff1156,C,-2 (PRELIMINARY 1.05 2010-03-02, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_DeSerClkA = PERIOD TIMEGRP "DeSerClkA" 200 MHz HIGH 50%;
+
+ 594 paths analyzed, 170 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.785ns.
+--------------------------------------------------------------------------------
+Slack (setup path):     0.215ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_Ramb36E1 (RAM)
+  Destination:          DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.623ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.127ns (0.906 - 1.033)
+  Source Clock:         DeSerClkA_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_Ramb36E1 to DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y28.DOADO22 Trcko_DO              1.784   DeSerializer_I_Ramb36E1
+                                                       DeSerializer_I_Ramb36E1
+    SLICE_X25Y141.D4     net (fanout=2)        0.809   IntDataOutA<22>
+    SLICE_X25Y141.COUT   Topcyd                0.279   Mcompar_IntEquA_cy<7>
+                                                       Mcompar_IntEquA_lut<7>
+                                                       Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CIN    net (fanout=1)        0.000   Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CMUX   Tcinc                 0.221   IntBitCntRst
+                                                       Mcompar_IntEquA_cy<10>
+    SLICE_X49Y132.B6     net (fanout=3)        1.193   IntBitCntRst
+    SLICE_X49Y132.B      Tilo                  0.061   IntBitCntRstOrReSync
+                                                       IntBitCntRstOrReSync1
+    SLICE_X49Y133.D6     net (fanout=6)        0.219   IntBitCntRstOrReSync
+    SLICE_X49Y133.CLK    Tas                   0.057   DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4
+                                                       DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4_rstpot
+                                                       DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4
+    -------------------------------------------------  ---------------------------
+    Total                                      4.623ns (2.402ns logic, 2.221ns route)
+                                                       (52.0% logic, 48.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.218ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_Ramb36E1 (RAM)
+  Destination:          DeSerializer_I_CntFivBit/IntCntTc (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.620ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.127ns (0.906 - 1.033)
+  Source Clock:         DeSerClkA_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_Ramb36E1 to DeSerializer_I_CntFivBit/IntCntTc
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y28.DOADO22 Trcko_DO              1.784   DeSerializer_I_Ramb36E1
+                                                       DeSerializer_I_Ramb36E1
+    SLICE_X25Y141.D4     net (fanout=2)        0.809   IntDataOutA<22>
+    SLICE_X25Y141.COUT   Topcyd                0.279   Mcompar_IntEquA_cy<7>
+                                                       Mcompar_IntEquA_lut<7>
+                                                       Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CIN    net (fanout=1)        0.000   Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CMUX   Tcinc                 0.221   IntBitCntRst
+                                                       Mcompar_IntEquA_cy<10>
+    SLICE_X49Y132.B6     net (fanout=3)        1.193   IntBitCntRst
+    SLICE_X49Y132.B      Tilo                  0.061   IntBitCntRstOrReSync
+                                                       IntBitCntRstOrReSync1
+    SLICE_X49Y133.A6     net (fanout=6)        0.213   IntBitCntRstOrReSync
+    SLICE_X49Y133.CLK    Tas                   0.060   DeSerializer_I_CntFivBit/IntCnt_FSM_FFd4
+                                                       DeSerializer_I_CntFivBit/IntCntTc_rstpot1
+                                                       DeSerializer_I_CntFivBit/IntCntTc
+    -------------------------------------------------  ---------------------------
+    Total                                      4.620ns (2.405ns logic, 2.215ns route)
+                                                       (52.1% logic, 47.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.223ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_Ramb36E1 (RAM)
+  Destination:          DeSerializer_I_CntFivBit/IntCnt_FSM_FFd5 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.615ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.127ns (0.906 - 1.033)
+  Source Clock:         DeSerClkA_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_Ramb36E1 to DeSerializer_I_CntFivBit/IntCnt_FSM_FFd5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB36_X1Y28.DOADO22 Trcko_DO              1.784   DeSerializer_I_Ramb36E1
+                                                       DeSerializer_I_Ramb36E1
+    SLICE_X25Y141.D4     net (fanout=2)        0.809   IntDataOutA<22>
+    SLICE_X25Y141.COUT   Topcyd                0.279   Mcompar_IntEquA_cy<7>
+                                                       Mcompar_IntEquA_lut<7>
+                                                       Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CIN    net (fanout=1)        0.000   Mcompar_IntEquA_cy<7>
+    SLICE_X25Y142.CMUX   Tcinc                 0.221   IntBitCntRst
+                                                       Mcompar_IntEquA_cy<10>
+    SLICE_X49Y132.B6     net (fanout=3)        1.193   IntBitCntRst
+    SLICE_X49Y132.B      Tilo                  0.061   IntBitCntRstOrReSync
+                                                       IntBitCntRstOrReSync1
+    SLICE_X49Y134.A6     net (fanout=6)        0.208   IntBitCntRstOrReSync
+    SLICE_X49Y134.CLK    Tas                   0.060   DeSerializer_I_CntFivBit/IntCnt_FSM_FFd5
+                                                       DeSerializer_I_CntFivBit/IntCnt_FSM_FFd5_rstpot
+                                                       DeSerializer_I_CntFivBit/IntCnt_FSM_FFd5
+    -------------------------------------------------  ---------------------------
+    Total                                      4.615ns (2.405ns logic, 2.210ns route)
+                                                       (52.1% logic, 47.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_DeSerClkA = PERIOD TIMEGRP "DeSerClkA" 200 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack (hold path):      0.047ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.192ns (Levels of Logic = 0)
+  Clock Path Skew:      0.145ns (0.569 - 0.424)
+  Source Clock:         DeSerClkA_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 to DeSerializer_I_Ramb36E1
+    Location                   Delay type         Delay(ns)  Physical Resource
+                                                             Logical Resource(s)
+    -------------------------------------------------------  -------------------
+    SLICE_X25Y138.BQ           Tcko                  0.098   IntAddrA<7>
+                                                             DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2
+    RAMB36_X1Y28.ADDRARDADDRL7 net (fanout=5)        0.287   IntAddrA<7>
+    RAMB36_X1Y28.CLKARDCLKL    Trckc_ADDRA (-Th)     0.193   DeSerializer_I_Ramb36E1
+                                                             DeSerializer_I_Ramb36E1
+    -------------------------------------------------------  ---------------------------
+    Total                                            0.192ns (-0.095ns logic, 0.287ns route)
+                                                             (-49.5% logic, 149.5% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.060ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntTwoBit_Msb/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.206ns (Levels of Logic = 0)
+  Clock Path Skew:      0.146ns (0.569 - 0.423)
+  Source Clock:         DeSerClkA_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntTwoBit_Msb/IntCnt_FSM_FFd2 to DeSerializer_I_Ramb36E1
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X26Y138.AQ            Tcko                  0.115   IntAddrA<13>
+                                                              DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntTwoBit_Msb/IntCnt_FSM_FFd2
+    RAMB36_X1Y28.ADDRARDADDRL13 net (fanout=6)        0.284   IntAddrA<13>
+    RAMB36_X1Y28.CLKARDCLKL     Trckc_ADDRA (-Th)     0.193   DeSerializer_I_Ramb36E1
+                                                              DeSerializer_I_Ramb36E1
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.206ns (-0.078ns logic, 0.284ns route)
+                                                              (-37.9% logic, 137.9% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.071ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCntTc (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.080ns (Levels of Logic = 1)
+  Clock Path Skew:      0.009ns (0.052 - 0.043)
+  Source Clock:         DeSerClkA_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkA_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 to DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCntTc
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y138.BQ     Tcko                  0.098   IntAddrA<7>
+                                                       DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2
+    SLICE_X24Y138.A6     net (fanout=5)        0.058   IntAddrA<7>
+    SLICE_X24Y138.CLK    Tah         (-Th)     0.076   DeSerializer_I_CntTenBit_PortA/IntCntTc_Lsb
+                                                       DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCntTc_rstpot
+                                                       DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Lsb/IntCntTc
+    -------------------------------------------------  ---------------------------
+    Total                                      0.080ns (0.022ns logic, 0.058ns route)
+                                                       (27.5% logic, 72.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_DeSerClkA = PERIOD TIMEGRP "DeSerClkA" 200 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.148ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.852ns (539.957MHz) (Trper_CLKA)
+  Physical resource: DeSerializer_I_Ramb36E1/CLKARDCLKL
+  Logical resource: DeSerializer_I_Ramb36E1/CLKARDCLKL
+  Location pin: RAMB36_X1Y28.CLKARDCLKL
+  Clock network: DeSerClkA_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: IntAddrA<13>/SR
+  Logical resource: DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntTwoBit_Msb/IntCnt_FSM_FFd1/SR
+  Location pin: SLICE_X26Y138.SR
+  Clock network: DeSerReSync_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: IntAddrA<12>/SR
+  Logical resource: DeSerializer_I_CntTenBit_PortA/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd3/SR
+  Location pin: SLICE_X26Y137.SR
+  Clock network: DeSerReSync_IBUF
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_DeSerClkB = PERIOD TIMEGRP "DeSerClkB" 200 MHz HIGH 50%;
+
+ 76 paths analyzed, 69 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   2.009ns.
+--------------------------------------------------------------------------------
+Slack (setup path):     2.991ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_Ctrl/AddrCntEnaB (FF)
+  Destination:          DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCntTc (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      1.874ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.100ns (0.858 - 0.958)
+  Source Clock:         DeSerClkB_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_Ctrl/AddrCntEnaB to DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCntTc
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y130.AQ     Tcko                  0.283   IntAddrCntEnaB
+                                                       DeSerializer_I_Ctrl/AddrCntEnaB
+    SLICE_X27Y139.D2     net (fanout=10)       1.534   IntAddrCntEnaB
+    SLICE_X27Y139.CLK    Tas                   0.057   DeSerializer_I_CntTenBit_PortB/IntCntTc_Lsb
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCntTc_rstpot
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCntTc
+    -------------------------------------------------  ---------------------------
+    Total                                      1.874ns (0.340ns logic, 1.534ns route)
+                                                       (18.1% logic, 81.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.004ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_Ctrl/AddrCntEnaB (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          5.000ns
+  Data Path Delay:      1.980ns (Levels of Logic = 0)
+  Clock Path Skew:      0.019ns (0.977 - 0.958)
+  Source Clock:         DeSerClkB_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_Ctrl/AddrCntEnaB to DeSerializer_I_Ramb36E1
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X45Y130.AQ        Tcko                  0.283   IntAddrCntEnaB
+                                                          DeSerializer_I_Ctrl/AddrCntEnaB
+    RAMB36_X1Y28.ENBWRENL   net (fanout=10)       1.350   IntAddrCntEnaB
+    RAMB36_X1Y28.CLKBWRCLKL Trcck_WREN            0.347   DeSerializer_I_Ramb36E1
+                                                          DeSerializer_I_Ramb36E1
+    ----------------------------------------------------  ---------------------------
+    Total                                         1.980ns (0.630ns logic, 1.350ns route)
+                                                          (31.8% logic, 68.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.037ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCntTc (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      1.877ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.051ns (0.860 - 0.911)
+  Source Clock:         DeSerClkB_BUFGP rising at 0.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 to DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCntTc
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y139.BQ     Tcko                  0.322   IntAddrB<7>
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2
+    SLICE_X26Y139.C2     net (fanout=5)        0.595   IntAddrB<7>
+    SLICE_X26Y139.C      Tilo                  0.061   IntAddrB<7>
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_n00401
+    SLICE_X25Y139.D4     net (fanout=1)        0.348   DeSerializer_I_CntTenBit_PortB/IntCntCmbTc_Lsb
+    SLICE_X25Y139.D      Tilo                  0.061   DeSerializer_I_CntTenBit_PortB/IntCntTc_Mid
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCntTcLog<1>1
+    SLICE_X25Y139.C2     net (fanout=1)        0.430   DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/CntCmbTc
+    SLICE_X25Y139.CLK    Tas                   0.060   DeSerializer_I_CntTenBit_PortB/IntCntTc_Mid
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCntTc_rstpot
+                                                       DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCntTc
+    -------------------------------------------------  ---------------------------
+    Total                                      1.877ns (0.504ns logic, 1.373ns route)
+                                                       (26.9% logic, 73.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_DeSerClkB = PERIOD TIMEGRP "DeSerClkB" 200 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack (hold path):      0.042ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.186ns (Levels of Logic = 0)
+  Clock Path Skew:      0.144ns (0.566 - 0.422)
+  Source Clock:         DeSerClkB_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd2 to DeSerializer_I_Ramb36E1
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X24Y139.CQ            Tcko                  0.115   IntAddrB<12>
+                                                              DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd2
+    RAMB36_X1Y28.ADDRBWRADDRL11 net (fanout=5)        0.264   IntAddrB<11>
+    RAMB36_X1Y28.CLKBWRCLKL     Trckc_ADDRB (-Th)     0.193   DeSerializer_I_Ramb36E1
+                                                              DeSerializer_I_Ramb36E1
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.186ns (-0.078ns logic, 0.264ns route)
+                                                              (-41.9% logic, 141.9% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.070ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.215ns (Levels of Logic = 0)
+  Clock Path Skew:      0.145ns (0.566 - 0.421)
+  Source Clock:         DeSerClkB_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2 to DeSerializer_I_Ramb36E1
+    Location                   Delay type         Delay(ns)  Physical Resource
+                                                             Logical Resource(s)
+    -------------------------------------------------------  -------------------
+    SLICE_X26Y139.BQ           Tcko                  0.115   IntAddrB<7>
+                                                             DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Lsb/IntCnt_FSM_FFd2
+    RAMB36_X1Y28.ADDRBWRADDRL7 net (fanout=5)        0.293   IntAddrB<7>
+    RAMB36_X1Y28.CLKBWRCLKL    Trckc_ADDRB (-Th)     0.193   DeSerializer_I_Ramb36E1
+                                                             DeSerializer_I_Ramb36E1
+    -------------------------------------------------------  ---------------------------
+    Total                                            0.215ns (-0.078ns logic, 0.293ns route)
+                                                             (-36.3% logic, 136.3% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.092ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd4 (FF)
+  Destination:          DeSerializer_I_Ramb36E1 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.236ns (Levels of Logic = 0)
+  Clock Path Skew:      0.144ns (0.566 - 0.422)
+  Source Clock:         DeSerClkB_BUFGP rising at 5.000ns
+  Destination Clock:    DeSerClkB_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd4 to DeSerializer_I_Ramb36E1
+    Location                   Delay type         Delay(ns)  Physical Resource
+                                                             Logical Resource(s)
+    -------------------------------------------------------  -------------------
+    SLICE_X24Y139.BQ           Tcko                  0.115   IntAddrB<12>
+                                                             DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd4
+    RAMB36_X1Y28.ADDRBWRADDRL9 net (fanout=6)        0.314   IntAddrB<9>
+    RAMB36_X1Y28.CLKBWRCLKL    Trckc_ADDRB (-Th)     0.193   DeSerializer_I_Ramb36E1
+                                                             DeSerializer_I_Ramb36E1
+    -------------------------------------------------------  ---------------------------
+    Total                                            0.236ns (-0.078ns logic, 0.314ns route)
+                                                             (-33.1% logic, 133.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_DeSerClkB = PERIOD TIMEGRP "DeSerClkB" 200 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.148ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.852ns (539.957MHz) (Trper_CLKB)
+  Physical resource: DeSerializer_I_Ramb36E1/CLKBWRCLKL
+  Logical resource: DeSerializer_I_Ramb36E1/CLKBWRCLKL
+  Location pin: RAMB36_X1Y28.CLKBWRCLKL
+  Clock network: DeSerClkB_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: IntAddrB<13>/SR
+  Logical resource: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntTwoBit_Msb/IntCnt_FSM_FFd1/SR
+  Location pin: SLICE_X23Y139.SR
+  Clock network: DeSerRstB_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: IntAddrB<12>/SR
+  Logical resource: DeSerializer_I_CntTenBit_PortB/CntTenBit_I_CntFourBit_Mid/IntCnt_FSM_FFd3/SR
+  Location pin: SLICE_X24Y139.SR
+  Clock network: DeSerRstB_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock DeSerClkA
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DeSerClkA      |    4.785|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DeSerClkB
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DeSerClkB      |    2.009|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 670 paths, 0 nets, and 305 connections
+
+Design statistics:
+   Minimum period:   4.785ns{1}   (Maximum frequency: 208.986MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed May 05 11:57:34 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 456 MB
+
+Total REAL time to Trace completion: 18 secs 
+Total CPU time to Trace completion: 18 secs 
+
+
+

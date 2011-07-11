@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_com.simplifide.generator" default="compile.module.com.simplifide.generator">
+  <dirname property="module.com.simplifide.generator.basedir" file="${ant.file.module_com.simplifide.generator}"/>
+  
+  <property name="module.jdk.home.com.simplifide.generator" value="${jdk.home.1.6}"/>
+  <property name="module.jdk.bin.com.simplifide.generator" value="${jdk.bin.1.6}"/>
+  <property name="module.jdk.classpath.com.simplifide.generator" value="jdk.classpath.1.6"/>
+  
+  <property name="compiler.args.com.simplifide.generator" value="${compiler.args}"/>
+  
+  <property name="com.simplifide.generator.output.dir" value="${module.com.simplifide.generator.basedir}/bin"/>
+  <property name="com.simplifide.generator.testoutput.dir" value="${module.com.simplifide.generator.basedir}/bin"/>
+  
+  <path id="com.simplifide.generator.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="com.simplifide.generator.module.production.classpath">
+    <path refid="${module.jdk.classpath.com.simplifide.generator}"/>
+    <path refid="library.scala-library-2.8.1.rc4.classpath"/>
+    <path refid="library.scala-compiler-2.8.1.rc4.classpath"/>
+  </path>
+  
+  <path id="com.simplifide.generator.runtime.production.module.classpath">
+    <pathelement location="${com.simplifide.generator.output.dir}"/>
+    <path refid="library.scala-library-2.8.1.rc4.classpath"/>
+    <path refid="library.scala-compiler-2.8.1.rc4.classpath"/>
+  </path>
+  
+  <path id="com.simplifide.generator.module.classpath">
+    <pathelement location="${com.simplifide.generator.output.dir}"/>
+    <path refid="${module.jdk.classpath.com.simplifide.generator}"/>
+    <path refid="library.scala-library-2.8.1.rc4.classpath"/>
+    <path refid="library.scala-compiler-2.8.1.rc4.classpath"/>
+  </path>
+  
+  <path id="com.simplifide.generator.runtime.module.classpath">
+    <pathelement location="${com.simplifide.generator.output.dir}"/>
+    <path refid="library.scala-library-2.8.1.rc4.classpath"/>
+    <path refid="library.scala-compiler-2.8.1.rc4.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.com.simplifide.generator">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.com.simplifide.generator">
+    <patternset refid="excluded.from.module.com.simplifide.generator"/>
+  </patternset>
+  
+  <path id="com.simplifide.generator.module.sourcepath">
+    <dirset dir="${module.com.simplifide.generator.basedir}/../../eclipse/com.simplifide.scala2">
+      <include name="src"/>
+    </dirset>
+    <dirset dir="${module.com.simplifide.generator.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.com.simplifide.generator" depends="compile.module.com.simplifide.generator.production,compile.module.com.simplifide.generator.tests" description="Compile module com.simplifide.generator"/>
+  
+  <target name="compile.module.com.simplifide.generator.production" depends="register.custom.compilers" description="Compile module com.simplifide.generator; production classes">
+    <mkdir dir="${com.simplifide.generator.output.dir}"/>
+    <javac2 destdir="${com.simplifide.generator.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.com.simplifide.generator}/javac">
+      <compilerarg line="${compiler.args.com.simplifide.generator}"/>
+      <bootclasspath refid="com.simplifide.generator.module.bootclasspath"/>
+      <classpath refid="com.simplifide.generator.module.production.classpath"/>
+      <src refid="com.simplifide.generator.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.com.simplifide.generator"/>
+    </javac2>
+    
+    <copy todir="${com.simplifide.generator.output.dir}">
+      <fileset dir="${module.com.simplifide.generator.basedir}/../../eclipse/com.simplifide.scala2/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.com.simplifide.generator.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.com.simplifide.generator.tests" depends="register.custom.compilers,compile.module.com.simplifide.generator.production" description="compile module com.simplifide.generator; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.com.simplifide.generator" description="cleanup module">
+    <delete dir="${com.simplifide.generator.output.dir}"/>
+    <delete dir="${com.simplifide.generator.testoutput.dir}"/>
+  </target>
+</project>

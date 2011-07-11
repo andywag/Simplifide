@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HDLdoc</title>
+</head>
+
+<body>
+<!--*** <h1>HDLdoc</h1> ***-->
+<p>HDLdoc is similar to javadoc where the comments before object declarations are parsed and added
+   associated with the object for documentation purposes. Currently this form of documentation is being
+   used for <a href="../Editing/texthovers.htm"/>text hovers</a>, but in the very near term this will
+   be expanded to aid in generating design documentation.  </p>
+
+<h2>HdlDoc Syntax</h2>
+<p>The syntax for the hdl doc is quite straightforward, and can probably best be seen by looking at the 
+   example project supplied with this software. In general the format follows these rules : </p>
+
+<ul>
+	<li>All doc lines are prefixed with a --* </li>
+	<li>A general description of the object is first followed by extra descriptors</li>
+	<li>The extra descriptors all follow the format of <b>@{name}</b> <i>@{value}</i> <b>@{description}</b> where the value is optional in some cases</li>
+	<li>A small subset of html is allowed inside the description blocks which include bold, italic, and color tags</li>
+</ul>
+
+<h2>Current Descriptors</h2>
+
+<p>Below is a list of the currently implemented descriptors. This is an initial version and descriptors will
+ be added with time, but efforts will be made to keep the syntax backward compatible.</p> 
+  
+<ul>
+	<li><b>@port</b>   {port_name} {port_description} is used to describe ports</li>
+	<li><b>@param</b>  {param_name} {param_description} is used to describe parameters mainly used for types</li>
+	<li><b>@return</b> {return_name} {return_description} is used to describe the return value for functions</li>
+	<li><b>@latch</b> is used to describe a latched process so it is not flagged as a warning</li>
+	<li><b>@deprecated</b> {description} is used to describe an object which should no longer be used</li>
+</ul>
+
+
+
+</body>
+
+</html>

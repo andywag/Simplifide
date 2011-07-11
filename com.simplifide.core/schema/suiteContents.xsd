@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.simplifide.com/suiteContents" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://www.simplifide.com/suiteContents">
+   
+
+    <xs:element name="suite">
+    	<xs:complexType>
+    		<xs:sequence>
+
+    			<xs:element ref="library" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    			<xs:element ref="project" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="library">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="design"></xs:element>
+    		</xs:sequence>
+    		<xs:attribute name="name" type="xs:string"></xs:attribute>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="sourceOnly" type="xs:boolean"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="project">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="design"></xs:element>
+    		</xs:sequence>
+    		<xs:attribute name="name" type="xs:string"></xs:attribute>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="sourceOnly" type="xs:boolean"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+    
+
+    <xs:element name="design">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="file"></xs:element>
+    			<xs:element ref="folder"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="file">
+    	<xs:complexType>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="folder">
+    	<xs:complexType>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+</xs:schema>

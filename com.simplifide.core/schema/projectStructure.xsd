@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.simplifide.com/projectStructure" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://www.simplifide.com/projectStructure">
+    <xs:element name="basedir">
+    	<xs:annotation>
+    		<xs:documentation>
+    			Main Class for the schema
+    		</xs:documentation>
+    	</xs:annotation>
+    	<xs:complexType>
+    		<xs:sequence maxOccurs="unbounded" minOccurs="0">
+    			<xs:choice>
+    				<xs:element ref="dir"></xs:element>
+    				<xs:element ref="file"></xs:element>
+    			</xs:choice>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="dir">
+        <xs:annotation>
+        	<xs:documentation>Link to the simplifide distribution</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+        	<xs:sequence maxOccurs="unbounded" minOccurs="0">
+        		<xs:choice>
+        			<xs:element ref="dir"></xs:element>
+        			<xs:element ref="file"></xs:element>
+        		</xs:choice>
+        	</xs:sequence>
+        	<xs:attribute name="name" type="xs:string"></xs:attribute>
+        	<xs:attribute name="link">
+        		<xs:simpleType>
+        			<xs:restriction base="xs:string">
+        				<xs:enumeration value="design"></xs:enumeration>
+        				<xs:enumeration value="projects"></xs:enumeration>
+        				<xs:enumeration value="libraries"></xs:enumeration>
+        				<xs:enumeration value="script"></xs:enumeration>
+        				<xs:enumeration value="docs"></xs:enumeration>
+        				<xs:enumeration value="test"></xs:enumeration>
+        				<xs:enumeration value="build"></xs:enumeration>
+        				<xs:enumeration value="synthesis"></xs:enumeration>
+        				<xs:enumeration value="subprojects"></xs:enumeration>
+        			</xs:restriction>
+        		</xs:simpleType>
+        	</xs:attribute>
+        	<xs:attribute name="elink" type="xs:string"
+        		use="optional">
+        		<xs:annotation>
+        			<xs:documentation>
+        				Location of eclipse style link
+        			</xs:documentation>
+        		</xs:annotation>
+        	</xs:attribute>
+        	<xs:attribute name="dlink" type="xs:string"></xs:attribute>
+        	<xs:attribute name="copy" type="xs:string">
+        		<xs:annotation>
+        			<xs:documentation>Location where files should be copied from </xs:documentation>
+        		</xs:annotation></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="file">
+    	<xs:complexType>
+    		<xs:attribute name="name" type="xs:string"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+
+  
+    <xs:element name="suite">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="basedir"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="project">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="basedir"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="library">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="basedir"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="subproject">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="basedir"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="root">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:choice maxOccurs="unbounded" minOccurs="1">
+    				<xs:element ref="suite"></xs:element>
+    				<xs:element ref="project"></xs:element>
+    				<xs:element ref="library"></xs:element>
+    				<xs:element ref="subproject"></xs:element>
+    			</xs:choice>
+
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+</xs:schema>

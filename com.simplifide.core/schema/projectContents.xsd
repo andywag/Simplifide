@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.simplifide.com/projectContents" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://www.simplifide.com/projectContents">
+   
+    <xs:element name="file">
+    	<xs:complexType>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="root">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="design"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    
+    <xs:element name="design">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="file" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    			<xs:element ref="folder" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="folder">
+    	<xs:complexType>
+    		<xs:attribute name="location" type="xs:string"></xs:attribute>
+    		<xs:attribute name="link" type="xs:boolean"></xs:attribute>
+    	</xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="antl" default="total" basedir=".">
+
+<target name="clean">
+    <touch file="verilog.g"/>
+    <touch file="systemverilog.g"/>
+</target>
+ 
+<target name="cleanbuild">
+  <!--<delete>
+     <fileset dir="../../../../../../../build/classes/org/hide/codegen/sourcefile/antlr/" includes="**/*.class"/>
+  </delete>-->
+</target>
+
+<target name="vhdl" depends="cleanbuild">
+	<mkdir dir="vhdl"/>
+    <antlr target="vhdl.g"  outputdirectory="vhdl"/>
+    <replace file="vhdl/VhdlLexer.java" token="import antlr.CharScanner;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseLexer;"/>
+    <replace file="vhdl/VhdlParser.java" token="import antlr.LLkParser;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseParser;
+    	import com.simplifide.base.sourcefile.antlr.grammar.BaseVhdlParser;"/>
+    <replace file="vhdl/VhdlLexer.java" token="antlr.CharScanner" value="BaseLexer"/> 
+    <replace file="vhdl/VhdlParser.java" token="antlr.LLkParser" value="BaseVhdlParser"/>
+</target>
+
+<target name="verilog" depends="clean" >
+	<mkdir dir="verilog"/>
+    <antlr target="verilog.g" outputdirectory="verilog"/>
+    <replace file="verilog/VerilogLexer.java" token="import antlr.CharScanner;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseLexer;"/> 
+    <replace file="verilog/VerilogParser.java" token="import antlr.LLkParser;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseParser;
+    	import com.simplifide.base.sourcefile.antlr.grammar.BaseVerilogParser;"/> 
+    <replace file="verilog/VerilogLexer.java" token="antlr.CharScanner" value="BaseLexer"/>
+    <replace file="verilog/VerilogParser.java" token="antlr.LLkParser" value="BaseVerilogParser"/>
+    <copy file="verilog.g" tofile="verilog/verilog.g"/>
+</target>
+
+<target name="systemverilog" depends="verilog">
+	<mkdir dir="system"/>
+    <copy file="verilog/VerilogTokenTypes.txt" tofile="VerilogTokenTypes.txt"/>
+    <antlr target="systemverilog.g" glib="verilog/verilog.g" outputdirectory="system"/>
+    <replace file="system/SystemVerilogLexer.java" token="import antlr.CharScanner;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseLexer;"/> 
+    <replace file="system/SystemVerilogParser.java" token="import antlr.LLkParser;" value="import com.simplifide.base.sourcefile.antlr.grammar.BaseParser;
+    	import com.simplifide.base.sourcefile.antlr.grammar.BaseVerilogParser;"/>   
+    <replace file="system/SystemVerilogLexer.java" token="antlr.CharScanner" value="BaseLexer"/> 
+    <replace file="system/SystemVerilogParser.java" token="antlr.LLkParser" value="BaseVerilogParser"/>
+</target>
+
+<target name="copyfiles" depends="systemverilog,vhdl">
+	<copy todir="../src/com/simplifide/base/vhdl/parse/grammar">
+		<fileset dir="vhdl">
+			<exclude name="**/*.g"/>
+			<exclude name="**/*.txt"/>
+		</fileset>
+	</copy>
+	<copy todir="../src/com/simplifide/base/verilog/parse/grammar/verilog">
+		<fileset dir="verilog">
+			<exclude name="**/*.g"/>
+			<exclude name="**/*.txt"/>
+		</fileset>
+	</copy>
+	<copy todir="../src/com/simplifide/base/verilog/parse/grammar/system">
+		<fileset dir="system">
+			<exclude name="**/*.g"/>
+			<exclude name="**/*.txt"/>
+		</fileset>
+	</copy>
+</target>
+
+<target name="total" depends="copyfiles">
+    <echo>Ant Done</echo>
+</target>
+
+
+
+
+</project>
