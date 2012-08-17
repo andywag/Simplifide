@@ -60,5 +60,8 @@
    <feature url="features/com.simplifide.features_1.2.20.201105170831.jar" id="com.simplifide.features" version="1.2.20.201105170831">
       <category name="Hardware"/>
    </feature>
+   <feature url="features/com.simplifide.features_1.2.30.201208171322.jar" id="com.simplifide.features" version="1.2.30.201208171322">
+      <category name="Hardware"/>
+   </feature>
    <category-def name="Hardware" label="Hardware"/>
 </site>

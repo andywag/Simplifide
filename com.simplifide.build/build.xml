@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release" default="create_zip">
-	<property name="BASEDIR"  value="/home/andy/simplifide_base/eclipse/com.simplifide.build"/>
-	<property name="REVISION"     value="1.2.20"/>
-	<property name="DATE"     value="201105170831"/>
+	<property name="BASEDIR"  value="C:\simplifide_download\SimplifideBase\com.simplifide.build"/>
+	<property name="REVISION"     value="1.2.30"/>
+	<property name="DATE"     value="201208171322"/>
 	<property name="RELEASE"  value="com.simplifide.features_${REVISION}.${DATE}"/>
 	
 	<property name="PLUGINDIR" value="../com.simplifide.updates/plugins"/>

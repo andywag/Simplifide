@@ -18,13 +18,13 @@ public class LicenseCheck {
 	public static final int LICENSE_ACADEMIC_VALID_EXPIRED  = 9; 
 
 	
+	/*
 	public static Info checkLicense(String file) {
 		Info info = HardwareLicenseManager.getInstance().validate(file);
-		/*if (file.trim().equalsIgnoreCase("testing_license_professional")) {
-			info = new Info(LICENSE_VALID,"TestLicense");
-		}*/
+		
 		return info;
 	}
+	*/
 	
 	public static class Info {
 		public int issueType;

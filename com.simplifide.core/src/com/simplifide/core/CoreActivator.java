@@ -15,7 +15,6 @@ import org.osgi.framework.BundleContext;
 import com.simplifide.base.sourcefile.antlr.FormatSupport;
 import com.simplifide.core.builder.BuildHandler;
 import com.simplifide.core.editors.format.FormatIndentProvider;
-import com.simplifide.core.license.LicenseStartup;
 import com.simplifide.core.scalaext.ScalaStartup;
 import com.simplifide.core.ui.preference.SourcePreferenceInitializer;
 
@@ -51,7 +50,7 @@ public class CoreActivator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 	    super.start(context);
 		IPreferenceStore store = CoreActivator.getDefault().getPreferenceStore();
-		LicenseStartup.initializeLicense();
+		//LicenseStartup.initializeLicense();
 		
 	    try {
 	    	BuildHandler.buildInitialProject();

@@ -2,7 +2,7 @@
 <feature
       id="com.simplifide.features"
       label="Simplifide"
-      version="1.2.20.qualifier"
+      version="1.2.30.qualifier"
       provider-name="SIMPLIFIDE">
 
    <description url="http://www.example.com/description">
@@ -199,35 +199,28 @@ WILL BE LIMITED TO $50.
          id="com.simplifide.base"
          download-size="0"
          install-size="0"
-         version="1.2.20.qualifier"
+         version="1.2.30.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.simplifide.core"
          download-size="0"
          install-size="0"
-         version="1.2.20.qualifier"
+         version="1.2.30.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.simplifide.scala2"
          download-size="0"
          install-size="0"
-         version="1.2.20.qualifier"
+         version="1.2.30.qualifier"
          unpack="false"/>
 
    <plugin
          id="com.simplifide.generator"
          download-size="0"
          install-size="0"
-         version="1.2.20.qualifier"
-         unpack="false"/>
-
-   <plugin
-         id="com.simplifide.genint"
-         download-size="0"
-         install-size="0"
-         version="1.2.20.qualifier"
+         version="1.2.30.qualifier"
          unpack="false"/>
 
 </feature>

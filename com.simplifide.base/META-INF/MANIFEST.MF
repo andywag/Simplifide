@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Base Plug-in
 Bundle-SymbolicName: com.simplifide.base;singleton:=true
-Bundle-Version: 1.2.20.qualifier
+Bundle-Version: 1.2.30.qualifier
 Bundle-Activator: com.simplifide.base.BaseActivator
 Bundle-Vendor: SIMPLIFIDE
 Bundle-Localization: plugin
@@ -103,7 +103,6 @@ Export-Package: .,
    com.simplifide.base.core.doc,
    com.simplifide.base.core.finder",
  com.simplifide.base.core.interfac,
- com.simplifide.base.core.license;uses:="de.schlichtherle.license",
  com.simplifide.base.core.module;
   uses:="com.simplifide.base.basic.api.progress,
    com.simplifide.base.basic.struct.reference,
