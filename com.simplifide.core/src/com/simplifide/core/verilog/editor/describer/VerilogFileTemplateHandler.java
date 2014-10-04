@@ -7,8 +7,8 @@ package com.simplifide.core.verilog.editor.describer;
 import com.simplifide.base.basic.struct.NodePosition;
 import com.simplifide.base.verilog.parse.base.VerilogTemplateHandler;
 import com.simplifide.core.python.template.TemplateInterpreter;
-import com.simplifide.core.scalaext.ScalaInterpreter;
-import com.simplifide.core.scalaext.context.ScalaCurrentContext;
+//import com.simplifide.core.scalaext.ScalaInterpreter;
+//import com.simplifide.core.scalaext.context.ScalaCurrentContext;
 import com.simplifide.core.source.design.DesignFile;
 import com.simplifide.core.source.design.FileTemplateHandler;
 
@@ -34,8 +34,9 @@ public class VerilogFileTemplateHandler extends FileTemplateHandler{
 	@Override
 	protected String executeScala(String command, NodePosition pos) {
 		
-		ScalaCurrentContext context = this.createCurrentContext(pos.getStartPos());
-		return ScalaInterpreter.executeVerilog(context, command, pos);
+		//ScalaCurrentContext context = this.createCurrentContext(pos.getStartPos());
+		//return ScalaInterpreter.executeVerilog(context, command, pos);
+		return "error";
 	}
 	
 }

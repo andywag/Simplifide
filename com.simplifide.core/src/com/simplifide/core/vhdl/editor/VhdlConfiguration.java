@@ -21,7 +21,7 @@ import com.simplifide.core.editors.SourceConfiguration;
 import com.simplifide.core.editors.SourceEditor;
 import com.simplifide.core.editors.format.SourceContentFormattingStrategy;
 import com.simplifide.core.editors.indent.SourceAutoEditStrategy;
-import com.simplifide.core.scripteditor.format.ScriptAutoEditStrategy;
+//import com.simplifide.core.scripteditor.format.ScriptAutoEditStrategy;
 import com.simplifide.core.vhdl.editor.indent.VhdlFormattingStrategy;
 import com.simplifide.core.vhdl.editor.indent.VhdlIndentStrategy;
 import com.simplifide.core.vhdl.editor.templates.VhdlTemplateProcessor;
@@ -46,9 +46,9 @@ public class VhdlConfiguration extends SourceConfiguration {
     	if (contentType == IDocument.DEFAULT_CONTENT_TYPE) {
     		return new IAutoEditStrategy[] {new SourceAutoEditStrategy(),new VhdlIndentStrategy()};
     	}
-    	else if (contentType == SourcePartitionScanner.SCRIPT_COMMENT) {
-    		return new IAutoEditStrategy[] {new ScriptAutoEditStrategy.Vhdl()};
-    	}
+    	//else if (contentType == SourcePartitionScanner.SCRIPT_COMMENT) {
+    	//	return new IAutoEditStrategy[] {new ScriptAutoEditStrategy.Vhdl()};
+    	//}
     	return super.getAutoEditStrategies(sourceViewer, contentType);
 
     }

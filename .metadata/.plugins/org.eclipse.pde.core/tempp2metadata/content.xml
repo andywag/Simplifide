@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='file:/C:/simplifide/Simplifide/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1412345924759'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://simplifide.com/html/updates' url='http://simplifide.com/html/updates' type='0' options='0'/>
+    <repository uri='http://simplifide.com/html/updates' url='http://simplifide.com/html/updates' type='1' options='0'/>
+  </references>
+  <units size='6'>
+    <unit id='com.simplifide.features.feature.jar' version='1.2.30.201410030718'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Simplifide'/>
+        <property name='org.eclipse.equinox.p2.description' value='Support for hardware langages'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SIMPLIFIDE'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.features.feature.jar' version='1.2.30.201410030718'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='com.simplifide.features' version='1.2.30.201410030718'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='com.simplifide.features' version='1.2.30.201410030718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          Software License Agreement and Limited Warranty &#xA;This is a legal agreement (this &amp;apos;License&amp;apos;) between you, &#xA;the end user, and SimplifIDE&#xA;Opening the enclosed disk envelope or, if electronically &#xA;distributed, downloading and using the Software indicates &#xA;that you accept and agree to comply with these terms. &#xA;If you do not agree to these terms, (a) you may so notify &#xA;SimplifIDE. within thirty (30) days of downloading for a full &#xA;refund, or (b) you may write to SimplifIDE. with a request &#xA;to modify any term of this License. Please allow six &#xA;(6) weeks for a response.&#xA;&#xA;1. GRANT OF LICENSE. SimplifIDE grants to you a non-exclusive, &#xA;personal license to use the Software as provided in this &#xA;License. Each permitted copy of the Software may be stored &#xA;in memory (either temporary or &amp;apos;permanent&amp;apos;), on no more than &#xA;one computer at any one time. However, you may install the &#xA;Software on a network server for the sole purpose of valid &#xA;distribution to other computers.&#xA;IT IS STRICTLY PROHIBITED TO refer your registration number to third &#xA;parties if you are a registered user.&#xA;&#xA;2. COPYRIGHT. The Software is owned by SimplifIDE or its &#xA;suppliers and is protected by United States copyright laws &#xA;and international treaty provisions. This means that you &#xA;must treat the Software like a book, musical recording or &#xA;any other copyrighted material. Nevertheless, SimplifIDE&#xA;gives you the right to (a) make two copies of the &#xA;Software solely for backup or archival purposes, or &#xA;(b) transfer the Software to a single hard disk, provided &#xA;you keep the original solely for backup or archival purposes. &#xA;You may not copy the written materials accompanying the &#xA;Software (called the &amp;apos;Documentation&amp;apos;). You should be &#xA;aware that illegal copying or distribution of copyrighted &#xA;material is investigated by the FBI, and is punishable by &#xA;prison terms of up to 10 years. &#xA;&#xA;3. OTHER RESTRICTIONS. You may not rent or lease the &#xA;Software, but you may permanently transfer the Software &#xA;and Documentation provided you retain no copies and the &#xA;recipient agrees to the terms of this Agreement. You may &#xA;not modify, reverse engineer, decompile, disassemble, or &#xA;create derivative works from the Software or Documentation.&#xA;IF software includes SOURCE CODE, You may NOT make Software &#xA;SOURCE CODE publically or freely available. If SOFTWARE is BETA or PROMOTIONAL,&#xA;You may not resell or re-distribute it.&#xA;&#xA;4. TERM. This License is effective until terminated. &#xA;You may terminate the license at any time by returning &#xA;the Software and all Documentation to SimplifIDE and by &#xA;removing the Software from the memory of the computer &#xA;into which the Software has been transferred. This &#xA;License may be terminated by SimplifIDE immediately and &#xA;without notice in the event that you fail to comply &#xA;with any term or condition hereof. Upon any termination, &#xA;you will return to SimplifIDE, at your expense, the &#xA;Software and Documentation and any copies whether or not &#xA;the copying was authorized. Should you fail to comply with any &#xA;of the above-mentioned your user&amp;apos;s rights would be automatically &#xA;terminated. This termination will be in addition to any &#xA;criminal, civil or other remedies.&#xA;&#xA;5. EXPORT LAW ASSURANCES. You agree that neither the &#xA;Software nor any direct product thereof is being or &#xA;will be acquired, shipped, transferred, or reexported, &#xA;directly or indirectly, into any country prohibited &#xA;by the United States Export Administration Act and &#xA;the regulations thereunder or will be used for any &#xA;purpose prohibited by the same.&#xA;&#xA;6. SEVERABILITY. If for any reason, any provision &#xA;or partial provision of this License is held invalid, &#xA;such invalidity shall not affect the remainder of &#xA;such provision or this License, and this License &#xA;shall, to the full extent consistent with law, &#xA;continue in full force and effect.&#xA;&#xA;7. GENERAL. The validity and performance of this &#xA;License shall be governed by United States law, &#xA;except for that body of law dealing with conflict &#xA;of laws and except as to copyrights, which are &#xA;governed by United States laws and international &#xA;treaties. This License constitutes the entire &#xA;agreement between the parties concerning the &#xA;subject matter hereof. Any waiver or amendment &#xA;of any provision of this License shall be &#xA;effective only if in writing and signed by you &#xA;and an officer of SimplifIDE No distributor, &#xA;dealer, or employee (other than an officer) &#xA;of SimplifIDE. is authorized to change or amend &#xA;any terms of this License. In the event of any &#xA;conflict between the terms of this License and &#xA;the terms of any license bound into any manual &#xA;packaged with the Software, this License shall &#xA;govern.&#xA;LIMITED WARRANTY&#xA;SimplifIDE. warrants that for thirty (30) days &#xA;following delivery of the Software to you: &#xA;(1) the Software, unless modified by you, will &#xA;perform substantially the functions described in &#xA;the Documentation provided by SimplifIDE.; and &#xA;(2) the media on which the Software is furnished &#xA;will be free from defects in materials and &#xA;workmanship under normal use.&#xA;SimplifIDE. does not &#xA;warrant that the Software will meet your &#xA;requirements or that operation of the Software &#xA;will be uninterrupted or error-free. SimplifIDE. &#xA;is not responsible for any problem, including &#xA;any problem which would otherwise be a breach &#xA;of warranty, caused by (i) changes in the &#xA;operating characteristics of computer hardware &#xA;or computer operating systems which are made &#xA;after the release of the Software, &#xA;(ii) interaction of the Software with non-SimplifIDE. &#xA;software or (iii) accident, abuse, or misapplication.&#xA;THE ABOVE WARRANTIES ARE MADE BY SIMPLIFIDE. &#xA;ALONE, AND THEY ARE THE ONLY WARRANTIES MADE &#xA;BY ANYONE REGARDING THE ENCLOSED SOFTWARE. &#xA;SIMPLIFIDE. AND ITS LICENSOR(S) MAKE NO OTHER &#xA;WARRANTIES, EXPRESS OR IMPLIED, INCLUDING &#xA;WITHOUT LIMITATION THE IMPLIED WARRANTIES &#xA;OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE, REGARDING THE ENCLOSED &#xA;SOFTWARE. EXCEPT AS OTHERWISE EXPRESSLY &#xA;PROVIDED ABOVE, SIMPLIFIDE. AND ITS LICENSOR(S) &#xA;DO NOT WARRANT, GUARANTEE OR MAKE ANY &#xA;REPRESENTATION REGARDING THE USE OR THE &#xA;RESULTS OF THE USE OF THE SOFTWARE IN TERMS &#xA;OF ITS CORRECTNESS, ACCURACY, RELIABILITY, &#xA;CURRENTNESS, OR OTHERWISE. THE ENTIRE RISK &#xA;AS TO THE RESULTS AND PERFORMANCE OF THE &#xA;SOFTWARE IS ASSUMED BY YOU. THE EXCLUSION &#xA;OF IMPLIED WARRANTIES IS NOT PERMITTED BY &#xA;SOME STATES OR JURISDICTIONS, SO THE ABOVE &#xA;EXCLUSION MAY NOT APPLY TO YOU. IN THAT &#xA;CASE, ANY IMPLIED WARRANTIES ARE LIMITED &#xA;IN DURATION TO THIRTY (30) DAYS FROM THE &#xA;DATE OF DELIVERY OF THE SOFTWARE. THERE MAY &#xA;BE OTHER RIGHTS THAT YOU MAY HAVE WHICH VARY &#xA;FROM JURISDICTION TO JURISDICTION.&#xA;LIMITATION OF REMEDIES&#xA;SimplifIDE.&amp;apos;s entire liability and your sole remedy under &#xA;the warranty during the thirty (30) day warranty period &#xA;is that SimplifIDE. shall, at its sole and exclusive &#xA;option, either replace the Software with a functionally &#xA;equivalent program at no charge to you or refund the &#xA;license fee of the Software. Any replacement Software &#xA;will be warranted for the remainder of the original &#xA;warranty period or thirty (30) days, whichever is &#xA;longer. These are your sole and exclusive remedies for &#xA;any breach of warranty during this ninety (90) day &#xA;period.&#xA;REGARDLESS OF WHETHER OR NOT ANY REMEDY SET &#xA;FORTH HEREIN FAILS OF ITS ESSENTIAL PURPOSE, &#xA;IN NO EVENT WILL SIMPLIFIDE., ITS LICENSOR(S) &#xA;AND THE DIRECTORS, OFFICERS, EMPLOYEES OR &#xA;AGENTS OF ANY OF THEM BE LIABLE TO YOU FOR &#xA;ANY CONSEQUENTIAL, INCIDENTAL OR INDIRECT &#xA;DAMAGES (INCLUDING DAMAGES FOR LOSS OF &#xA;BUSINESS PROFITS, BUSINESS INTERRUPTION, &#xA;LOSS OF BUSINESS INFORMATION, AND THE LIKE) &#xA;ARISING OUT THE USE OR INABILITY TO USE &#xA;THE SOFTWARE EVEN IF SIMPLIFIDE. OR ITS LICENSOR(S) &#xA;HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH &#xA;DAMAGES. BECAUSE SOME STATES OR JURISDICTIONS &#xA;DO NOT ALLOW THE EXCLUSION OR LIMITATION OF &#xA;LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL &#xA;DAMAGES, THE ABOVE LIMITATIONS MAY NOT APPLY &#xA;TO YOU. SIMPLIFIDE. AND ITS LICENSOR(S) LIABILITY &#xA;TO YOU FOR ACTUAL DAMAGES FROM ANY CAUSE &#xA;WHATSOEVER, AND REGARDLESS OF THE FORM OF &#xA;THE ACTION (WHETHER IN CONTRACT, TORT [INCLUDING &#xA;NEGLIGENCE], PRODUCT LIABILITY OR OTHERWISE), &#xA;WILL BE LIMITED TO $50.
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        Copyright © 2007-2010 Simplifide
+      </copyright>
+    </unit>
+    <unit id='com.simplifide.scala2' version='1.2.30.201410030718'>
+      <update id='com.simplifide.scala2' range='[0.0.0,1.2.30.201410030718)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Scala2'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SIMPLIFIDE'/>
+      </properties>
+      <provides size='116'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.scala2' version='1.2.30.201410030718'/>
+        <provided namespace='osgi.bundle' name='com.simplifide.scala2' version='1.2.30.201410030718'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.clocks' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.command' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.context' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.fixed' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.fixed.function' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.flop' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.operator' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.statement' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.test' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.basic.vars' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.ccode' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.complex' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.core.module' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.expression' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.expression.nodes' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.expression.segments' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.jep' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.parameters' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.parser' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.parser.generic' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.parser.nodes' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.top' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.top.parser' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.scala2.util' version='0.0.0'/>
+        <provided namespace='java.package' name='scala' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors.remote' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors.scheduler' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors.threadpool' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors.threadpool.helpers' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.actors.threadpool.locks' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.annotation' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.annotation.target' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.annotation.unchecked' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection.generic' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection.immutable' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection.interfaces' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection.mutable' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.collection.script' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.compat' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.concurrent' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.concurrent.forkjoin' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.io' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.math' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.ref' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.reflect' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.reflect.generic' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.runtime' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.testing' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.text' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.ant' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.ant.sabbus' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.cmd' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.cmd.program' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.ast' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.ast.parser' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend.icode' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend.icode.analysis' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend.jvm' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend.msil' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.backend.opt' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.dependencies' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.doc' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.doc.html' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.doc.html.page' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.doc.model' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.doc.model.comment' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.interactive' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.interpreter' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.io' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.javac' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.matching' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.plugins' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.reporters' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.settings' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.symtab' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.symtab.classfile' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.symtab.clr' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.transform' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.typechecker' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.nsc.util' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.tools.util' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.automata' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.continuations' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.control' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.grammar' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.matching' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.ast' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.combinator' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.combinator.lexical' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.combinator.syntactical' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.combinator.testing' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.combinator.token' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.input' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.json' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.parsing.syntax' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.util.regexp' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.dtd' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.factory' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.include' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.include.sax' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.parsing' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.persistent' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.pull' version='0.0.0'/>
+        <provided namespace='java.package' name='scala.xml.transform' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.simplifide.scala2' version='1.2.30.201410030718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.simplifide.scala2;singleton:=true&#xA;Bundle-Version: 1.2.30.201410030718
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.simplifide.features.feature.group' version='1.2.30.201410030718' singleton='false'>
+      <update id='com.simplifide.features.feature.group' range='[0.0.0,1.2.30.201410030718)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Simplifide'/>
+        <property name='org.eclipse.equinox.p2.description' value='Support for hardware langages'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SIMPLIFIDE'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.features.feature.group' version='1.2.30.201410030718'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.base' range='[1.2.30.201410030718,1.2.30.201410030718]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.core' range='[1.2.30.201410030718,1.2.30.201410030718]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.scala2' range='[1.2.30.201410030718,1.2.30.201410030718]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.generator' range='[1.2.30.201410030718,1.2.30.201410030718]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.features.feature.jar' range='[1.2.30.201410030718,1.2.30.201410030718]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          Software License Agreement and Limited Warranty &#xA;This is a legal agreement (this &amp;apos;License&amp;apos;) between you, &#xA;the end user, and SimplifIDE&#xA;Opening the enclosed disk envelope or, if electronically &#xA;distributed, downloading and using the Software indicates &#xA;that you accept and agree to comply with these terms. &#xA;If you do not agree to these terms, (a) you may so notify &#xA;SimplifIDE. within thirty (30) days of downloading for a full &#xA;refund, or (b) you may write to SimplifIDE. with a request &#xA;to modify any term of this License. Please allow six &#xA;(6) weeks for a response.&#xA;&#xA;1. GRANT OF LICENSE. SimplifIDE grants to you a non-exclusive, &#xA;personal license to use the Software as provided in this &#xA;License. Each permitted copy of the Software may be stored &#xA;in memory (either temporary or &amp;apos;permanent&amp;apos;), on no more than &#xA;one computer at any one time. However, you may install the &#xA;Software on a network server for the sole purpose of valid &#xA;distribution to other computers.&#xA;IT IS STRICTLY PROHIBITED TO refer your registration number to third &#xA;parties if you are a registered user.&#xA;&#xA;2. COPYRIGHT. The Software is owned by SimplifIDE or its &#xA;suppliers and is protected by United States copyright laws &#xA;and international treaty provisions. This means that you &#xA;must treat the Software like a book, musical recording or &#xA;any other copyrighted material. Nevertheless, SimplifIDE&#xA;gives you the right to (a) make two copies of the &#xA;Software solely for backup or archival purposes, or &#xA;(b) transfer the Software to a single hard disk, provided &#xA;you keep the original solely for backup or archival purposes. &#xA;You may not copy the written materials accompanying the &#xA;Software (called the &amp;apos;Documentation&amp;apos;). You should be &#xA;aware that illegal copying or distribution of copyrighted &#xA;material is investigated by the FBI, and is punishable by &#xA;prison terms of up to 10 years. &#xA;&#xA;3. OTHER RESTRICTIONS. You may not rent or lease the &#xA;Software, but you may permanently transfer the Software &#xA;and Documentation provided you retain no copies and the &#xA;recipient agrees to the terms of this Agreement. You may &#xA;not modify, reverse engineer, decompile, disassemble, or &#xA;create derivative works from the Software or Documentation.&#xA;IF software includes SOURCE CODE, You may NOT make Software &#xA;SOURCE CODE publically or freely available. If SOFTWARE is BETA or PROMOTIONAL,&#xA;You may not resell or re-distribute it.&#xA;&#xA;4. TERM. This License is effective until terminated. &#xA;You may terminate the license at any time by returning &#xA;the Software and all Documentation to SimplifIDE and by &#xA;removing the Software from the memory of the computer &#xA;into which the Software has been transferred. This &#xA;License may be terminated by SimplifIDE immediately and &#xA;without notice in the event that you fail to comply &#xA;with any term or condition hereof. Upon any termination, &#xA;you will return to SimplifIDE, at your expense, the &#xA;Software and Documentation and any copies whether or not &#xA;the copying was authorized. Should you fail to comply with any &#xA;of the above-mentioned your user&amp;apos;s rights would be automatically &#xA;terminated. This termination will be in addition to any &#xA;criminal, civil or other remedies.&#xA;&#xA;5. EXPORT LAW ASSURANCES. You agree that neither the &#xA;Software nor any direct product thereof is being or &#xA;will be acquired, shipped, transferred, or reexported, &#xA;directly or indirectly, into any country prohibited &#xA;by the United States Export Administration Act and &#xA;the regulations thereunder or will be used for any &#xA;purpose prohibited by the same.&#xA;&#xA;6. SEVERABILITY. If for any reason, any provision &#xA;or partial provision of this License is held invalid, &#xA;such invalidity shall not affect the remainder of &#xA;such provision or this License, and this License &#xA;shall, to the full extent consistent with law, &#xA;continue in full force and effect.&#xA;&#xA;7. GENERAL. The validity and performance of this &#xA;License shall be governed by United States law, &#xA;except for that body of law dealing with conflict &#xA;of laws and except as to copyrights, which are &#xA;governed by United States laws and international &#xA;treaties. This License constitutes the entire &#xA;agreement between the parties concerning the &#xA;subject matter hereof. Any waiver or amendment &#xA;of any provision of this License shall be &#xA;effective only if in writing and signed by you &#xA;and an officer of SimplifIDE No distributor, &#xA;dealer, or employee (other than an officer) &#xA;of SimplifIDE. is authorized to change or amend &#xA;any terms of this License. In the event of any &#xA;conflict between the terms of this License and &#xA;the terms of any license bound into any manual &#xA;packaged with the Software, this License shall &#xA;govern.&#xA;LIMITED WARRANTY&#xA;SimplifIDE. warrants that for thirty (30) days &#xA;following delivery of the Software to you: &#xA;(1) the Software, unless modified by you, will &#xA;perform substantially the functions described in &#xA;the Documentation provided by SimplifIDE.; and &#xA;(2) the media on which the Software is furnished &#xA;will be free from defects in materials and &#xA;workmanship under normal use.&#xA;SimplifIDE. does not &#xA;warrant that the Software will meet your &#xA;requirements or that operation of the Software &#xA;will be uninterrupted or error-free. SimplifIDE. &#xA;is not responsible for any problem, including &#xA;any problem which would otherwise be a breach &#xA;of warranty, caused by (i) changes in the &#xA;operating characteristics of computer hardware &#xA;or computer operating systems which are made &#xA;after the release of the Software, &#xA;(ii) interaction of the Software with non-SimplifIDE. &#xA;software or (iii) accident, abuse, or misapplication.&#xA;THE ABOVE WARRANTIES ARE MADE BY SIMPLIFIDE. &#xA;ALONE, AND THEY ARE THE ONLY WARRANTIES MADE &#xA;BY ANYONE REGARDING THE ENCLOSED SOFTWARE. &#xA;SIMPLIFIDE. AND ITS LICENSOR(S) MAKE NO OTHER &#xA;WARRANTIES, EXPRESS OR IMPLIED, INCLUDING &#xA;WITHOUT LIMITATION THE IMPLIED WARRANTIES &#xA;OF MERCHANTABILITY AND FITNESS FOR A &#xA;PARTICULAR PURPOSE, REGARDING THE ENCLOSED &#xA;SOFTWARE. EXCEPT AS OTHERWISE EXPRESSLY &#xA;PROVIDED ABOVE, SIMPLIFIDE. AND ITS LICENSOR(S) &#xA;DO NOT WARRANT, GUARANTEE OR MAKE ANY &#xA;REPRESENTATION REGARDING THE USE OR THE &#xA;RESULTS OF THE USE OF THE SOFTWARE IN TERMS &#xA;OF ITS CORRECTNESS, ACCURACY, RELIABILITY, &#xA;CURRENTNESS, OR OTHERWISE. THE ENTIRE RISK &#xA;AS TO THE RESULTS AND PERFORMANCE OF THE &#xA;SOFTWARE IS ASSUMED BY YOU. THE EXCLUSION &#xA;OF IMPLIED WARRANTIES IS NOT PERMITTED BY &#xA;SOME STATES OR JURISDICTIONS, SO THE ABOVE &#xA;EXCLUSION MAY NOT APPLY TO YOU. IN THAT &#xA;CASE, ANY IMPLIED WARRANTIES ARE LIMITED &#xA;IN DURATION TO THIRTY (30) DAYS FROM THE &#xA;DATE OF DELIVERY OF THE SOFTWARE. THERE MAY &#xA;BE OTHER RIGHTS THAT YOU MAY HAVE WHICH VARY &#xA;FROM JURISDICTION TO JURISDICTION.&#xA;LIMITATION OF REMEDIES&#xA;SimplifIDE.&amp;apos;s entire liability and your sole remedy under &#xA;the warranty during the thirty (30) day warranty period &#xA;is that SimplifIDE. shall, at its sole and exclusive &#xA;option, either replace the Software with a functionally &#xA;equivalent program at no charge to you or refund the &#xA;license fee of the Software. Any replacement Software &#xA;will be warranted for the remainder of the original &#xA;warranty period or thirty (30) days, whichever is &#xA;longer. These are your sole and exclusive remedies for &#xA;any breach of warranty during this ninety (90) day &#xA;period.&#xA;REGARDLESS OF WHETHER OR NOT ANY REMEDY SET &#xA;FORTH HEREIN FAILS OF ITS ESSENTIAL PURPOSE, &#xA;IN NO EVENT WILL SIMPLIFIDE., ITS LICENSOR(S) &#xA;AND THE DIRECTORS, OFFICERS, EMPLOYEES OR &#xA;AGENTS OF ANY OF THEM BE LIABLE TO YOU FOR &#xA;ANY CONSEQUENTIAL, INCIDENTAL OR INDIRECT &#xA;DAMAGES (INCLUDING DAMAGES FOR LOSS OF &#xA;BUSINESS PROFITS, BUSINESS INTERRUPTION, &#xA;LOSS OF BUSINESS INFORMATION, AND THE LIKE) &#xA;ARISING OUT THE USE OR INABILITY TO USE &#xA;THE SOFTWARE EVEN IF SIMPLIFIDE. OR ITS LICENSOR(S) &#xA;HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH &#xA;DAMAGES. BECAUSE SOME STATES OR JURISDICTIONS &#xA;DO NOT ALLOW THE EXCLUSION OR LIMITATION OF &#xA;LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL &#xA;DAMAGES, THE ABOVE LIMITATIONS MAY NOT APPLY &#xA;TO YOU. SIMPLIFIDE. AND ITS LICENSOR(S) LIABILITY &#xA;TO YOU FOR ACTUAL DAMAGES FROM ANY CAUSE &#xA;WHATSOEVER, AND REGARDLESS OF THE FORM OF &#xA;THE ACTION (WHETHER IN CONTRACT, TORT [INCLUDING &#xA;NEGLIGENCE], PRODUCT LIABILITY OR OTHERWISE), &#xA;WILL BE LIMITED TO $50.
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        Copyright © 2007-2010 Simplifide
+      </copyright>
+    </unit>
+    <unit id='com.simplifide.core' version='1.2.30.201410030718'>
+      <update id='com.simplifide.core' range='[0.0.0,1.2.30.201410030718)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Core Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SIMPLIFIDE'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='28'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.core' version='1.2.30.201410030718'/>
+        <provided namespace='osgi.bundle' name='com.simplifide.core' version='1.2.30.201410030718'/>
+        <provided namespace='java.package' name='com.simplifide.core' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.actions.format' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.color' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.hover' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.hyperlink' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.outline' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.source' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.baseeditor.template' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.console' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.editors' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.project' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.project.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.project.library' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.project.preference' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.project.test' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.pythonext.console' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.resources' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.source' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.source.design' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.ui.wizard' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.util' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.verilog.editor.describer' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.core.vhdl.describer' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='17'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='com.simplifide.base' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.views' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ltk.core.refactoring' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ltk.ui.refactoring' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='1.1.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='3.4.1'/>
+        <required namespace='osgi.bundle' name='com.simplifide.scala2' range='1.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.simplifide.core' version='1.2.30.201410030718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.simplifide.core;singleton:=true&#xA;Bundle-Version: 1.2.30.201410030718
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.simplifide.base' version='1.2.30.201410030718'>
+      <update id='com.simplifide.base' range='[0.0.0,1.2.30.201410030718)' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Base Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='SIMPLIFIDE'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='120'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.base' version='1.2.30.201410030718'/>
+        <provided namespace='osgi.bundle' name='com.simplifide.base' version='1.2.30.201410030718'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.ASdebug' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.actions.cpp' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.actions.csharp' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.actions.java' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.actions.python' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.build' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.collections' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.collections.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.debug' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.debug.misc' version='0.0.0'/>
+        <provided namespace='java.package' name='antlr.preprocessor' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.api.template' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api.codegeneration' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api.file' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api.progress' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api.project' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.api.python' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.gui' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.lists' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.newaction' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.struct' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.struct.change' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.struct.reference' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.support' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.thread' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.basic.util' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.alias' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.class1' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.context' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.doc' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.error' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.error.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.error.err' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.error.warnings' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.finder' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.finder.index' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.hierarchy' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.instance' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.interfac' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.module' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.newfunction' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.port' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.project' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.project.define' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.reference' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.var.realvars' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.core.var.types' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.hover' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.license.info' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.refactor.model' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.grammar' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.instance' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.namedec' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.port' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.segment.core' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.segment.process' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.vars.signal' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.node.vars.types' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.parse' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.stream' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.tok' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.antlr.walk' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.sourcefile.util' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.split' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.verilog.core.port' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.verilog.core.types' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.verilog.parse.base' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.verilog.parse.context' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.base' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.grammar' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.alias' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.context' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.designunits' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.function' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.instance' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.literals' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.misc' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.port' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.segment.assign' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.segment.condition' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.segment.core' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.segment.process' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.segment.process.segment' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.string' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.vars' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.vars.signal' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.parse.node.vars.types' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.base.vhdl.project' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.binary' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.digest' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.language' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.net' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.auth' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.cookie' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.methods' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.methods.multipart' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.params' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.protocol' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.adapters' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.filter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.input' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.output' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.transform' version='0.0.0'/>
+        <provided namespace='java.package' name='org.jdom.xpath' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='1.1.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.net' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.simplifide.base' version='1.2.30.201410030718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.simplifide.base;singleton:=true&#xA;Bundle-Version: 1.2.30.201410030718
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.simplifide.generator' version='1.2.30.201410030718'>
+      <update id='com.simplifide.generator' range='[0.0.0,1.2.30.201410030718)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='Generator'/>
+      </properties>
+      <provides size='21'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.simplifide.generator' version='1.2.30.201410030718'/>
+        <provided namespace='osgi.bundle' name='com.simplifide.generator' version='1.2.30.201410030718'/>
+        <provided namespace='java.package' name='com.simplifide.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.component' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.flop' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.instance' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.lut' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.rotation' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.basic.state' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.equalizer' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.equalizer.cd' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.equalizer.filter' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.equalizer.rotation' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.fft' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.fft.expression' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.fft.gain' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.blocks.gain' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.general' version='0.0.0'/>
+        <provided namespace='java.package' name='com.simplifide.generator.signal.fir' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='osgi.bundle' name='com.simplifide.base' range='1.2.16'/>
+        <required namespace='osgi.bundle' name='com.simplifide.core' range='1.2.16'/>
+        <required namespace='osgi.bundle' name='com.simplifide.scala2' range='1.2.16'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.simplifide.generator' version='1.2.30.201410030718'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.simplifide.generator;singleton:=true&#xA;Bundle-Version: 1.2.30.201410030718
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

@@ -15,7 +15,6 @@ import org.osgi.framework.BundleContext;
 import com.simplifide.base.sourcefile.antlr.FormatSupport;
 import com.simplifide.core.builder.BuildHandler;
 import com.simplifide.core.editors.format.FormatIndentProvider;
-import com.simplifide.core.scalaext.ScalaStartup;
 import com.simplifide.core.ui.preference.SourcePreferenceInitializer;
 
 /**

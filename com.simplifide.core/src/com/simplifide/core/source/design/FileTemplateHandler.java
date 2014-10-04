@@ -34,7 +34,7 @@ import com.simplifide.core.project.EclipseBaseProject;
 import com.simplifide.core.project.EclipseSuite;
 import com.simplifide.core.python.template.TemplateInterpreter;
 import com.simplifide.core.pythonext.basic.PythonSearch;
-import com.simplifide.core.scalaext.context.ScalaCurrentContext;
+//import com.simplifide.core.scalaext.context.ScalaCurrentContext;
 
 public abstract class FileTemplateHandler {
 
@@ -59,7 +59,7 @@ public abstract class FileTemplateHandler {
 	
 	
 	
-	protected ScalaCurrentContext createCurrentContext(int pos) {
+	/*protected ScalaCurrentContext createCurrentContext(int pos) {
 		EclipseBaseProject project = (EclipseBaseProject) this.getDesignFile().getProjectRef().getObject();
 		EclipseSuite suite = (EclipseSuite) project.getSuiteReference().getObject();
 		InstanceModule mod = null;
@@ -73,7 +73,7 @@ public abstract class FileTemplateHandler {
 		
 		ScalaCurrentContext context = new ScalaCurrentContext(suite,project,this.getDesignFile(),mod);
 		return context;
-	}
+	}*/
 	
 	protected ParseContext getParseContext(TemplateContents cont) {
 		ParseDescriptor desc = this.getDesignFile().getParseDescriptor();

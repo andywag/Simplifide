@@ -20,7 +20,6 @@ import com.simplifide.core.baseeditor.template.GeneralContentProcessor;
 import com.simplifide.core.editors.SourceConfiguration;
 import com.simplifide.core.editors.SourceEditor;
 import com.simplifide.core.editors.format.SourceContentFormattingStrategy;
-import com.simplifide.core.scripteditor.format.ScriptAutoEditStrategy;
 import com.simplifide.core.verilog.editor.indent.VerilogAutoEditStrategy;
 import com.simplifide.core.verilog.editor.indent.VerilogFormattingStrategy;
 import com.simplifide.core.verilog.editor.indent.VerilogIndentStrategy;
@@ -54,9 +53,9 @@ public class VerilogConfiguration extends SourceConfiguration{
 		if (contentType == IDocument.DEFAULT_CONTENT_TYPE) {
 			return new IAutoEditStrategy[] {new VerilogAutoEditStrategy(),new VerilogIndentStrategy()};
     	}
-    	else if (contentType.equals(SourcePartitionScanner.SCRIPT_COMMENT)) {
-    		return new IAutoEditStrategy[] {new ScriptAutoEditStrategy.Verilog()};
-    	}
+    	//else if (contentType.equals(SourcePartitionScanner.SCRIPT_COMMENT)) {
+    	//	return new IAutoEditStrategy[] {new ScriptAutoEditStrategy.Verilog()};
+    	//}
     	return super.getAutoEditStrategies(sourceViewer, contentType);
 	}
 

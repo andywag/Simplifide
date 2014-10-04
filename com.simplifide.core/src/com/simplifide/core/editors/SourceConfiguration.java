@@ -31,9 +31,9 @@ import com.simplifide.core.baseeditor.hover.SourceInformationControlCreator;
 import com.simplifide.core.baseeditor.hyperlink.GeneralHyperlinkDetector;
 import com.simplifide.core.editors.format.SourceContentFormattingStrategy;
 import com.simplifide.core.editors.hyperlink.SourceHyperlinkDetector;
-import com.simplifide.core.scripteditor.ScriptScanner;
-import com.simplifide.core.scripteditor.hover.ScriptTextHover;
-import com.simplifide.core.scripteditor.templates.ScriptContentProcessor;
+//import com.simplifide.core.scripteditor.ScriptScanner;
+//import com.simplifide.core.scripteditor.hover.ScriptTextHover;
+//import com.simplifide.core.scripteditor.templates.ScriptContentProcessor;
 import com.simplifide.core.ui.preference.PreferenceConstants;
 
 public abstract class SourceConfiguration extends GeneralConfiguration {
@@ -51,8 +51,8 @@ public abstract class SourceConfiguration extends GeneralConfiguration {
 		
 		
 		ContentAssistant assistant = (ContentAssistant) super.getContentAssistant(sourceViewer);
-		assistant.setContentAssistProcessor(new ScriptContentProcessor(this.getEditor()),
-				SourcePartitionScanner.SCRIPT_COMMENT);
+		//assistant.setContentAssistProcessor(new ScriptContentProcessor(this.getEditor()),
+		//		SourcePartitionScanner.SCRIPT_COMMENT);
 		assistant.setInformationControlCreator(new SourceInformationControlCreator(null));
 		
 		return assistant;
@@ -101,9 +101,9 @@ public abstract class SourceConfiguration extends GeneralConfiguration {
 		reconciler.setRepairer(dr, IDocument.DEFAULT_CONTENT_TYPE);
 		
 		
-		dr= new DefaultDamagerRepairer(new ScriptScanner(this.getColorManager()));
-		reconciler.setDamager(dr, SourcePartitionScanner.SCRIPT_COMMENT);
-		reconciler.setRepairer(dr, SourcePartitionScanner.SCRIPT_COMMENT);
+		//dr= new DefaultDamagerRepairer(new ScriptScanner(this.getColorManager()));
+		//reconciler.setDamager(dr, SourcePartitionScanner.SCRIPT_COMMENT);
+		//reconciler.setRepairer(dr, SourcePartitionScanner.SCRIPT_COMMENT);
 	
 		dr= new DefaultDamagerRepairer(new CommentScanner.Comment(this.getColorManager()));
 		reconciler.setDamager(dr, SourcePartitionScanner.MULTI_COMMENT);
@@ -121,14 +121,14 @@ public abstract class SourceConfiguration extends GeneralConfiguration {
 	@Override
 	public ITextHover getTextHover(ISourceViewer sourceViewer, String contentType, int stateMask) {
 		if (contentType == SourcePartitionScanner.SCRIPT_COMMENT) {
-			return new ScriptTextHover(this.getEditor());
+			//return new ScriptTextHover(this.getEditor());
 		}
 		return null;
 	}
 	@Override
 	public ITextHover getTextHover(ISourceViewer sourceViewer, String contentType) {
 		if (contentType == SourcePartitionScanner.SCRIPT_COMMENT) {
-			return new ScriptTextHover(this.getEditor());
+			//return new ScriptTextHover(this.getEditor());
 		}
 		return null;
 	}

@@ -1,0 +1,119 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Built-By: genie.rt.rap
+Bundle-SymbolicName: org.eclipse.rap.tools.intro;singleton:=true
+Eclipse-LazyStart: true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/rap/or
+ g.eclipse.rap.tools.git;path="bundles/org.eclipse.rap.tools.intro";co
+ mmitId=ffb71082100ec8b1b1fa1cf1cdd0e70718784987
+Bundle-Activator: org.eclipse.rap.tools.intro.internal.IntroPlugin
+Require-Bundle: org.eclipse.ui.intro,org.eclipse.ui.intro.universal,or
+ g.eclipse.ui,org.eclipse.ui.cheatsheets,org.eclipse.pde.core,org.ecli
+ pse.core.runtime,org.eclipse.ant.core,org.eclipse.core.resources,org.
+ eclipse.equinox.p2.metadata,org.eclipse.equinox.p2.core,org.eclipse.e
+ quinox.p2.repository
+Bundle-Version: 2.3.1.20140819-1934
+Export-Package: org.eclipse.rap.tools.intro.internal;x-friends:="org.e
+ clipse.rap.tools.tests",org.eclipse.rap.tools.intro.internal.commands
+ ;x-internal:=true,org.eclipse.rap.tools.intro.internal.target;x-frien
+ ds:="org.eclipse.rap.tools.tests"
+Build-Jdk: 1.7.0_51
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Name: %Bundle-Name
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/rap/tools/intro/internal/commands/LaunchRAPApplicati
+ on$1.class
+SHA1-Digest: K/tXL+KwumVf60ijvv+lpkdcsFI=
+
+Name: intro/graphics/extract_target.gif
+SHA1-Digest: mP42BavEe8Hd+HYdvwulqv3oz08=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallTargetDialog$
+ 1.class
+SHA1-Digest: 8fqRNn7j745oMmSHXWYFGeDoJow=
+
+Name: org/eclipse/rap/tools/intro/internal/ErrorUtil$1.class
+SHA1-Digest: jY6HJxAX97vNqtcohpnl0Sfyt+k=
+
+Name: META-INF/maven/org.eclipse.rap/org.eclipse.rap.tools.intro/pom.x
+ ml
+SHA1-Digest: MomJOfCSdDjd8aWS1HTeuO0/PNM=
+
+Name: plugin.properties
+SHA1-Digest: TNnHPPbB0OsRvQOk8o/3WdbdeI4=
+
+Name: org/eclipse/rap/tools/intro/internal/IntroPlugin.class
+SHA1-Digest: CMJHq35C0no8uJLmwlfjIQyacDo=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallRAPTargetHand
+ ler.class
+SHA1-Digest: YXu6iF9TVhHJ4WM3GXCMZIbuWOY=
+
+Name: cheatsheets/getting-started.xml
+SHA1-Digest: YPuYJm4d/qMipb3aADj7Nl1Jx34=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallRAPTargetActi
+ on.class
+SHA1-Digest: T6YXXUh/QJxyoHbtMLfu+JmwrhQ=
+
+Name: intro/graphics/rap.png
+SHA1-Digest: 3nIfIOeeLrCXLOX/X46MR/niuJY=
+
+Name: plugin.xml
+SHA1-Digest: al7GAgLwSS7O8qA/vRYY5QOorkk=
+
+Name: intro/graphics/tu_checkout48.gif
+SHA1-Digest: huJw6xHMsj2LT1Q3HgsQiEbzNFw=
+
+Name: intro/css/overview.css
+SHA1-Digest: QcGxGH19A8KOzViQpJnTMj0OC1E=
+
+Name: org/eclipse/rap/tools/intro/internal/target/IntroMessages.class
+SHA1-Digest: XOLvunnvzMoUW77Ah8jKy6no9To=
+
+Name: META-INF/maven/org.eclipse.rap/org.eclipse.rap.tools.intro/pom.p
+ roperties
+SHA1-Digest: kQvjCUzQj0QukS2XGx4Pz1ONrV0=
+
+Name: org/eclipse/rap/tools/intro/internal/target/TargetSwitcher.class
+SHA1-Digest: dZnxAiPwR6fzCpuuH0bvt0xuScY=
+
+Name: intro/graphics/quick_tour.gif
+SHA1-Digest: 3WM5AjtvQF9BwvL7dI+zCD1kpu4=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallRAPTargetHand
+ ler$1.class
+SHA1-Digest: AFrqs0g2zYoB4YcUTvum5Hwx6BQ=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallRAPTargetHand
+ ler$2.class
+SHA1-Digest: YfTURdjNiYitl9JdSINJZl3JUDA=
+
+Name: about.html
+SHA1-Digest: EDMbfdZtAOAztTA0u8UO/Mu1bxc=
+
+Name: org/eclipse/rap/tools/intro/internal/target/TargetProvider.class
+SHA1-Digest: YoguYAS8VLEIl+22rId7ht5ID2I=
+
+Name: org/eclipse/rap/tools/intro/internal/target/messages.properties
+SHA1-Digest: Kk4ajItF/qoXfyg6JHsPgpdNl2U=
+
+Name: org/eclipse/rap/tools/intro/internal/commands/LaunchRAPApplicati
+ on.class
+SHA1-Digest: ZTf9mhUvllmUfBsdNEvVpajMWC4=
+
+Name: org/eclipse/rap/tools/intro/internal/target/InstallTargetDialog.
+ class
+SHA1-Digest: Ac4ayrSHgXRZmyL/Okjp/zdk5WM=
+
+Name: org/eclipse/rap/tools/intro/internal/ErrorUtil.class
+SHA1-Digest: X7AUosUicYr0IcWKB4/VzH1JRiI=
+
+Name: intro/overviewExtensionContent.xml
+SHA1-Digest: kLnlwxJysd087pTl2lLWmHL6avs=
+

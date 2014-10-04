@@ -50,7 +50,6 @@ import com.simplifide.core.project.EclipseDummySuite;
 import com.simplifide.core.project.EclipseSuite;
 import com.simplifide.core.pythonext.console.BuildConsole;
 import com.simplifide.core.ui.preference.PreferenceConstants;
-import com.simplifide.scala2.top.InterfaceError;
 
 public abstract class DesignFileBuilder extends GeneralFileBuilder{
 
@@ -120,7 +119,7 @@ public abstract class DesignFileBuilder extends GeneralFileBuilder{
 	}
 	
         protected abstract ErrorWrapper createErrorWrapper(TopError error);
-        
+        /*
         public void addScalaMarkers(final List<InterfaceError> errors, final NodePosition pos) {
         	final String MarkerID = "com.simplifide.core.externalMarker";
         	final IResource resource = this.getDesignFile().getResource();
@@ -162,7 +161,7 @@ public abstract class DesignFileBuilder extends GeneralFileBuilder{
         		HardwareLog.logError(e);
         	}
         }
-        
+        */
         private void addTaskMarkers(final ParseDescriptor desc) {
         	final String MarkerID = "org.eclipse.core.resources.taskmarker";
         	final IResource resource = this.getDesignFile().getResource();

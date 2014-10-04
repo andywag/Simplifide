@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="com/simplifide/core/scalaext/|com/simplifide/core/scripteditor/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="external/jython.jar" sourcepath="C:/software/jython2.5.1/src"/>
 	<classpathentry kind="lib" path="external/freemarker.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

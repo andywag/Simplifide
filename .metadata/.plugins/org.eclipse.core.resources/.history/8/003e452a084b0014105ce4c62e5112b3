@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Simplifide Update Site" url="http://simplifide.com/html/updates">
+      Update Site for Simplifide
+   </description>
+   <feature url="features/com.simplifide.features_1.2.30.201410030714.jar" id="com.simplifide.features" version="1.2.30.201410030714">
+      <category name="Hardware"/>
+   </feature>
+   <feature url="features/com.simplifide.features_1.2.30.201410030717.jar" id="com.simplifide.features" version="1.2.30.201410030717">
+      <category name="Hardware"/>
+   </feature>
+   <category-def name="Hardware" label="Hardware"/>
+</site>

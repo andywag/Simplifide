@@ -3,64 +3,7 @@
    <description name="Simplifide Update Site" url="http://simplifide.com/html/updates">
       Update Site for Simplifide
    </description>
-   <feature url="features/com.simplifide.features_1.2.0.201007131826.jar" id="com.simplifide.features" version="1.2.0.201007131826">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.1.201007281309.jar" id="com.simplifide.features" version="1.2.1.201007281309">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.2.201008131325.jar" id="com.simplifide.features" version="1.2.2.201008131325">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.3.201008301607.jar" id="com.simplifide.features" version="1.2.3.201008301607">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.4.201009151745.jar" id="com.simplifide.features" version="1.2.4.201009151745">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.5.201009301226.jar" id="com.simplifide.features" version="1.2.5.201009301226">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.6.201010141802.jar" id="com.simplifide.features" version="1.2.6.201010141802">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.7.201010281012.jar" id="com.simplifide.features" version="1.2.7.201010281012">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.8.201011162146.jar" id="com.simplifide.features" version="1.2.8.201011162146">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.9.201012031450.jar" id="com.simplifide.features" version="1.2.9.201012031450">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.10.201012031720.jar" id="com.simplifide.features" version="1.2.10.201012031720">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.11.201012151547.jar" id="com.simplifide.features" version="1.2.11.201012151547">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.12.201012162034.jar" id="com.simplifide.features" version="1.2.12.201012162034">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.13.201012222229.jar" id="com.simplifide.features" version="1.2.13.201012222229">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.14.201101071637.jar" id="com.simplifide.features" version="1.2.14.201101071637">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.15.201101232109.jar" id="com.simplifide.features" version="1.2.15.201101232109">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.16.201102060848.jar" id="com.simplifide.features" version="1.2.16.201102060848">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.19.201105042109.jar" id="com.simplifide.features" version="1.2.19.201105042109">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.20.201105170831.jar" id="com.simplifide.features" version="1.2.20.201105170831">
-      <category name="Hardware"/>
-   </feature>
-   <feature url="features/com.simplifide.features_1.2.30.201208171322.jar" id="com.simplifide.features" version="1.2.30.201208171322">
+   <feature url="features/com.simplifide.features_1.2.30.201410030718.jar" id="com.simplifide.features" version="1.2.30.201410030718">
       <category name="Hardware"/>
    </feature>
    <category-def name="Hardware" label="Hardware"/>
